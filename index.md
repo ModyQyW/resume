@@ -14,22 +14,18 @@ export_on_save:
 - 中山大学（2015.08 - 2019.06），本科，软件工程
 - 邮箱 - wurui7@mail3.sysu.edu.cn
 - QQ/微信 - 261857860
-- 手机 - 13266337925
 - Github - <https://www.github.com/ModyQyW>
 - 个人站 - <https://modyqyw.github.io>
 - 语雀 - <https://www.yuque.com/modyqyw>
-- 简历在线查看 - <https://modyqyw.github.io/resume/>
-- 熟悉前端常见的开发技术，能够处理常见需求、常见问题。
-- 理解前端工程化并努力实践。
+- 在线简历 - <https://modyqyw.github.io/resume/>
+- 熟悉前端常见的开发技术，能够处理常见需求、常见问题，理解前端工程化并努力实践。
 - 拥有良好的编程习惯、钻研精神和开源精神，喜欢接触并尝试前沿技术。
 
 ## 工作期望
 
 - 前端开发工程师
 - 佛山禅城/南海工作
-- 双休
-- 10-15k
-- 五险一金
+- 双休，10-15k，五险一金
 - 正式岗位（非人力外包）
 
 ## 过往工作
