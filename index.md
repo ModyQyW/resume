@@ -71,7 +71,7 @@ export_on_save:
      - 使用 `uni-app` 完全重构，计划支持微信支付宝双端点餐小程序和移动端应用。
 
 <img
-  src="http://mmbiz.qpic.cn/mmbiz_jpg/eaz41r5eBTliacsYB3F76U5kIZNnlJjEe6ialwvdP6W6xu2lDNNLZ30n2RlYEDI8YrDPmer059jgJGEFJmicnHcQA/0"
+  src="./qrcode0.jpeg"
   alt="都城送小程序二维码"
   width="128px"
   height="128px"
