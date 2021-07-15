@@ -12,61 +12,58 @@ export_on_save:
 
 ## 自我介绍
 
-- 男，24 岁
-- 中山大学（2015.08 - 2019.06），本科，软件工程。
+- 男，广东佛山高明人，24 岁，2019 年 6 月毕业于中山大学软件工程，统招本科学历学士学位。
 - 邮箱 - <a href="mailto:wurui7@mail3.sysu.edu.cn">wurui7@mail3.sysu.edu.cn</a>
-- QQ/微信 - 261857860
 - 在线简历 - <https://modyqyw.github.io/resume/>，方便地查看以下各个链接。
-- Github - <https://www.github.com/ModyQyW>，展示了我的一些开源项目。
-- 个人站 - <https://modyqyw.github.io>，展示了我个人的学习路径和一些知识整理，也可以在语雀 <https://www.yuque.com/modyqyw> 查看。
-- 对过往业务相关较为熟练，注重归纳总结并探索同一业务更好的实现和处理方式。
-- 理解前端常见的开发技术，包括但不限于 `jquery`，`vue`，`react` 以及其它常用周边库等。
-- 拥有良好的编程习惯，注重文档、代码规范和必要的注释。
-- 学习能力较强，能在短时间内了解未接触过的技术并运用，乐意接触前沿新鲜技术。
-- 语言和框架底层的理解、可视化的熟练度、serverless 较薄弱。
+- 个人站 - <https://modyqyw.github.io>，展示了我个人的学习路径和一些知识整理。
+- Github - <https://www.github.com/ModyQyW>，展示了我的个人站源码、在线简历源码、demos 和基础设施建设相关的开源工作。
 
 ## 工作期望
 
-- 正式岗位（非人力外包岗位）
-- 佛山禅城/南海工作
-- 10-12k，双休，五险一金
-- 良好的个人和公司发展空间
+- 正式岗位
+- 10 - 12k，佛山禅城/南海工作
+- 双休，五险一金
+- 良好的个人、公司和团队发展空间
 - 和谐、自由、包容的公司和团队氛围
-- 有计划性的团队工作安排
+- 有计划性的公司和团队安排
 
-## 过往工作
+## 专业技能
 
-### 广东砺云教育科技有限公司 2019.06 - 2021.04
+- `HTML`
+- `CSS` / `SCSS` / `LESS`
+- `JavaScript` / `TypeScript`
+- `Vue` / `uni-app`
+- `React` / `Taro`
+- `Node`
+- `Express`
+- `Egg`
+- `MongoDB`
 
-担任前端开发工程师一职，下面列写持续 1 个月以上的工作内容。
+## 工作经历
+
+### [广东砺云教育科技有限公司](https://www.millcloud.cn/) 2019.06 - 2021.04
+
+公司致力于智慧教学。我担任前端开发工程师一职，实习也在这家公司，因想回佛山发展而离职。
 
 #### 都城快餐 2019.06 - 2021.04
 
-公司早期外包项目，为都城快餐提供电子化支持，包括桌面端后台管理网页系统、微信支付宝小程序和移动端应用等。
+公司建立早期接的外包项目，为都城快餐提供电子化支持，包括桌面端网页、小程序和移动端应用等。
 
-本人负责前端选型、开发、维护和重构工作，技术栈涉及 `vue`，`uni-app`，`react-native`，`taro` 等。
+我是该项目的主要前端开发者，负责前端选型、开发、维护和重构等工作。
 
-1. 接手遗留项目，主要涉及维护（修复遗留问题、补全开发规范和文档）和重构（基于 `vue` 和 `uni-app`，全面拥抱 `vue` 生态），保证线上项目稳定运行。
-
-   - 基于 `angular 1` 的后台管理系统。
-   - 基于 `wepy 1` 的微信小程序。
-   - 基于 `expo` + `react-navigation` + `mobx` + `typescript` 的移动端应用。
-     - 自管理更新 self-hosting updates。
-
-2. 领导开发在线订餐系统，主要涉及选型、设计和协同开发。
+1. 接手遗留项目（桌面端网页 `Angular 1`、微信小程序 `wepy 1` 和移动端应用 `React Native`），修复了遗留问题，补充了说明文档，应甲方要求新增了功能，保证线上项目稳定运行的前提下，基于 `Vue` / `uni-app` 重构项目。
+2. 开发全新的在线订餐系统。
 
    - 与产品、后端三方协调，了解项目全貌。
-   - 基于 `vue 2` + `element-ui` + `vue-router` + `vuex` 的后台管理系统。
+   - `vue 2` + `element-ui` + `vue-router` + `vuex` 实现后台管理系统。
      - 多角色支持。
      - 统一布局，配置式侧边栏。
-     - 修改 `vue-cli` 配置以自定义，包括通过 `sass-loader` 注入自定义的 `sass` 变量，自动去除 `console`，增加路径别名等，分块构建，增加 `stylelint` 校验等。
-     - 基于 `axios` 封装请求，包括请求/响应拦截器，自动错误处理，格式化数据，基于环境变量请求不同服务器等。
-     - 结合 `np` 和 `shell` 文件，一条命令快速部署。
-   - 基于 `taro 2` + `mobx` + `typescript` 的微信支付宝双端点餐小程序。
+     - 自定义 `vue-cli` 配置，包括通过 `sass-loader` 注入自定义的 `sass` 变量，自动去除 `console`，增加路径别名等，分块构建，增加 `stylelint` 校验等。
+     - 基于 `axios` 封装请求，包括自动输出日志，自动重试，自动错误处理，根据环境变量区分请求服务器等。
+     - 结合 `release-it` 和 `shell` 文件，一条命令快速部署到测试服务器或正式服务器。
+   - `taro 2` + `mobx` + `typescript` 实现微信支付宝双端点餐小程序。
      - 微信小程序名 `都城送`，需要切换地址到广州，完整功能的体验时间：11:00 - 13:00，17:30 - 19:00。支付宝小程序内测中。
-     - 根据要求实现样式，参考 `tailwindcss 1` 实现项目内原子化样式，后续封装成库。
-     - 基于 `taro.request` 封装请求。
-     - 使用 `uni-app` 完全重构。
+     - 根据要求实现样式，参考 `tailwindcss 1` 实现项目内原子化样式。
 
 <img
   src="./qrcode0.jpeg"
@@ -78,33 +75,34 @@ export_on_save:
 
 #### MTU 互动学习平台 2020.07 - 2020.11
 
-公司自研项目，助力教学智能化，涉及包括桌面端后台管理网页系统和微信小程序。
+公司经营步入正轨后的自研项目，助力教学智能化。
 
-本人负责桌面端后台管理网页系统的选型和开发工作，技术栈涉及 `vue`。
+我负责桌面端后台管理网页系统的选型和开发工作。
 
-1. 基于 `vue 2` + `element-ui` + `vue-router` + `vuex` 的后台管理系统，高校使用的教学资源平台。
+1. `vue 2` + `element-ui` + `vue-router` + `vuex` 实现后台管理系统，高校使用的教学资源平台。
 
-   - 查看教学资源时，使用 EventBus 处理侧边栏、面包屑和页面主体三个组件之间的数据流动，区分开 vuex。
+   - 查看教学资源时，使用 EventBus 同步侧边栏、面包屑和页面主体三者之间的数据。
    - 封装 `vue-simple-uploader`，针对不同文件格式显示不同图标，自定义添加和上传完成逻辑以控制上传行为。
    - 轻度修改 `element-ui` 的面包屑，支持点击最后一个面包屑项，以刷新页面。
    - 轻度修改 `element-ui` 的树，支持懒加载失败时可以重新加载。
 
-#### 基础建设
+#### 基础设施 2019.06 - 2021.04
 
-- 前端规范 <https://millcloud.github.io/frontend-standard/> - 聚合社区内现有的很多优秀实践而来的规范，旨在降低新成员融入的成本，提高开发、研发、协作效率，避免开发中常见的问题，覆盖学习规范、编码规范、工作流规范、异常处理和监控规范、测试规范、文档规范、前后端协作规范等，也涉及提高方面的建议。
-- boilerplate-vue <https://github.com/millcloud/boilerplate-vue> - 在 `vue-cli` 创建的模版基础上，结合过往项目经历，加入开发常用配置的模板，包括组件库、`vuex`、`vue-router`、`lodash`、`dayjs`、`i18n`、`axios` 等，使用 `vue` 做桌面端网页、移动端网页和桌面端应用开发，支持 `vue 2` 和 `vue 3`，目前 `vue 3` 部分尚不稳定。
-- boilerplate-uni-app <https://github.com/millcloud/boilerplate-uni-app> - 和上一个模板类似，使用 `uni-app` 做小程序和移动端应用开发，没有使用 `vue-router`，请求使用了 `uni-ajax`，只支持 `vue 2`。
+实习期间，我注意到公司内部基本没有做基础设施建设，于是向领导申请做基础设施建设。
 
-## 开源项目
+基础设施建设包括了编码规范、工作流规范、测试规范、文档规范、协作规范等，最终聚合成 [前端规范](https://millcloud.github.io/frontend-standard/)。
 
-- @modyqyw/fabric <https://github.com/modyqyw/fabric#readme> - 不同前端项目的可共享规范，涉及 `editorconfig`，`prettier`，`eslint`，`stylelint`，`markdownlint`，`commitlint`，`lint-staged`，`husky`，`vscode` 等配置。
-- @modyqyw/utils <https://github.com/modyqyw/utils#readme> - 不同前端项目的可共享工具方法库，主要参考 `lodash-es`，加入了一些其它常用方法。
-- @modyqyw/mp-scss <https://modyqyw.github.io/mp-scss> - 一个基于 `flexbox` 的小程序 `scss` 库，用于快速实现自定义设计，定位位于 `tailwindcss` 和 `bootstrap` 之间，既提供了原子化的功能类，也提供了用于快速开发的布局类和组件类。
-- @modyqyw/dsa <https://github.com/modyqyw/dsa#readme> - 用 `typescript` 实现的部分数据结构和算法，期望用于个人学习和实际开发。使用 `jest` 测试，使用 `rollup` 构建。
-- uni-helper <https://github.com/modyqyw/uni-helper#readme> - 增强 `vscode` 对 `uni-*` 的支持。
+### [佛山市马威贸易有限公司](https://globus-china.com/) 2021.05 - 2021.07
 
-## Demo
+国际贸易公司，我担任全栈开发工程师一职，因公司内项目安排没有良好的计划性而离职。
 
-- vue2-todo-list-demo <https://github.com/ModyQyW/vue2-todo-list-demo> - 一个简易的待办清单应用，使用 `vue 2` + `vuetify` 制作，在线体验 <https://vue2-todo-list-demo.vercel.app/>。
-- next-mine-sweeper-demo <https://github.com/ModyQyW/next-mine-sweeper-demo> - 一个简易的扫雷游戏，使用 `next 10` + `tailwindcss 2` 制作，在线体验 <https://next-mine-sweeper-demo.vercel.app/>。
-- next-fetch-demo <https://github.com/ModyQyW/next-fetch-demo> - 一个简易的获取 Github 仓库的示例，使用 `next 10` + `tailwindcss 2` 制作，在线体验 <https://next-fetch-demo.vercel.app/>。
+1. 维护已有的 MERN 项目，增加业务功能，包括导出 XLSX，导出 PDF，增加验货模块等。
+2. 调研 AWS + Serverless Framework 的可能性，根据已有项目设计迁移、升级方案。
+
+## 自我评价
+
+- 对过往业务相关较为熟练，注重归纳总结并探索更好的实现和处理方式。
+- 理解前端常见的开发技术，包括但不限于 `jquery`，`vue`，`react` 以及一些常用周边库等。
+- 拥有良好的编程习惯，注重文档、代码规范和必要的注释。
+- 学习能力较强，能在短时间内了解新技术并简单运用，乐意接触前沿新鲜技术，目前在探索 MERN / MEVN 全栈开发和服务端渲染 SSR。
+- 语言、库和框架底层方面、可视化方面、serverless 方面较薄弱。
