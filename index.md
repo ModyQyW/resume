@@ -13,7 +13,7 @@ export_on_save:
 ## 自我介绍
 
 - 男，广东佛山高明人，24 岁，2019 年 6 月毕业于中山大学软件工程，统招本科学历学士学位。
-- 邮箱 - <a href="mailto:wurui7@mail3.sysu.edu.cn">wurui7@mail3.sysu.edu.cn</a>
+- 邮箱 - <a href="mailto:wurui-dev@foxmail.com">wurui-dev@foxmail.com</a>
 - 在线简历 - <https://modyqyw.github.io/resume/>，方便地查看以下各个链接。
 - 个人站 - <https://modyqyw.github.io>，展示了我个人的学习路径和一些知识整理。
 - Github - <https://www.github.com/ModyQyW>，展示了我的个人站源码、在线简历源码、demos 和基础设施建设相关的开源工作。
