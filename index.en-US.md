@@ -1,5 +1,7 @@
 # Wu Rui - Frontend Engineer
 
+[简体中文](./index.zh-CN.md) | English
+
 **Please note that English is not my native language and it is possible that my expressions may cause some misunderstanding.**
 
 ## Information

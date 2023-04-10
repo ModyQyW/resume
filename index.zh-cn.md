@@ -1,5 +1,7 @@
 # 吴睿 - 前端工程师
 
+简体中文 | [English](./index.en-US.md)
+
 ## 信息
 
 <div class="flex items-center">
