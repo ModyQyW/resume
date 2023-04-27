@@ -30,6 +30,36 @@
 
 2019 年开始接触并自学前端。在个人项目中喜欢接触前沿技术，在实际工作中强调规范、稳定、快速、现代。
 
+## 技能
+
+### 协作基础
+
+- macOS 重度用户
+- 习惯使用 Git 协作
+- 有互补意识
+- 问题调试能力
+- 问题搜索能力
+- 提问能力
+
+### Web 基础
+
+- 使用 HTML 5、CSS 3、JavaScript、jQuery 开发过小型网页系统
+- 熟悉响应式布局
+- 熟悉 ES6+
+
+### 前端相关
+
+- 使用 TypeScript、Vue、Nuxt、React、Next、ElementUI、ElementPlus、Vuetify、AntDesign、MUI 开发过小中大型网页系统、小型小程序、小型移动应用，熟悉周边生态
+- 使用 Webpack、Rollup、Vite 作为构建工具构建过库、应用，熟悉周边生态
+- 使用 Electron 开发过小型桌面应用
+
+### 后端相关
+
+- 使用 TypeScript、Nest 开发过小型服务端项目
+- 使用 Koa 快速开发
+- 使用 MongoDB 作为基本数据库，Redis 作为缓存数据库
+- 使用 Docker 实现项目部署
+
 ## 工作
 
 ### [广东砺云教育科技有限公司](https://www.millcloud.cn/)
@@ -149,36 +179,6 @@ tailwind-extensions 是一个拓展 [tailwindcss](https://tailwindcss.com/) 的�
 除此之外，它提供了和 [antd](https://ant.design/)、[antdv](https://antdv.com/)、[element-plus](https://element-plus.org/) 的结合使用预设，使 tailwindcss 更容易和这些 UI 库集成使用。
 
 考虑到国内生态，它还提供了小程序和适老化预设，使 tailwindcss 对国内生态更友好。
-
-## 技能
-
-### 协作基础
-
-- macOS 重度用户
-- 习惯使用 Git 协作
-- 有互补意识
-- 问题调试能力
-- 问题搜索能力
-- 提问能力
-
-### Web 基础
-
-- 使用 HTML 5、CSS 3、JavaScript、jQuery 开发过小型网页系统
-- 熟悉响应式布局
-- 熟悉 ES6+
-
-### 前端相关
-
-- 使用 TypeScript、Vue、Nuxt、React、Next、ElementUI、ElementPlus、Vuetify、AntDesign、MUI 开发过小中大型网页系统、小型小程序、小型移动应用，熟悉周边生态
-- 使用 Webpack、Rollup、Vite 作为构建工具构建过库、应用，熟悉周边生态
-- 使用 Electron 开发过小型桌面应用
-
-### 后端相关
-
-- 使用 TypeScript、Nest 开发过小型服务端项目
-- 使用 Koa 快速开发
-- 使用 MongoDB 作为基本数据库，Redis 作为缓存数据库
-- 使用 Docker 实现项目部署
 
 ## 期望
 

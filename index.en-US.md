@@ -32,6 +32,36 @@ I graduated from Sun Yat-sen University in June 2019 with a Bachelor's degree in
 
 I started to self-teach front-end in 2019. In personal projects, I like to be exposed to cutting-edge technologies and emphasize specification, stability, speed and modernity in practical work.
 
+## Skills
+
+### Collaboration Basis
+
+- macOS heavy user
+- Get used to collaborating with Git
+- Have a sense of complementarity
+- Ability to debug
+- Ability to search
+- Ability to ask
+
+### Web Basis
+
+- Develop small web systems using HTML 5, CSS 3, JavaScript, jQuery
+- Familiar with responsive layout
+- Familiar with ES6+
+
+### Frontend
+
+- Develop small, medium and large web systems, small miniprograms and small mobile applications using TypeScript, Vue, Nuxt, React, Next, ElementUI, ElementPlus, Vuetify, AntDesign and MUI， familiar with the ecosystem
+- Build libraries and applications using Webpack, Rollup, Vite, familiar with the ecosystem
+- Develop small desktop applications using Electron
+
+### Backend
+
+- Develop small server-side projects using TypeScript and Nest
+- Prototype using Koa
+- Use MongoDB as the base database and Dragonfly as the cache database
+- Deploy projects using Docker
+
 ## Jobs
 
 ### [Guangdong MillCloud Technology Co., Ltd.](https://www.millcloud.cn/)
@@ -149,36 +179,6 @@ It provides more configuration values to reduce the use of inferred values, whic
 In addition, it provides presets for use with [antd](https://ant.design/), [antdv](https://antdv.com/), [element-plus](https://element-plus.org/), making tailwindcss easier to integrate with these UI libraries.
 
 It also provides miniprogream and easy presets to make tailwindcss more friendly to the Chinese ecosystem.
-
-## Skills
-
-### Collaboration Basis
-
-- macOS heavy user
-- Get used to collaborating with Git
-- Have a sense of complementarity
-- Ability to debug
-- Ability to search
-- Ability to ask
-
-### Web Basis
-
-- Develop small web systems using HTML 5, CSS 3, JavaScript, jQuery
-- Familiar with responsive layout
-- Familiar with ES6+
-
-### Frontend
-
-- Develop small, medium and large web systems, small miniprograms and small mobile applications using TypeScript, Vue, Nuxt, React, Next, ElementUI, ElementPlus, Vuetify, AntDesign and MUI， familiar with the ecosystem
-- Build libraries and applications using Webpack, Rollup, Vite, familiar with the ecosystem
-- Develop small desktop applications using Electron
-
-### Backend
-
-- Develop small server-side projects using TypeScript and Nest
-- Prototype using Koa
-- Use MongoDB as the base database and Dragonfly as the cache database
-- Deploy projects using Docker
 
 ## Expectations
 
