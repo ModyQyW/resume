@@ -113,8 +113,8 @@ I started to self-teach front-end in 2019. In personal projects, I like to be ex
 
 - Fullstack developer, develop new features for existing projects
   - Quickly sort out project development steps, dependencies and business logic after joining
-  - Update product module to export products to XLSX and PDF
-  - Add factory inspection module to display inspection date, inspection records, etc.
+  - Update product module to export products to XLSX and PDF for business needs
+  - Add factory inspection module to display inspection date, inspection records, etc. for business needs
   - Investigate how to migrate existing projects to serverless and aws, and design basic solutions
 
 ### [Guangdong MillCloud Technology Co., Ltd.](https://www.millcloud.cn/)
