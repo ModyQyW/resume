@@ -104,7 +104,7 @@ As a front-end engineer, I enjoy working with product managers to improve projec
 ### [Globus LTD.](https://globus-china.com/)
 
 <div class="flex items-center flex-wrap -mt-2">
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Work from office</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Work From Office</div>
   <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Business</div>
   <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Full Stack</div>
   <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Express</div>
@@ -140,7 +140,7 @@ As a front-end engineer, I enjoy working with product managers to improve projec
   <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">TypeScript</div>
 </div>
 
-<p class="text-gray-500 my-2">2019-06 - 2021-04, Work from office</p>
+<p class="text-gray-500 my-2">2019-06 - 2021-04</p>
 
 - Front-end lead: responsible for existing outsourced catering front-end projects
   - Quickly learned React Native after joining, organized and analyzed existing issues, and quickly made emergency fixes.
