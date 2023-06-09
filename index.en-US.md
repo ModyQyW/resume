@@ -4,6 +4,8 @@
 
 **Please note that English is not my native language and it is possible that my expressions may cause some misunderstanding.**
 
+[Download PDF](./Wu%20Rui%20-%20Frontend%20Engineer.pdf)
+
 ## Information
 
 <div class="flex items-center">
