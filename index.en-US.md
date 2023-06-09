@@ -27,120 +27,135 @@
 </div>
 
 ## Introduction
+I began learning front-end development on my own in 2018 and graduated from Sun Yat-sen University with a Bachelor's degree in Software Engineering in June 2019.
 
-I graduated from Sun Yat-sen University in June 2019 with a Bachelor's degree in Software Engineering.
+As a front-end engineer, I have a solid programming foundation, strict coding standards, and rich project experience. I am proficient in front-end technologies such as native JavaScript/TypeScript, Vue, and React, and can independently complete front-end development projects while collaborating with team members to complete complex projects.
 
-I started to self-teach front-end in 2019. In personal projects, I like to be exposed to cutting-edge technologies and emphasize specification, stability, speed and modernity in practical work.
+Throughout my career, I have participated in the development of various projects in fields such as catering, education, business, and Web 3. In these projects, I have taken on different roles, including front-end development, full-stack development, and front-end team leader. Through these experiences, I have accumulated a wealth of knowledge and familiarity with the project development process and requirements. I have high quality standards for code and am skilled in using various tools and techniques to improve code maintainability and readability.
+
+Outside of work, I also research and apply open-source technologies. I have multiple open-source projects on Github and regularly publish technical blogs and articles on my personal website. I believe in the power of open-source technology and sharing and communication to continuously improve my own technical skills.
+
+As a front-end engineer, I enjoy working with product managers to improve project user experience and performance. I also pay attention to project stability and usability and am able to use various tools and techniques to ensure project quality and stability. In the future, I hope to become a 10x full-stack engineer with TypeScript-based, product, operational, and thinking capabilities.
 
 ## Skills
 
 ### Collaboration Basis
 
-- macOS heavy user
-- Get used to collaborating with Git
-- Have a sense of complementarity
-- Ability to debug
-- Ability to search
-- Ability to ask
+- Heavy user of macOS
+- Familiar with Git collaboration and knowledgeable about Git Flow, GitHub Flow, and GitLab Flow
+- Collaborative mindset, proactive communication with team members, committed to improving project user experience and performance.
+- Strong communication skills, highly supportive of [Nonviolent Communication](https://en.wikipedia.org/wiki/Nonviolent_Communication).
+- Strong debugging skills using tools such as console and debugger.
+- Proficient in problem-solving using Google and Stack Overflow for issue searching.
+- Strong ability to ask questions and highly supportive of the principles outlined in [How to Ask Questions the Smart Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way).
 
 ### Web Basis
 
-- Develop small web systems using HTML 5, CSS 3, JavaScript, jQuery
-- Familiar with responsive layout
-- Familiar with ES6+
+- Developed small-scale web systems using HTML 5, CSS 3, JavaScript, and jQuery.
+- Familiar with responsive layout, considering presentation effects and user experience across different devices.
+- Familiar with ES6+, preferring modern native APIs or libraries based on modern native APIs rather than libraries such as Lodash.
 
 ### Frontend
 
-- Develop small, medium and large web systems, small miniprograms and small mobile applications using TypeScript, Vue, Nuxt, React, Next, ElementUI, ElementPlus, Vuetify, AntDesign and MUI， familiar with the ecosystem
-- Build libraries and applications using Webpack, Rollup, Vite, familiar with the ecosystem
-- Develop small desktop applications using Electron
+- Developed small, medium, and large-scale web systems, small mini-programs, and small mobile applications using TypeScript, Vue, Nuxt, React, Next, ElementUI, ElementPlus, Vuetify, AntDesign, and MUI. Familiar with the surrounding ecosystem and have submitted PRs for ElementPlus.
+- Used Webpack, Rollup, and Vite as build tools to build libraries and applications, familiar with the surrounding ecosystem, and participated in Vite plugin development.
+- Developed small desktop applications using Electron.
 
 ### Backend
 
-- Develop small server-side projects using TypeScript and Nest
-- Prototype using Koa
-- Use MongoDB as the base database and Dragonfly as the cache database
-- Deploy projects using Docker
+- Developed small-scale server-side projects using TypeScript and Nest.
+- Used Koa and FakerJS to quickly develop prototypes.
+- Used MongoDB as the primary database and Redis as the caching database.
+- Implemented project deployment using Docker.
 
-## Jobs
+## Work
 
 ### [Guangdong MillCloud Technology Co., Ltd.](https://www.millcloud.cn/)
 
 <div class="flex items-center flex-wrap -mt-2">
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">wepy</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">mpvue</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">uni-app</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">vue</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">taro</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">react-native</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">expo</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">angular.js</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">typescript</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Work From Home</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Infrastructure</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Engineering</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Business</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">UniApp</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Vue</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">UnoCSS</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Sentry</div>
 </div>
 
-<p class="text-gray-500 my-2">2019-06 - 2021-04, Work from office</p>
+<p class="text-gray-500 my-2">2021-07 - Present</p>
 
-- Frontend leader, responsible for existing outsourced restaurant frontend projects
-  - Quickly learn react-native and fix existing issues after joining
-  - Complete project documentation and clarify project development steps, dependencies and business logic
-  - Fix project legacy issues, including asynchronous processing, error handling, error reporting, compatibility adaptations, etc.
-  - Optimize the project, introduce typescript, uni-app, eslint, stylelint, prettier, etc. and shrink the technology stack to the vue ecosystem to improve the development and maintenance experience
-  - Introduced atomic CSS for existing projects, compressing miniprogram size by about 12% and admin size by about 8%
-  - Coordinate with all parties, confirm requirements, documentation, etc., complete the requirements in advance with high quality and go live with the food ordering miniprogram, including custom menus, custom payment methods, menu categories and dish linkage, etc.
-  - Running stably, with millions CNY daily
-- Frontend developer, develop online teaching resource sharing sites
-  - Drive the implementation of requirement documents, prototypes, design drafts and interface documents
-  - Lightly modified `element-ui` to meet business needs, using Gitee as a source, [access online](https://gitee.com/MillCloud/element)
-    - Modify the breadcrumb component to support clicking on the last breadcrumb to refresh the page
-    - Modify the tree component to support reloading when lazy loading failed
-  - Runningn stably, with 3 million PV
+- Front-end lead: responsible for existing outsourced catering front-end projects
+  - Introduced Iconify and removed a large number of PNG icons for more icon freedom and flexibility.
+  - Integrated Sentry for existing projects to more uniformly collect errors and user profiles.
+  - Upgraded existing projects to Vue 3 for improved user experience.
+  - Switched existing projects to Vite for improved development experience.
+  - Switched existing projects to UnoCSS for more flexibility and better developer experience.
+- Front-end developer:
+  - Based on past experience, developed multiple backend sites and iterated quickly.
+  - Took over and used an Electron project for a one-machine system.
+  - Built an online text detection tool using SolidJS and UnoCSS, [available online](https://tool.lijiaoyun.cn/corrector/).
+- Infrastructure lead:
+  - Provided guidance on front-end development.
+  - Organized development templates, [available online](https://github.com/MillCloud/presets).
+  - Organized and summarized standards and best practices, [available online](https://millcloud.github.io/standard).
+  - Conducted on-site testing, [available online](https://millcloud.github.io/developer-examination/).
 
 ### [Globus LTD.](https://globus-china.com/)
 
 <div class="flex items-center flex-wrap -mt-2">
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">业务</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">全栈</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">express</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">mongodb</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">react</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">mern</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">typescript</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">aws</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">serverless</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Work from office</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Business</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Full Stack</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Express</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">MongoDB</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">React</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">MERN</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">TypeScript</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">AWS</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Serverless Framework</div>
 </div>
 
-<p class="text-gray-500 my-2">2021-05 - 2021-07, Work from office</p>
+<p class="text-gray-500 my-2">2021-05 - 2021-07</p>
 
-- Fullstack developer, develop new features for existing projects
-  - Quickly sort out project development steps, dependencies and business logic after joining
-  - Update product module to export products to XLSX and PDF for business needs
-  - Add factory inspection module to display inspection date, inspection records, etc. for business needs
-  - Investigate how to migrate existing projects to serverless and aws, and design basic solutions
+- Full-stack developer: developed new features for existing front-end and back-end projects
+  - Quickly clarified project development steps, dependencies, and business logic after joining.
+  - Added XLSX and PDF export functionality using React based on business needs.
+  - Added a factory inspection module using React to display inspection dates and records based on business needs.
+  - Investigated how existing Express projects could be migrated to the Serverless Framework and AWS and designed basic plans.
 
 ### [Guangdong MillCloud Technology Co., Ltd.](https://www.millcloud.cn/)
 
 <div class="flex items-center flex-wrap -mt-2">
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Infrastructure</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Engineering</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">uni-app</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">vue</div>
-  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">sentry</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Work From Office</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Business</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">WePY</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">MpVue</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">UniApp</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Vue</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Taro</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">ReactNative</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Expo</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">Angular.js</div>
+  <div class="rounded-full bg-gray-100 px-4 mr-2 mt-2">TypeScript</div>
 </div>
 
-<p class="text-gray-500 my-2">2021-07 - Present, Work from homee</p>
+<p class="text-gray-500 my-2">2019-06 - 2021-04, Work from office</p>
 
-- Frontend leader, responsible for existing outsourced restaurant frontend projects
-  - Introduce iconify for existing projects and remove a lot of png icons, bringing more icon freedom and flexibility
-  - Introduce sentry for existing projects to capture errors and user profiles more consistently
-  - Upgrade to vue 3 for existing projects and optimize the user experience
-  - Switch to vite for existing projects to enhance the development experience
-- Frontend developer
-  - Rapid development of multiple admin sites based on previous experience
-- Infrastructure leader
-  - Provide guidance on frontend
-  - Collation of development templates, [access online](https://github.com/MillCloud/presets)
-  - Organize and summarize specifications and best practices, [access online](https://millcloud.github.io/standard)
-  - On-board testing, [access online](https://millcloud.github.io/developer-examination/)
+- Front-end lead: responsible for existing outsourced catering front-end projects
+  - Quickly learned React Native after joining, organized and analyzed existing issues, and quickly made emergency fixes.
+  - Completed project documentation, clarified project development steps, dependencies, and business logic.
+  - Fixed legacy project issues, including asynchronous processing, error handling, server error reporting, and compatibility adaptation.
+  - Optimized the project, introduced TypeScript, UniApp, ESLint, Stylelint, Prettier, etc., and narrowed the technology stack to the Vue ecosystem, improving development and maintenance experience.
+  - Introduced TailwindCSS for existing projects, reducing the size of mini-programs by about 12% and backend size by about 8%.
+  - Coordinated with all parties to confirm requirements, documentation, etc., and completed the development and launch of a catering mini-program with customized menus, payment methods, menu categories, and dish linkage, etc., with high quality and ahead of schedule.
+  - The project averages daily revenue in the millions, maintaining stable operation.
+- Front-end developer: developed an online teaching resource sharing site
+  - Promoted the implementation of requirement documents, prototypes, design drafts, and interface documents.
+  - Made minor modifications to ElementUI to meet business needs, using Gitee as the source, [available online](https://gitee.com/MillCloud/element).
+  - Modified the breadcrumb component to support refreshing the page by clicking on the last breadcrumb.
+  - Modified the tree component to support reloading if lazy loading fails.
+  - The project has 3 million PV and maintains stable operation.
 
 ## Projects
 
@@ -148,11 +163,11 @@ This is only a partial list of projects, check out GitHub for more.
 
 ### [fabric](https://github.com/ModyQyW/fabric)
 
-Opinionated shareable specification for different JavaScript/TypeScript projects，including Git,EditorConfig, tsconfig, Prettier, ESLint, Stylelint, Markdownlint, Commitlint, Conmitizen, Publint, LintStaged, Husky, VScode.
+Opinionated shareable specification for different JavaScript/TypeScript projects，including Git,EditorConfig, tsconfig, Prettier, ESLint, Stylelint, Markdownlint, Commitlint, Conmitizen, Publint, LintStaged, Husky, SimpleGitHooks, VScode.
 
 ### [vite-plugin-eslint2](https://github.com/ModyQyW/vite-plugin-eslint2)
 
-Vite ESLint plugin, like eslint-webpack-plugin. Initially forked to maintain and add new features because vite-plugin-eslint maintenance was not active enough.
+Vite ESLint plugin, like eslint-webpack-plugin. Initially forked to maintain and add new features because vite-plugin-eslint maintenance was not active enough. I submit a [PR](https://github.com/fi3ework/vite-plugin-checker/pull/158) for [vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) based on this plugin.
 
 Although I still maintain it, I don't recommend to use it anymore.
 
@@ -166,26 +181,30 @@ Although I still maintain it, I don't recommend to use it anymore.
 
 uni-helper was originally just a [personal project](https://github.com/ModyQyW/uni-helper), but has now become an [unofficial non-profit organization](https://github.com/uni-helper).
 
-uni-helper provides a number of packages that enhance the development experience of the uni-app family of products, some of which I'm trying to maintain, including [TypeScript type definitions](https://github.com/orgs/uni-helper/repositories?q=types& type=all&language=&sort=), [VSCode plugins](https://github.com/orgs/uni-helper/repositories?q=vscode&type=all&language=&sort=), and more.
+uni-helper provides a number of packages that enhance the development experience of the uni-app family of products, some of which I'm trying to maintain, including [TypeScript type definitions](https://github.com/orgs/uni-helper/repositories?q=types&type=all&language=&sort=), [VSCode plugins](https://github.com/orgs/uni-helper/repositories?q=vscode&type=all&language=&sort=).
 
-As of 2023-04-10, there are 146k cumulative downloads of the VSCode plugin, and I believe that most uni-app developers using VSCode have used or are using the VSCode plugin and TypeScript type definitions I developed.
+As of 2023-06-09, there are 177k cumulative downloads of the VSCode plugin, and I believe that most uni-app developers using VSCode have used or are using the VSCode plugin and TypeScript type definitions I developed.
 
 ### [tailwind-extensions](https://github.com/ModyQyW/tailwind-extensions)
 
-tailwind-extensions is a library that extends [tailwindcss](https://tailwindcss.com/).
+tailwind-extensions is a library that extends TailwindCSS.
 
-It provides more configuration values to reduce the use of inferred values, which brings tailwindcss one step closer to [unocss](https://github.com/unocss/unocss).
+It provides more configuration values to reduce the use of inferred values, which brings TailwindCSS one step closer to UnoCSS.
 
-In addition, it provides presets for use with [antd](https://ant.design/), [antdv](https://antdv.com/), [element-plus](https://element-plus.org/), making tailwindcss easier to integrate with these UI libraries.
+In addition, it provides presets for use with AntDesign and ElementPlus, making tailwindcss easier to integrate with these UI libraries.It also provides miniprogream and easy presets to make tailwindcss more friendly to the Chinese ecosystem.
 
-It also provides miniprogream and easy presets to make tailwindcss more friendly to the Chinese ecosystem.
+I also participated in the development of [unocss-preset-antd](https://github.com/Dunqing/unocss-preset-antd) and [unocss-preset-element-plus](https://github.com/ModyQyW/unocss-preset-element-plus).
+.
 
 ## Expectations
 
-- Emphasis on efficiency, rejection of red tape, any communication should be straight to the point
-- China time zone, can schedule some time to coordinate meetings
+- The company has good prospects and there is room for advancement.
+- The team is harmonious and friendly, with unified goals, standardized processes, and a focus on efficiency. We reject unnecessary formalities and overtime culture.
+- We are in the China time zone and can arrange fixed meeting times for coordination.
+
+<!-- 
 - Full-time remote work, 15 - 20k CNY, social security, 35 - 40 hours per week, 18 - 24k if I need to handle my social security, tax, etc.
-- Part-time remote job, 1h 120 - 240 CNY, 1h 144 - 288 if I need to handle my social security, tax, etc.
+- Part-time remote job, 1h 120 - 240 CNY, 1h 144 - 288 if I need to handle my social security, tax, etc. -->
 
 <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon/dist/iconify-icon.min.js"></script>
