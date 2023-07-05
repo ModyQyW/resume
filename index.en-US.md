@@ -97,7 +97,6 @@ Vite Stylelint plugin, like stylelint-webpack-plugin. As of 2023-07-05, there ar
 tailwind-extensions is a library that extends TailwindCSS. It provides more configuration values to reduce the use of inferred values, which brings TailwindCSS one step closer to UnoCSS.
 
 In addition, it provides presets for use with AntDesign and ElementPlus, making tailwindcss easier to integrate with these UI libraries. It also provides miniprogream and easy presets to make tailwindcss more friendly to the Chinese ecosystem.
-.
 
 <!-- 
 ## Expectations
