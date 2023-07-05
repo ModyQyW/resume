@@ -1,4 +1,4 @@
-# Wu Rui - Frontend Engineer
+## Wu Rui - Frontend Engineer
 
 [简体中文](./index.zh-CN.md) | English
 
@@ -27,7 +27,7 @@
   </span>
 </div>
 
-## Introduction
+### Introduction
 
 I started to self-learn front-end in 2018, and graduated from Sun Yat-sen University with a Bachelor's degree in Software Engineering in June 2019.
 
@@ -35,7 +35,7 @@ I am proficient in native JavaScript / TypeScript, Vue, React and other related 
 
 I post technical blogs on my personal website and participate in open source projects on Github to improve my technical skills. I hope I can become a TypeScript-based 10x full-stack engineer.
 
-## Skills
+### Skills
 
 - Proficiency in Git collaboration and knowledge of CI/CD
 - Familiarity with CSS3 and proficiency with atomized CSS frameworks such as TailwindCSS, UnoCSS
@@ -46,9 +46,9 @@ I post technical blogs on my personal website and participate in open source pro
 - Proficiency in using normalization tools such as ESLint, Stylelint, Prettier, LintStaged, Husky, etc.
 - Currently learning technologies such as Web3, Solid, Nest, MongoDB, Redis, Docker, etc.
 
-## Work
+### Work
 
-### [Guangdong MillCloud Technology Co., Ltd.](https://www.millcloud.cn/)
+#### [Guangdong MillCloud Technology Co., Ltd.](https://www.millcloud.cn/)
 
 <p class="text-gray-500">2021-07 Present, Chancheng, Foshan, Guangdong, China, Remote</p>
 
@@ -58,7 +58,7 @@ I post technical blogs on my personal website and participate in open source pro
 - Introduced Vitest for unit testing of basic methods, with an average coverage of 89%
 - Organize [development templates](https://github.com/MillCloud/presets), [development specifications](https://millcloud.github.io/standard), [onboarding tests](https://millcloud.github.io/) from scratch developer-examination/)
 
-### [Globus LTD.](https://globus-china.com/)
+#### [Globus LTD.](https://globus-china.com/)
 
 <p class="text-gray-500 my-2">2021-05 - 2021-07, Chancheng, Foshan, Guangdong, China</p>
 
@@ -67,7 +67,7 @@ I post technical blogs on my personal website and participate in open source pro
 - Use Attribute Based Access Control to manage Web backend management system access rights
 - Investigated how to migrate existing Express projects to Serverless Framework and AWS, and designed basic solutions
 
-### [Guangdong MillCloud Technology Co., Ltd.](https://www.millcloud.cn/)
+#### [Guangdong MillCloud Technology Co., Ltd.](https://www.millcloud.cn/)
 
 <p class="text-gray-500 my-2">2019-06 - 2021-04, Panyu, Guangzhou, Guangdong, China</p>
 
@@ -76,23 +76,23 @@ I post technical blogs on my personal website and participate in open source pro
 - Modify ElementUI breadcrumbs and tree components to meet business requirements, [online access](https://gitee.com/MillCloud/element)
 - Use Role Based Access Control to manage Web backend management system access rights
 
-## Projects
+### Projects
 
 This is only a partial list of projects, check out [my GitHub](https://github.com/ModyQyW) for more.
 
-### [fabric](https://github.com/ModyQyW/fabric)
+#### [fabric](https://github.com/ModyQyW/fabric)
 
 This is an out-of-the-box shared specification for different JavaScript / TypeScript projects, including personal configuration and use of a large number of common tools.
 
-### [vite-plugin-eslint2](https://github.com/ModyQyW/vite-plugin-eslint2)
+#### [vite-plugin-eslint2](https://github.com/ModyQyW/vite-plugin-eslint2)
 
 Vite ESLint plugin, like eslint-webpack-plugin. Initially forked to maintain and add new features because vite-plugin-eslint maintenance was not active enough.
 
-### [vite-plugin-stylelint](https://github.com/ModyQyW/vite-plugin-stylelint)
+#### [vite-plugin-stylelint](https://github.com/ModyQyW/vite-plugin-stylelint)
 
 Vite Stylelint plugin, like stylelint-webpack-plugin. As of 2023-07-05, there are 14k weekly downloads. I submit a [PR](https://github.com/fi3ework/vite-plugin-checker/pull/158) for [vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) based on this plugin.
 
-### [tailwind-extensions](https://github.com/ModyQyW/tailwind-extensions)
+#### [tailwind-extensions](https://github.com/ModyQyW/tailwind-extensions)
 
 tailwind-extensions is a library that extends TailwindCSS. It provides more configuration values to reduce the use of inferred values, which brings TailwindCSS one step closer to UnoCSS.
 
