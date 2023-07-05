@@ -92,12 +92,6 @@ Vite ESLint plugin, like eslint-webpack-plugin. Initially forked to maintain and
 
 Vite Stylelint plugin, like stylelint-webpack-plugin. As of 2023-07-05, there are 14k weekly downloads. I submit a [PR](https://github.com/fi3ework/vite-plugin-checker/pull/158) for [vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) based on this plugin.
 
-### uni-helper
-
-uni-helper was originally just a [personal project](https://github.com/ModyQyW/uni-helper), but has now become an [unofficial non-profit organization](https://github.com/uni-helper).
-
-uni-helper provides a number of packages that enhance the development experience of the uni-app family of products, some of which I'm trying to maintain, including [TypeScript type definitions](https://github.com/orgs/uni-helper/repositories?q=types&type=all&language=&sort=), [VSCode plugins](https://github.com/orgs/uni-helper/repositories?q=vscode&type=all&language=&sort=). As of 2023-07-05, there are 188k cumulative downloads of the VSCode plugin.
-
 ### [tailwind-extensions](https://github.com/ModyQyW/tailwind-extensions)
 
 tailwind-extensions is a library that extends TailwindCSS. It provides more configuration values to reduce the use of inferred values, which brings TailwindCSS one step closer to UnoCSS.
