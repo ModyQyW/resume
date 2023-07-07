@@ -50,7 +50,7 @@
 
 ### [广东砺云教育科技有限公司](https://www.millcloud.cn/)
 
-<p class="text-gray-500">2021-07 至今，中国广东佛山禅城，远程</p>
+<p class="text-gray-500">2021-07 - 2023-07，中国广东佛山禅城，远程</p>
 
 - 主导升级旧项目，包括 Web、多端小程序、Electron 等，统一升级为 TypeScript + Vue 3 + Pinia + VueQuery + UnoCSS + Vite，项目编译时间平均降低 20%，任务完成时间平均降低 5%
 - 通过分包、压缩、缓存等手段，降低构建产物体积平均 38%

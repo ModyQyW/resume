@@ -54,7 +54,7 @@ I post technical blogs on my personal website and participate in open source pro
 
 #### [Guangdong MillCloud Technology Co., Ltd.](https://www.millcloud.cn/)
 
-<p class="text-gray-500">2021-07 Present, Chancheng, Foshan, Guangdong, China, Remote</p>
+<p class="text-gray-500">2021-07 - 2023-07, Chancheng, Foshan, Guangdong, China, Remote</p>
 
 - Led the upgrade of old projects, including Web, multi-end applets, Electron, etc., to TypeScript + Vue 3 + Pinia + VueQuery + UnoCSS + Vite, reducing project compilation time by 20% on average and task completion time by 5% on average
 - Reduced build size by an average of 38% by means of sub-packaging, compression, caching, etc.
