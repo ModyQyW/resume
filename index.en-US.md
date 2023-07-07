@@ -1,6 +1,6 @@
 ## Wu Rui - Frontend Engineer
 
-[Get PDF](./Wu%20Rui%20-%20Frontend%20Engineer.pdf) | [简体中文](./index.zh-CN.md) | English
+[简体中文](./index.zh-CN.md) | English
 
 **Please note that English is not my native language and it is possible that my expressions may cause some misunderstanding.**
 
@@ -33,18 +33,22 @@ I started to self-learn front-end in 2018, and graduated from Sun Yat-sen Univer
 
 I am proficient in native JavaScript / TypeScript, Vue, React and other related front-end technologies, and I am able to complete front-end projects independently, as well as collaborate with team members on development.
 
-I post technical blogs on my personal website and participate in open source projects on Github to improve my technical skills. I hope I can become a TypeScript-based 10x full-stack engineer.
+I post technical blogs on my personal website and participate in open source projects on Github to improve my skills. I hope I can become a TypeScript-based 10x full-stack engineer.
 
 ### Skills
 
-- Proficiency in Git collaboration and knowledge of CI/CD
-- Familiarity with CSS3 and proficiency with atomized CSS frameworks such as TailwindCSS, UnoCSS
-- Familiarity with JavaScript (ES6+) and TypeScript
-  - Proficiency in Vue, VueRouter, Pinia, ElementPlus, UniApp and peripheral development, knowledge of Nuxt, etc.
-  - Proficiency in React, ReactRouter, Zustand, Antd, Taro and surrounding development, knowledge of Next, Redux, Mobx, ReactNative, etc.
-- Proficiency in Rollup, Vite and peripheral development
-- Proficiency in using normalization tools such as ESLint, Stylelint, Prettier, LintStaged, Husky, etc.
-- Currently learning technologies such as Web3, Solid, Nest, MongoDB, Redis, Docker, etc.
+- Familiar with Git collaboration
+- Familiar with CSS3, PostCSS, SASS, TailwindCSS, UnoCSS and related
+- Familiar with JavaScript (ES6+) and TypeScript
+  - Familiar with Vue, VueRouter, Pinia, ElementPlus, UniApp and related
+  - Understand Nuxt, Vuetify, iView, NaiveUI, etc.
+  - Familiar with React, ReactRouter, Zustand, Antd, Taro and related
+  - Understand Next, Redux, Mobx, ReactNative, MUI, etc.
+  - Familiar with writing simple scripts using Node.js
+- Familiar with Rollup, Vite and related
+- Familiar with using specification tools such as ESLint, Stylelint, Prettier, LintStaged, Husky, etc.
+- Understand CI/CD, such as GitHub Actions, etc.
+- Currently learning technologies such as Web3, Nest, Docker, etc.
 
 ### Work
 
@@ -52,17 +56,19 @@ I post technical blogs on my personal website and participate in open source pro
 
 <p class="text-gray-500">2021-07 Present, Chancheng, Foshan, Guangdong, China, Remote</p>
 
-- Led the upgrade of old projects, including Web, multi-platform miniprograms, Electron, etc., to TypeScript + Vue 3 + Pinia + VueQuery + ElementPlus + UnoCSS + Vite + Conventional Routing, reducing project compilation time by 20% on average and task completion time by 5% on average
-- Manage Web admin access with Resource Based Access Control
-- Combined with Azure DevOps Pipelines to complete CI/CD, saving about 2 minutes on local builds, deployments, etc.
-- Introduced Vitest for unit testing of basic methods, with an average coverage of 89%
-- Organize [development templates](https://github.com/MillCloud/presets), [development specifications](https://millcloud.github.io/standard), [onboarding tests](https://millcloud.github.io/) from scratch developer-examination/)
+- Led the upgrade of old projects, including Web, multi-end applets, Electron, etc., to TypeScript + Vue 3 + Pinia + VueQuery + UnoCSS + Vite, reducing project compilation time by 20% on average and task completion time by 5% on average
+- Reduced build size by an average of 38% by means of sub-packaging, compression, caching, etc.
+- Coordinated with backend to reduce cloud server instance outflow traffic by about 19% by adjusting data structure
+- Use Vitest to do unit testing of basic methods, with an average coverage of 89% and 10+ samples
+- Write simple scripts using Node.js for uploading and deploying to servers, Wecom bot notifications, etc.
+- Integrate Azure DevOps Pipelines to save 2 - 5 minutes per project on local builds, deployments, etc.
+- Organize [development presets](https://github.com/MillCloud/presets) and [development standard](https://millcloud.github.io/standard) from scratch
 
 #### [Globus LTD.](https://globus-china.com/)
 
 <p class="text-gray-500 my-2">2021-05 - 2021-07, Chancheng, Foshan, Guangdong, China</p>
 
-- Front-end and back-end development of Web backend management systems using MongoDB, Express, React (MERN) and other technologies
+- Front-end and back-end development (full-stack) of Web backend management systems using MongoDB, Express, React (MERN) and other technologies
 - Use ReactQuery for remote state management and Recoil for local state management
 - Use Attribute Based Access Control to manage Web backend management system access rights
 - Investigated how to migrate existing Express projects to Serverless Framework and AWS, and designed basic solutions
@@ -72,8 +78,8 @@ I post technical blogs on my personal website and participate in open source pro
 <p class="text-gray-500 my-2">2019-06 - 2021-04, Panyu, Guangzhou, Guangdong, China</p>
 
 - Taking over old projects, dealing with asynchronous processing, error reporting, ReactNative compatibility adaptations, etc.
-- Customized complex menu, access to own and three-party payment methods for restaurant applet project
-- Modify ElementUI breadcrumbs and tree components to meet business requirements, [online access](https://gitee.com/MillCloud/element)
+- Customized menu, access to own and three-party payment methods for restaurant miniprogram project
+- Modify ElementUI breadcrumb and tree components to meet business requirements, [online access](https://gitee.com/MillCloud/element)
 - Use Role Based Access Control to manage Web backend management system access rights
 
 ### Projects
@@ -82,21 +88,19 @@ This is only a partial list of projects, check out [my GitHub](https://github.co
 
 #### [fabric](https://github.com/ModyQyW/fabric)
 
-This is an out-of-the-box shared specification for different JavaScript / TypeScript projects, including personal configuration and use of a large number of common tools.
-
-#### [vite-plugin-eslint2](https://github.com/ModyQyW/vite-plugin-eslint2)
-
-Vite ESLint plugin, like eslint-webpack-plugin. Initially forked to maintain and add new features because vite-plugin-eslint maintenance was not active enough.
+This is an out-of-the-box shared specification for different JavaScript / TypeScript projects, which directly improves the specification of personal and corporate projects.
 
 #### [vite-plugin-stylelint](https://github.com/ModyQyW/vite-plugin-stylelint)
 
-Vite Stylelint plugin, like stylelint-webpack-plugin. As of 2023-07-05, there are 14k weekly downloads. I submit a [PR](https://github.com/fi3ework/vite-plugin-checker/pull/158) for [vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) based on this plugin.
+Vite Stylelint plugin, like stylelint-webpack-plugin. As of 2023-07-05, there are 14k weekly downloads. Based on experience with this plugin, I submitted a [PR](https://github.com/fi3ework/vite-plugin-checker/pull/158) to [vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) to support running Stylelint.
 
 #### [tailwind-extensions](https://github.com/ModyQyW/tailwind-extensions)
 
-tailwind-extensions is a library that extends TailwindCSS. It provides more configuration values to reduce the use of inferred values, which brings TailwindCSS one step closer to UnoCSS.
+tailwind-extensions is a library that extends TailwindCSS. It provides more configurable values to reduce the use of inferred values and increase flexibility. In addition, it provides presets for use with AntDesign and ElementPlus, making tailwindcss easier to integrate with these UI libraries. It also provides miniprogream and easy presets to make tailwindcss more friendly to the Chinese ecosystem.
 
-In addition, it provides presets for use with AntDesign and ElementPlus, making tailwindcss easier to integrate with these UI libraries. It also provides miniprogream and easy presets to make tailwindcss more friendly to the Chinese ecosystem.
+### [element-plus](https://github.com/element-plus/element-plus)
+
+I submitted a [PR](https://github.com/element-plus/element-plus/pull/12549) for element-plus that optimizes the `FormRules` type. This PR allows `FormRules` to accept generics and improves type safety.
 
 <!-- 
 ## Expectations

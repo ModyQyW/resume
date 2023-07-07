@@ -1,6 +1,6 @@
 # 吴睿 - 前端工程师
 
-[下载 PDF](./%E5%90%B4%E7%9D%BF%20-%20%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88.pdf) | 简体中文 | [English](./index.en-US.md)
+简体中文 | [English](./index.en-US.md)
 
 <div class="flex">
   <a href="https://modyqyw.github.io" class="flex items-center mr-2">
@@ -31,18 +31,20 @@
 
 我熟练掌握原生 JavaScript / TypeScript、Vue、 React 等相关前端技术，能够独立完成前端项目的开发，也能够与团队成员协作开发。
 
-我在个人站上发布技术博客，在 Github 上参与开源项目，不断提高自己的技术水平。我希望我能成为一名基于 TypeScript 的 10x 全栈工程师。
+我在个人站上发布技术博客，在 Github 上参与开源项目，不断提高自己水平。我希望我能成为一名基于 TypeScript 的 10x 全栈工程师。
 
 ## 技能
 
-- 熟练使用 Git 协作，了解 CI/CD
-- 熟悉 CSS3，熟练使用 TailwindCSS、UnoCSS 等原子化 CSS 框架
+- 熟练使用 Git 协作
+- 熟悉 CSS3，熟练使用 PostCSS、SASS、TailwindCSS、UnoCSS 等工具
 - 熟悉 JavaScript (ES6+) 和 TypeScript
-  - 熟练使用 Vue、VueRouter、Pinia、ElementPlus、UniApp 及周边开发，了解 Nuxt 等
-  - 熟练使用 React、ReactRouter、Zustand、Antd、Taro 及周边开发，了解 Next、Redux、Mobx、ReactNative 等
+  - 熟练使用 Vue、VueRouter、Pinia、ElementPlus、UniApp 及周边开发，了解 Nuxt、Vuetify、iView、NaiveUI 等
+  - 熟练使用 React、ReactRouter、Zustand、Antd、Taro 及周边开发，了解 Next、Redux、Mobx、ReactNative、MUI 等
+  - 熟练使用 Node.js 编写简单脚本
 - 熟练使用 Rollup、Vite 及周边开发
 - 熟练使用规范化工具，如 ESLint、Stylelint、Prettier、LintStaged、Husky 等
-- 目前正在学习 Web3、Solid、Nest、MongoDB、Redis、Docker 等技术
+- 了解 CI/CD，如 GitHub Actions 等
+- 目前正在学习 Web3、Nest、Docker 等技术
 
 ## 工作
 
@@ -50,17 +52,19 @@
 
 <p class="text-gray-500">2021-07 至今，中国广东佛山禅城，远程</p>
 
-- 主导升级旧项目，包括 Web、多端小程序、Electron 等，统一升级为 TypeScript + Vue 3 + Pinia + VueQuery + ElementPlus + UnoCSS + Vite + 约定式路由，项目编译时间平均降低 20%，任务完成时间平均降低 5%
-- 使用基于资源的权限控制 Resource Based Access Control 管理 Web 后台管理系统访问权限
-- 结合 Azure DevOps Pipelines 完成 CI/CD，节省本地构建、部署等操作约 2 分钟
-- 引入 Vitest 做基本方法的单元测试，平均覆盖率达 89%
-- 从零整理 [开发模板](https://github.com/MillCloud/presets)、[开发规范](https://millcloud.github.io/standard)、[上机测试](https://millcloud.github.io/developer-examination/)
+- 主导升级旧项目，包括 Web、多端小程序、Electron 等，统一升级为 TypeScript + Vue 3 + Pinia + VueQuery + UnoCSS + Vite，项目编译时间平均降低 20%，任务完成时间平均降低 5%
+- 通过分包、压缩、缓存等手段，降低构建产物体积平均 38%
+- 和后端协调，通过调整数据结构，降低云服务器实例流出流量约 19%
+- 使用 Vitest 做基本方法的单元测试，平均覆盖率达 89%，样例 10+ 个
+- 使用 Node.js 编写简单脚本，实现上传和部署到服务器、企业微信机器人通知等
+- 集成 Azure DevOps Pipelines，节省每个项目本地构建、部署等操作 2 - 5 分钟不等
+- 从零整理 [开发模板](https://github.com/MillCloud/presets) 和 [开发规范](https://millcloud.github.io/standard)
 
 ### [佛山市马威贸易有限公司](https://globus-china.com/)
 
 <p class="text-gray-500">2021-05 - 2021-07，中国广东佛山禅城</p>
 
-- 使用 MongoDB、Express、React (MERN) 等技术做 Web 后台管理系统的前后端开发
+- 使用 MongoDB、Express、React (MERN) 等技术做 Web 后台管理系统的前后端开发（全栈开发）
 - 使用 ReactQuery 做远端状态管理，Recoil 做本地状态管理
 - 使用基于属性的权限控制 Attribute Based Access Control 管理 Web 后台管理系统访问权限
 - 调研既有 Express 项目如何迁移到 Serverless Framework 和 AWS，设计基本方案
@@ -70,8 +74,8 @@
 <p class="text-gray-500">2019-06 - 2021-04，中国广东广州番禺</p>
 
 - 接手旧项目，处理异步处理、错误上报、ReactNative 兼容性适配等问题
-- 餐饮类小程序项目定制复杂菜单、接入自有和三方支付方式
-- 修改 ElementUI 面包屑和树两个组件以满足业务需求，[在线访问](https://gitee.com/MillCloud/element)
+- 餐饮类小程序项目定制菜单、接入自有和三方支付方式
+- 修改 ElementUI 面包屑和树两个组件以满足业务需求，使用 [Gitee 仓库](https://gitee.com/MillCloud/element) 托管
 - 使用基于角色的权限控制 Role Based Access Control 管理 Web 后台管理系统访问权限
 
 ## 项目
@@ -80,27 +84,23 @@
 
 ### [fabric](https://github.com/ModyQyW/fabric)
 
-这是一个开箱即用的共享规范，适用于不同的 JavaScript / TypeScript 项目，包括了大量常用工具的个人配置和使用。
-
-### [vite-plugin-eslint2](https://github.com/ModyQyW/vite-plugin-eslint2)
-
-这是一个用于 vite 的 ESLint 插件，与 eslint-webpack-plugin 作用类似。最初因为 vite-plugin-eslint 维护不够活跃而分叉出来维护并添加新功能。
+这是一个开箱即用的共享规范，适用于不同的 JavaScript / TypeScript 项目，直接提高了个人和公司项目的规范度。
 
 ### [vite-plugin-stylelint](https://github.com/ModyQyW/vite-plugin-stylelint)
 
-这是一个用于 vite 的 Stylelint 插件，与 stylelint-webpack-plugin 作用类似。截至 2023-07-05，周下载量有 14k。基于这个插件的经验，我为 [vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) 贡献了 [PR](https://github.com/fi3ework/vite-plugin-checker/pull/158)。
+这是一个用于 vite 的 Stylelint 插件，与 stylelint-webpack-plugin 作用类似。截至 2023-07-05，周下载量有 14k。基于这个插件的经验，我为 [vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) 贡献了 [PR](https://github.com/fi3ework/vite-plugin-checker/pull/158) 以支持运行 Stylelint。
 
 ### uni-helper
 
-uni-helper 本来只是一个 [个人项目](https://github.com/ModyQyW/uni-helper)，但现在已经成为一个 [非官方非盈利组织](https://github.com/uni-helper)。
-
-uni-helper 提供了大量增强 uni-app 系列产品的开发体验的包，我在尽力维护其中一部分，包括 [TypeScript 类型定义](https://github.com/orgs/uni-helper/repositories?q=types&type=all&language=&sort=)、[VSCode 插件](https://github.com/orgs/uni-helper/repositories?q=vscode&type=all&language=&sort=) 等。截至 2023-07-05，VSCode 插件累计下载量有 188k。
+uni-helper 源于 [我的个人项目](https://github.com/ModyQyW/uni-helper)，现在已经成长为 [组织](https://github.com/uni-helper)。我们致力于增强 uni-app 系列产品的开发体验，包括 [TypeScript 类型定义](https://github.com/orgs/uni-helper/repositories?q=types&type=all&language=&sort=)、[VSCode 插件](https://github.com/orgs/uni-helper/repositories?q=vscode&type=all&language=&sort=)、[请求库](https://github.com/uni-helper/uni-network)、[组合式方法库](https://github.com/uni-helper/uni-use) 等。截至 2023-07-05，VSCode 插件累计下载量有 188k。
 
 ### [tailwind-extensions](https://github.com/ModyQyW/tailwind-extensions)
 
-tailwind-extensions 是一个拓展 TailwindCSS 的库。它提供了更多的配置值以减少推断值的使用，这一点使 TailwindCSS 更靠近 UnoCSS。
+tailwind-extensions 是一个拓展 TailwindCSS 的库。它提供了更多的配置值以减少推断值的使用、增强使用灵活度，也提供了和 AntDesign、ElementPlus 的结合使用预设，使 TailwindCSS 更容易和这些 UI 库集成使用。考虑到国内生态，它还提供了小程序和适老化预设，使 TailwindCSS 对国内生态更友好。
 
-它还提供了和 AntDesign、ElementPlus 的结合使用预设，使 TailwindCSS 更容易和这些 UI 库集成使用。考虑到国内生态，它还提供了小程序和适老化预设，使 TailwindCSS 对国内生态更友好。
+### [element-plus](https://github.com/element-plus/element-plus)
+
+我为 element-plus 贡献了优化 `FormRules` 类型的 [PR](https://github.com/element-plus/element-plus/pull/12549)。这个 PR 使得 `FormRules` 可以接收范型，增强了类型安全。
 
 <!--
 ## 期望
