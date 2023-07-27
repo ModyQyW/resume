@@ -1,6 +1,6 @@
 ## 吴睿 - 前端工程师
 
-简体中文 | [English](./index.en-US.md)
+[PDF](./%E5%90%B4%E7%9D%BF%20-%20%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88.pdf) | 简体中文 | [English](./index.en-US.md)
 
 <div class="flex flex-wrap">
   <a href="https://modyqyw.github.io" class="flex items-center mr-2">
