@@ -1,6 +1,6 @@
 ## Wu Rui - Front-end Engineer
 
-[PDF](./Wu%20Rui%20-%20Frontend%20Engineer.pdf) | [简体中文](./index.zh-CN.md) | English
+[简体中文](./index.zh-CN.md) | English
 
 **Please note that English is not my native language and it is possible that my expressions may cause some misunderstanding.**
 
