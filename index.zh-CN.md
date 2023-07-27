@@ -62,7 +62,7 @@
 
 - 使用 MongoDB、Express、React (MERN) 做 Web 后台管理系统的全栈开发，实现验货流程模块
 - 使用 ReactQuery 做远端状态管理，Recoil 做本地状态管理
-- 使用基于属性的权限控制 Attribute Based Access Control 管理 Web 后台管理系统访问权限
+- 使用基于属性的权限控制 Attribute Based Access Control (ABAC) 管理 Web 后台管理系统访问权限
 - 调研既有 Express 项目如何迁移到 Serverless Framework 和 AWS，设计基本方案
 
 #### [广东砺云教育科技有限公司](https://www.millcloud.cn/)
@@ -74,7 +74,7 @@
 - 教育类项目实现类百度网盘文件库
 - 主导收缩技术栈到 Vue 生态，包括多端小程序使用 UniApp 开发、网页使用 Vue 开发等
 - 修改 ElementUI 面包屑和树两个组件以满足业务需求，使用 [Gitee 仓库](https://gitee.com/MillCloud/element) 托管
-- 使用基于角色的权限控制 Role Based Access Control 管理 Web 后台管理系统访问权限
+- 使用基于角色的权限控制 Role Based Access Control (RBAC) 管理 Web 后台管理系统访问权限
 
 ### 开源
 

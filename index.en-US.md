@@ -76,7 +76,7 @@ I post technical blogs on my personal website and participate in open source pro
 - Customized menu, access to own and three-party payment methods for restaurant project
 - Develop BaiduNetdisk-like file library for educational project
 - Modify ElementUI breadcrumb and tree components to meet business requirements, [online access](https://gitee.com/MillCloud/element)
-- Use Role Based Access Control to manage admin web system access
+- Use Role Based Access Control (RBAC) to manage admin web system access
 
 ### Open Source
 
