@@ -45,7 +45,8 @@ export default defineI18nConfig(() => ({
 
       education: "教育经历",
       educationUniversity: "中山大学",
-      educationDegree: "统招本科学历学士学位，软件工程专业（移动信息工程）",
+      educationDegree:
+        "全日制本科学历，工学学士学位，软件工程专业（移动信息工程）",
       educationDateTime: "2015-08 ~ 2019-06",
     },
     "en-US": {
@@ -100,7 +101,8 @@ export default defineI18nConfig(() => ({
 
       education: "EDUCATION",
       educationUniversity: "Sun Yat-sen University",
-      educationDegree: "Bachelor, Software Engineering",
+      educationDegree:
+        "Bachelor of Engineering, Software Engineering (Mobile Information Engineering)",
       educationDateTime: "08/2015 - 06/2019",
     },
   },
