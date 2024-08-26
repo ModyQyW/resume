@@ -1,0 +1,10 @@
+html.dark {
+  @apply text-gray-200;
+  @apply bg-gray-900;
+}
+
+@media print {
+  body {
+    print-color-adjust: exact;
+  }
+}
