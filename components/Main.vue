@@ -231,8 +231,9 @@ const years = differenceInYears(
               </li>
             </ul>
           </template>
-          <template>
-            <p>Front-end Lead, 2021/07 - present</p>
+          <template v-else>
+            <p>Front-end Lead</p>
+            <p class="text-gray-500">07/2021 - present</p>
             <ul>
               <li>
                 Responsible for team communication and collaboration,
@@ -286,7 +287,8 @@ const years = differenceInYears(
             </ul>
           </template>
           <template v-else>
-            <p>Fullstack Engineer, 2021-05 - 2021-07</p>
+            <p>Fullstack Engineer</p>
+            <p class="text-gray-500">05/2021 - 07/2021</p>
             <ul>
               <li>
                 Participated in the development of the internal trade management
@@ -327,7 +329,8 @@ const years = differenceInYears(
             </ul>
           </template>
           <template v-else>
-            <p>Front-end Engineer, 2019-06 - 2021-04</p>
+            <p>Front-end Engineer</p>
+            <p class="text-gray-500">06/2019 - 04/2021</p>
             <ul>
               <li>
                 Taking over old projects and improving them, normalizing the
@@ -338,8 +341,9 @@ const years = differenceInYears(
                 implementing technical solutions from scratch for related
                 websites, applets and mobile applications for backend management
                 of customers, menus and orders, user orders, payments, pickups
-                and more. 5,000 or more users use the apps and mobile apps every
-                day, and the monthly water flow reaches 10 million.
+                and more. We have 5,000 or more users using the apps and mobile
+                applications every day, with a monthly turnover of 10 million
+                RMB.
               </li>
               <li>
                 Deeply involved in educational projects, designing and realizing
