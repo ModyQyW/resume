@@ -232,7 +232,7 @@ const years = differenceInYears(
             </ul>
           </template>
           <template>
-            <p>Front-end Lead, 2021/07 to present</p>
+            <p>Front-end Lead, 2021/07 - present</p>
             <ul>
               <li>
                 Responsible for team communication and collaboration,
@@ -273,7 +273,7 @@ const years = differenceInYears(
         <div>
           <template v-if="locale === 'zh-CN'">
             <p>全栈工程师</p>
-            <p class="text-gray-500">2021-05 - 2021-07</p>
+            <p class="text-gray-500">2021-05 ~ 2021-07</p>
             <ul>
               <li>
                 参与到基于 MERN 的内部外贸管理系统研发，包括验货、PDF
@@ -313,7 +313,7 @@ const years = differenceInYears(
         <div>
           <template v-if="locale === 'zh-CN'">
             <p>前端工程师</p>
-            <p class="text-gray-500">2019-06 - 2021-04</p>
+            <p class="text-gray-500">2019-06 ~ 2021-04</p>
             <ul>
               <li>接手旧项目并加以改进，规范化技术栈、兼容性适配等方面。</li>
               <li>
