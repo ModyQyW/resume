@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: ["@nuxt/ui", "@nuxt/image", "@nuxtjs/i18n", "@vueuse/nuxt"],
 
   colorMode: {
@@ -14,8 +15,13 @@ export default defineNuxtConfig({
     defaultLocale: "zh-CN",
   },
 
-  ui: {
-    icons: ["heroicons", "flagpack", "logos", "carbon"],
+  icon: {
+    customCollections: [
+      {
+        prefix: "custom",
+        dir: "./assets/icons",
+      },
+    ],
   },
 
   compatibilityDate: "2024-08-26",
