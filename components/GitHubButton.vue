@@ -6,7 +6,7 @@ defineOptions({
 
 <template>
   <UButton
-    icon="i-logos-github-icon"
+    icon="i-simple-icons-github"
     color="gray"
     variant="ghost"
     to="https://github.com/ModyQyW"

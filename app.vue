@@ -4,7 +4,7 @@ watch(
   locale,
   () => {
     useHead({
-      title: t("title"),
+      title: t("base.name") + " - " + t("base.title"),
     });
   },
   { immediate: true }
