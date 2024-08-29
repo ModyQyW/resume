@@ -346,9 +346,7 @@ const values = computed(() => [
             <p>全栈工程师</p>
             <p>2021-05 ~ 2021-07</p>
             <ul>
-              <li>
-                我参与到内部外贸管理系统研发，包括验货、PDF预览等功能研发。
-              </li>
+              <li>参与到内部外贸管理系统研发，包括验货、PDF预览等功能研发。</li>
               <li>
                 我调研现有 Express.js 后端服务迁移到 Serverless Framework 和 AWS
                 的可行性并设计方案。
