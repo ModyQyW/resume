@@ -350,8 +350,8 @@ const values = computed(() => [
                 我参与到内部外贸管理系统研发，包括验货、PDF预览等功能研发。
               </li>
               <li>
-                我调研现有 Express.js 后端服务迁移到 Serverless Framework 和
-                AWS的可行性并设计方案。
+                我调研现有 Express.js 后端服务迁移到 Serverless Framework 和 AWS
+                的可行性并设计方案。
               </li>
             </ul>
           </template>
