@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/image": "^1.7.0",
+    "@nuxt/image": "^1.7.1",
     "@nuxt/ui": "^2.18.4",
     "@vueuse/core": "^11.0.3",
     "@vueuse/nuxt": "^11.0.3",
@@ -22,11 +22,11 @@
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.37",
-    "@iconify-json/devicon": "^1.1.50",
+    "@iconify-json/devicon": "^1.1.51",
     "@iconify-json/heroicons": "^1.1.24",
     "@iconify-json/logos": "^1.1.44",
     "@iconify-json/ph": "^1.1.14",
-    "@iconify-json/simple-icons": "^1.1.114",
+    "@iconify-json/simple-icons": "^1.1.115",
     "@nuxtjs/i18n": "^8.5.1"
   },
   "packageManager": "pnpm@9.9.0"
