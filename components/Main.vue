@@ -162,6 +162,7 @@ const values = computed(() => [
             size="xs"
             v-for="t of tools"
             :key="t.text"
+            class="cursor-default"
           >
             <UIcon :name="t.icon" class="mr-1 size-3"></UIcon>
             <span>{{ t.text }}</span>
@@ -173,7 +174,12 @@ const values = computed(() => [
         <h2 class="text-xl font-bold mb-2">{{ $t("philosophy.roles") }}</h2>
         <div class="flex flex-wrap gap-2">
           <UTooltip v-for="r of roles" :key="r.text" :text="r.tooltip">
-            <UBadge color="gray" variant="solid" size="xs">
+            <UBadge
+              color="gray"
+              variant="solid"
+              size="xs"
+              class="cursor-default"
+            >
               <UIcon :name="r.icon" class="mr-1 size-3"></UIcon>
               <span>{{ r.text }}</span>
             </UBadge>
