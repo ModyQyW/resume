@@ -262,19 +262,45 @@ const values = computed(() => [
           </template>
         </div>
         <div>
-          <UIcon name="i-logos-javascript" />
-          <UIcon name="i-logos-typescript-icon" />
-          <UIcon name="i-logos-vue" />
-          <UIcon name="i-logos-element" />
-          <UIcon name="i-logos-naiveui" />
-          <UIcon name="i-custom-uni-app" />
-          <UIcon name="i-logos-electron" />
-          <UIcon name="i-logos-rollup" />
-          <UIcon name="i-logos-vitejs" />
-          <UIcon name="i-logos-vitest" />
-          <UIcon name="i-logos-sentry-icon" />
-          <UIcon name="i-devicon-azuredevops" />
-          <UIcon name="i-simple-icons-github" />
+          <UTooltip text="JavaScript">
+            <UIcon name="i-logos-javascript" />
+          </UTooltip>
+          <UTooltip text="TypeScript">
+            <UIcon name="i-logos-typescript-icon" />
+          </UTooltip>
+          <UTooltip text="Vue.js">
+            <UIcon name="i-logos-vue" />
+          </UTooltip>
+          <UTooltip text="Element Plus">
+            <UIcon name="i-logos-element" />
+          </UTooltip>
+          <UTooltip text="Naive UI">
+            <UIcon name="i-logos-naiveui" />
+          </UTooltip>
+          <UTooltip text="uni-app">
+            <UIcon name="i-custom-uni-app" />
+          </UTooltip>
+          <UTooltip text="Electron">
+            <UIcon name="i-logos-electron" />
+          </UTooltip>
+          <UTooltip text="Rollup">
+            <UIcon name="i-logos-rollup" />
+          </UTooltip>
+          <UTooltip text="Vite">
+            <UIcon name="i-logos-vitejs" />
+          </UTooltip>
+          <UTooltip text="Vitest">
+            <UIcon name="i-logos-vitest" />
+          </UTooltip>
+          <UTooltip text="Sentry">
+            <UIcon name="i-logos-sentry-icon" />
+          </UTooltip>
+          <UTooltip text="Azure DevOps">
+            <UIcon name="i-devicon-azuredevops" />
+          </UTooltip>
+          <UTooltip text="GitHub">
+            <UIcon name="i-simple-icons-github" />
+          </UTooltip>
         </div>
       </section>
       <section>
@@ -314,15 +340,36 @@ const values = computed(() => [
           </template>
         </div>
         <div>
-          <UIcon name="i-logos-javascript" />
-          <UIcon name="i-logos-typescript-icon" />
-          <UIcon name="i-logos-react" />
-          <UIcon name="i-logos-ant-design" />
-          <UIcon name="i-logos-webpack" />
-          <UIcon name="i-logos-vitejs" />
-          <UIcon name="i-logos-express" />
-          <UIcon name="i-logos-serverless" />
-          <UIcon name="i-simple-icons-github" />
+          <UTooltip text="JavaScript">
+            <UIcon name="i-logos-javascript" />
+          </UTooltip>
+          <UTooltip text="TypeScript">
+            <UIcon name="i-logos-typescript-icon" />
+          </UTooltip>
+          <UTooltip text="React.js">
+            <UIcon name="i-logos-react" />
+          </UTooltip>
+          <UTooltip text="Next.js">
+            <UIcon name="i-logos-nextjs-icon" />
+          </UTooltip>
+          <UTooltip text="Ant Design">
+            <UIcon name="i-logos-ant-design" />
+          </UTooltip>
+          <UTooltip text="Webpack">
+            <UIcon name="i-logos-webpack" />
+          </UTooltip>
+          <UTooltip text="Vite">
+            <UIcon name="i-logos-vitejs" />
+          </UTooltip>
+          <UTooltip text="Express.js">
+            <UIcon name="i-logos-express" />
+          </UTooltip>
+          <UTooltip text="Serverless Framework">
+            <UIcon name="i-logos-serverless" />
+          </UTooltip>
+          <UTooltip text="GitHub">
+            <UIcon name="i-simple-icons-github" />
+          </UTooltip>
         </div>
       </section>
       <section>
@@ -381,18 +428,42 @@ const values = computed(() => [
           </template>
         </div>
         <div>
-          <UIcon name="i-logos-javascript" />
-          <UIcon name="i-logos-typescript-icon" />
-          <UIcon name="i-logos-vue" />
-          <UIcon name="i-logos-element" />
-          <UIcon name="i-custom-wepy" />
-          <UIcon name="i-custom-taro" />
-          <UIcon name="i-custom-uni-app" />
-          <UIcon name="i-logos-electron" />
-          <UIcon name="i-logos-webpack" />
-          <UIcon name="i-logos-express" />
-          <UIcon name="i-devicon-azuredevops" />
-          <UIcon name="i-simple-icons-github" />
+          <UTooltip text="JavaScript">
+            <UIcon name="i-logos-javascript" />
+          </UTooltip>
+          <UTooltip text="TypeScript">
+            <UIcon name="i-logos-typescript-icon" />
+          </UTooltip>
+          <UTooltip text="Vue.js">
+            <UIcon name="i-logos-vue" />
+          </UTooltip>
+          <UTooltip text="Element UI">
+            <UIcon name="i-logos-element" />
+          </UTooltip>
+          <UTooltip text="WePY">
+            <UIcon name="i-custom-wepy" />
+          </UTooltip>
+          <UTooltip text="Taro">
+            <UIcon name="i-custom-taro" />
+          </UTooltip>
+          <UTooltip text="uni-app">
+            <UIcon name="i-custom-uni-app" />
+          </UTooltip>
+          <UTooltip text="Electron">
+            <UIcon name="i-logos-electron" />
+          </UTooltip>
+          <UTooltip text="Webpack">
+            <UIcon name="i-logos-webpack" />
+          </UTooltip>
+          <UTooltip text="Express.js">
+            <UIcon name="i-logos-express" />
+          </UTooltip>
+          <UTooltip text="Azure DevOps">
+            <UIcon name="i-devicon-azuredevops" />
+          </UTooltip>
+          <UTooltip text="GitHub">
+            <UIcon name="i-simple-icons-github" />
+          </UTooltip>
         </div>
       </section>
     </section>
