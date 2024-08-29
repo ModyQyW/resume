@@ -37,12 +37,12 @@ const tools = computed(() => [
     text: "TypeScript",
   },
   {
-    icon: "i-logos-vue",
-    text: "Vue.js",
-  },
-  {
     icon: "i-logos-react",
     text: "React.js",
+  },
+  {
+    icon: "i-logos-vue",
+    text: "Vue.js",
   },
   {
     icon: "i-logos-tailwindcss-icon",
@@ -207,7 +207,7 @@ const values = computed(() => [
 
     <!-- WORK EXPERIENCE -->
     <section
-      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>img]:size-8 [&>section>img]:shrink-0 [&>section>img]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>button]:text-lg [&>section>div:nth-of-type(1)>button]:font-medium [&>section>div:nth-of-type(1)>button]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-16 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
+      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>img]:size-8 [&>section>img]:shrink-0 [&>section>img]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>button]:text-lg [&>section>div:nth-of-type(1)>button]:font-medium [&>section>div:nth-of-type(1)>button]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
     >
       <h2 class="text-xl font-bold">{{ $t("workExperience.title") }}</h2>
       <section>
@@ -274,6 +274,21 @@ const values = computed(() => [
           <UTooltip text="TypeScript">
             <UIcon name="i-logos-typescript-icon" />
           </UTooltip>
+          <UTooltip text="React.js">
+            <UIcon name="i-logos-react" />
+          </UTooltip>
+          <UTooltip text="Ant Design">
+            <UIcon name="i-logos-ant-design" />
+          </UTooltip>
+          <UTooltip text="Material UI">
+            <UIcon name="i-logos-material-ui" />
+          </UTooltip>
+          <UTooltip text="Taro">
+            <UIcon name="i-custom-taro" />
+          </UTooltip>
+          <UTooltip text="Solid.js">
+            <UIcon name="i-logos-solidjs-icon" />
+          </UTooltip>
           <UTooltip text="Vue.js">
             <UIcon name="i-logos-vue" />
           </UTooltip>
@@ -285,6 +300,12 @@ const values = computed(() => [
           </UTooltip>
           <UTooltip text="uni-app">
             <UIcon name="i-custom-uni-app" />
+          </UTooltip>
+          <UTooltip text="uni-helper">
+            <UIcon name="i-custom-uni-helper" />
+          </UTooltip>
+          <UTooltip text="TailwindCSS">
+            <UIcon name="i-logos-tailwindcss-icon" />
           </UTooltip>
           <UTooltip text="Electron">
             <UIcon name="i-logos-electron" />
@@ -300,6 +321,12 @@ const values = computed(() => [
           </UTooltip>
           <UTooltip text="Sentry">
             <UIcon name="i-logos-sentry-icon" />
+          </UTooltip>
+          <UTooltip text="Koa">
+            <UIcon name="i-logos-koa" />
+          </UTooltip>
+          <UTooltip text="Nest.js">
+            <UIcon name="i-logos-nestjs" />
           </UTooltip>
           <UTooltip text="Azure DevOps">
             <UIcon name="i-devicon-azuredevops" />
@@ -360,6 +387,9 @@ const values = computed(() => [
           </UTooltip>
           <UTooltip text="Ant Design">
             <UIcon name="i-logos-ant-design" />
+          </UTooltip>
+          <UTooltip text="TailwindCSS">
+            <UIcon name="i-logos-tailwindcss-icon" />
           </UTooltip>
           <UTooltip text="Webpack">
             <UIcon name="i-logos-webpack" />
@@ -440,6 +470,12 @@ const values = computed(() => [
           <UTooltip text="TypeScript">
             <UIcon name="i-logos-typescript-icon" />
           </UTooltip>
+          <UTooltip text="React.js">
+            <UIcon name="i-logos-react" />
+          </UTooltip>
+          <UTooltip text="Taro">
+            <UIcon name="i-custom-taro" />
+          </UTooltip>
           <UTooltip text="Vue.js">
             <UIcon name="i-logos-vue" />
           </UTooltip>
@@ -449,11 +485,11 @@ const values = computed(() => [
           <UTooltip text="WePY">
             <UIcon name="i-custom-wepy" />
           </UTooltip>
-          <UTooltip text="Taro">
-            <UIcon name="i-custom-taro" />
-          </UTooltip>
           <UTooltip text="uni-app">
             <UIcon name="i-custom-uni-app" />
+          </UTooltip>
+          <UTooltip text="TailwindCSS">
+            <UIcon name="i-logos-tailwindcss-icon" />
           </UTooltip>
           <UTooltip text="Electron">
             <UIcon name="i-logos-electron" />
