@@ -151,11 +151,13 @@ const values = computed(() => [
     </section>
 
     <!-- PHILOSOPHY -->
-    <section class="flex *:flex-initial *:basis-1/3 gap-4">
+    <section
+      class="flex gap-4 *:flex-initial *:basis-1/3 [&>div>h2]:text-xl [&>div>h2]:font-bold [&>div>h2]:mb-2 [&>div>div]:flex [&>div>div]:flex-wrap [&>div>div]:gap-2"
+    >
       <!-- MAIN TOOLS -->
       <div>
-        <h2 class="text-xl font-bold mb-2">{{ $t("philosophy.mainTools") }}</h2>
-        <div class="flex flex-wrap gap-2">
+        <h2>{{ $t("philosophy.mainTools") }}</h2>
+        <div>
           <UBadge
             color="gray"
             variant="solid"
@@ -164,15 +166,15 @@ const values = computed(() => [
             :key="t.text"
             class="cursor-default"
           >
-            <UIcon :name="t.icon" class="mr-1 size-3"></UIcon>
+            <UIcon :name="t.icon" class="mr-1 size-3 shrink-0"></UIcon>
             <span>{{ t.text }}</span>
           </UBadge>
         </div>
       </div>
       <!-- ROLES -->
       <div>
-        <h2 class="text-xl font-bold mb-2">{{ $t("philosophy.roles") }}</h2>
-        <div class="flex flex-wrap gap-2">
+        <h2>{{ $t("philosophy.roles") }}</h2>
+        <div>
           <UTooltip v-for="r of roles" :key="r.text" :text="r.tooltip">
             <UBadge
               color="gray"
@@ -180,7 +182,7 @@ const values = computed(() => [
               size="xs"
               class="cursor-default"
             >
-              <UIcon :name="r.icon" class="mr-1 size-3"></UIcon>
+              <UIcon :name="r.icon" class="mr-1 size-3 shrink-0"></UIcon>
               <span>{{ r.text }}</span>
             </UBadge>
           </UTooltip>
@@ -188,8 +190,8 @@ const values = computed(() => [
       </div>
       <!-- VALUES -->
       <div>
-        <h2 class="text-xl font-bold mb-2">{{ $t("philosophy.values") }}</h2>
-        <div class="flex flex-wrap gap-2">
+        <h2>{{ $t("philosophy.values") }}</h2>
+        <div>
           <UTooltip v-for="v of values" :key="v.text" :text="v.tooltip">
             <UBadge
               color="gray"
@@ -207,7 +209,7 @@ const values = computed(() => [
 
     <!-- WORK EXPERIENCE -->
     <section
-      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>img]:size-8 [&>section>img]:shrink-0 [&>section>img]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>button]:text-lg [&>section>div:nth-of-type(1)>button]:font-medium [&>section>div:nth-of-type(1)>button]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
+      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>img]:size-8 [&>section>img]:shrink-0 [&>section>img]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>button]:text-lg [&>section>div:nth-of-type(1)>button]:font-medium [&>section>div:nth-of-type(1)>button]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-12 md:[&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
     >
       <h2 class="text-xl font-bold">{{ $t("workExperience.title") }}</h2>
       <section>
