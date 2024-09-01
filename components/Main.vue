@@ -227,7 +227,7 @@ const values = computed(() => [
               </li>
               <li>
                 管理 5
-                人小团队，深度参与并从头设计与实现了多个教育类项目的技术方案，包括网页、桌面应用、移动应用、小程序等，满足高校等对于校内培训、校内宣传、成人教育管理、多校区协调分配等实际需求。
+                人小团队，深度参与多个教育类项目，既有从头设计与实现部分项目的技术方案，也有基于低代码平台框架实现部分项目，包括网页、桌面应用、移动应用、小程序等，满足高校和教研院等对于信息化、研修、教研、校内宣传、学生管理、课程管理等实际需求。
               </li>
               <li>
                 主导升级历史项目，优化项目架构，确立研发与文档规范、引入单元测试、引入
@@ -249,14 +249,14 @@ const values = computed(() => [
                 overcoming.
               </li>
               <li>
-                I managed a small team of 3 to 5 people, deeply involved in the
-                design and implementation of a number of education projects from
-                the ground up, including web pages, desktop applications, mobile
-                applications, mini programs, etc., to meet the practical needs
-                of colleges and universities for on-campus training, on-campus
-                publicity, adult education management, and multi-campus
-                coordination and distribution, etc. I was responsible for the
-                communication and collaboration of the team.
+                I managed a small team of 5 people, and have been deeply
+                involved in many education projects, including designing and
+                implementing some projects from scratch, as well as implementing
+                some projects based on low-code platform frameworks, including
+                web pages, desktop apps, mobile apps, applets, etc., to meet the
+                practical needs of colleges and universities for
+                informatization, training, teaching and research, on-campus
+                publicity, student management, and course management.
               </li>
               <li>
                 I took the lead in upgrading historical projects, optimizing
@@ -430,7 +430,8 @@ const values = computed(() => [
                 万元。
               </li>
               <li>
-                深度参与教育类项目，从头设计并实现类百度网盘的共享文件库的技术方案，为高校、企业等在线教育需求提供使用平台。
+                深度参与教育类项目，从头设计并实现类百度网盘的共享文件库的技术方案，为高校、企业等在线教育需求提供使用平台。平台目前托管了
+                100 多门课程，被访问 100 多万次。
               </li>
               <li>协助评估招聘新的开发人员。</li>
             </ul>
@@ -457,8 +458,8 @@ const values = computed(() => [
                 realizing the technical solution of Baidu.com-like shared file
                 library from scratch, providing a platform for colleges,
                 universities, enterprises and other online education needs. The
-                platform currently hosts more than 100 courses and more than 1
-                million visitors.
+                platform currently hosts over 100 courses and has been visited
+                over 1 million times.
               </li>
               <li>I help evaluate hiring new developers.</li>
             </ul>
