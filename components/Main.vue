@@ -474,6 +474,9 @@ const values = computed(() => [
           <UTooltip text="React.js">
             <UIcon name="i-logos-react" />
           </UTooltip>
+          <UTooltip text="Ant Design">
+            <UIcon name="i-logos-ant-design" />
+          </UTooltip>
           <UTooltip text="Taro">
             <UIcon name="i-custom-taro" />
           </UTooltip>
