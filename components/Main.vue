@@ -223,7 +223,7 @@ const values = computed(() => [
             <p>2021-07 至今</p>
             <ul>
               <li>
-                负责团队沟通和协作、需求沟通与分析、任务拆解和安排、前端架构设计、前端组件抽象扩展、前端规范落地推广、业务重难点攻坚等。
+                负责团队沟通和协作、需求沟通与分析、任务拆解和安排、前端架构设计、前端组件抽象扩展、业务重难点攻坚等。
               </li>
               <li>
                 管理 5
@@ -243,9 +243,10 @@ const values = computed(() => [
             <ul>
               <li>
                 I am responsible for team communication and collaboration,
-                requirements communication and analysis, task disassembly and
-                scheduling, front-end architecture design, and business
-                criticality attack.
+                requirement communication and analysis, task disassembly and
+                scheduling, front-end architecture design, front-end component
+                abstraction and extension, and business critical point
+                overcoming.
               </li>
               <li>
                 I managed a small team of 3 to 5 people, deeply involved in the
