@@ -52,6 +52,11 @@ export default defineI18nConfig(() => ({
         title: "业余项目",
       },
 
+      qualificationCertificate: {
+        title: "资格证书",
+        systemIntegrationProjectManagementEngineer: "系统集成项目管理工程师",
+      },
+
       education: {
         title: "教育经历",
         university: "中山大学",
@@ -107,13 +112,23 @@ export default defineI18nConfig(() => ({
       },
 
       workExperience: {
-        title: "WORK EXPERIENCE",
+        title: "Work Experience",
         millcloud: "Guangdong MillCloud Technology Co., Ltd.",
         globus: "Globus LTD.",
       },
 
+      projectExperience: {
+        title: "Side Projects",
+      },
+
+      qualificationCertificate: {
+        title: "Qualification Certificate",
+        systemIntegrationProjectManagementEngineer:
+          "Qualification Certificate of Computer and Software Technology Proficiency System Integration Project Management Engineer",
+      },
+
       education: {
-        title: "EDUCATION",
+        title: "Education",
         university: "Sun Yat-sen University",
         degree:
           "Bachelor of Engineering, Software Engineering (Mobile Information Engineering)",

@@ -205,11 +205,16 @@ const values = computed(() => [
 
     <!-- WORK EXPERIENCE -->
     <section
-      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>img]:size-8 [&>section>img]:shrink-0 [&>section>img]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>a]:text-lg [&>section>div:nth-of-type(1)>a]:font-medium [&>section>div:nth-of-type(1)>a]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-16 md:[&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
+      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>a]:size-8 [&>section>a]:shrink-0 [&>section>a]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>a]:text-lg [&>section>div:nth-of-type(1)>a]:font-medium [&>section>div:nth-of-type(1)>a]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-16 md:[&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
     >
       <h2 class="text-xl font-bold">{{ $t("workExperience.title") }}</h2>
       <section>
-        <NuxtImg src="https://www.millcloud.cn/logo.ico" alt="MillCloud LOGO" />
+        <ULink to="https://www.millcloud.cn/" target="_blank">
+          <NuxtImg
+            src="https://www.millcloud.cn/logo.ico"
+            alt="MillCloud LOGO"
+          />
+        </ULink>
         <div>
           <ULink to="https://www.millcloud.cn/" target="_blank">
             {{ $t("workExperience.millcloud") }}
@@ -339,7 +344,12 @@ const values = computed(() => [
         </div>
       </section>
       <section>
-        <NuxtImg src="https://globus-china.com/favicon.svg" alt="Globus LOGO" />
+        <ULink to="https://globus-china.com/" target="_blank">
+          <NuxtImg
+            src="https://globus-china.com/favicon.svg"
+            alt="Globus LOGO"
+          />
+        </ULink>
         <div>
           <ULink to="https://globus-china.com/" target="_blank">
             {{ $t("workExperience.globus") }}
@@ -409,13 +419,14 @@ const values = computed(() => [
         </div>
       </section>
       <section>
-        <NuxtImg src="https://www.millcloud.cn/logo.ico" alt="MillCloud LOGO" />
+        <ULink to="https://www.millcloud.cn/" target="_blank">
+          <NuxtImg
+            src="https://www.millcloud.cn/logo.ico"
+            alt="MillCloud LOGO"
+          />
+        </ULink>
         <div>
-          <ULink
-            to="https://www.millcloud.cn/"
-            target="_blank"
-            class="font-medium"
-          >
+          <ULink to="https://www.millcloud.cn/" target="_blank">
             {{ $t("workExperience.millcloud") }}
           </ULink>
           <template v-if="locale === 'zh-CN'">
@@ -599,6 +610,38 @@ const values = computed(() => [
             component libraries.
           </p>
         </template>
+      </section>
+      <section>
+        <ULink to="https://uni-helper.js.org/" target="_blank">
+          uni-helper
+        </ULink>
+        <template v-if="locale === 'zh-CN'">
+          <p>增强 uni-app 系列产品的开发体验。</p>
+        </template>
+        <template v-else>
+          <p>
+            Enhance the development experience of the uni-app family of
+            products.
+          </p>
+        </template>
+      </section>
+    </section>
+
+    <!-- QUALIFICATION CERTIFICATE -->
+    <section
+      class="[&>section]:my-2 [&>section]:text-sm [&>section>a]:text-lg [&>section>a]:font-medium"
+    >
+      <h2 class="text-xl font-bold">
+        {{ $t("qualificationCertificate.title") }}
+      </h2>
+      <section>
+        <p>
+          {{
+            $t(
+              "qualificationCertificate.systemIntegrationProjectManagementEngineer"
+            )
+          }}
+        </p>
       </section>
     </section>
 
