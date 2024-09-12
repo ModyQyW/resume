@@ -16,18 +16,19 @@
     "@vueuse/nuxt": "^11.0.3",
     "date-fns": "^3.6.0",
     "date-fns-tz": "^3.1.3",
-    "nuxt": "^3.13.0",
-    "vue": "^3.4.38",
-    "vue-router": "^4.4.3"
+    "nuxt": "^3.13.1",
+    "vue": "^3.5.4",
+    "vue-router": "^4.4.4"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.37",
-    "@iconify-json/devicon": "^1.1.51",
-    "@iconify-json/heroicons": "^1.1.24",
-    "@iconify-json/logos": "^1.1.44",
-    "@iconify-json/ph": "^1.1.14",
-    "@iconify-json/simple-icons": "^1.1.115",
-    "@nuxtjs/i18n": "^8.5.1"
+    "@iconify-json/carbon": "^1.2.1",
+    "@iconify-json/devicon": "^1.2.0",
+    "@iconify-json/flagpack": "^1.2.0",
+    "@iconify-json/heroicons": "^1.2.0",
+    "@iconify-json/logos": "^1.2.0",
+    "@iconify-json/ph": "^1.2.0",
+    "@iconify-json/simple-icons": "^1.2.2",
+    "@nuxtjs/i18n": "^8.5.3"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.10.0"
 }
