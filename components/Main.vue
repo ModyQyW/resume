@@ -645,13 +645,15 @@ const values = computed(() => [
         {{ $t("qualificationCertificate.title") }}
       </h2>
       <section>
-        <p>
-          {{
-            $t(
-              "qualificationCertificate.systemIntegrationProjectManagementEngineer"
-            )
-          }}
-        </p>
+        <ul class="list-disc ml-4">
+          <li>
+            {{
+              $t(
+                "qualificationCertificate.systemIntegrationProjectManagementEngineer"
+              )
+            }}
+          </li>
+        </ul>
       </section>
     </section>
 
