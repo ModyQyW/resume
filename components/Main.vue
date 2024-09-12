@@ -52,10 +52,6 @@ const tools = computed(() => [
     icon: "i-logos-hono",
     text: "Hono",
   },
-  {
-    icon: "i-logos-mongodb-icon",
-    text: "MongoDB",
-  },
 ]);
 
 const roles = computed(() => [
@@ -209,13 +205,13 @@ const values = computed(() => [
 
     <!-- WORK EXPERIENCE -->
     <section
-      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>img]:size-8 [&>section>img]:shrink-0 [&>section>img]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>button]:text-lg [&>section>div:nth-of-type(1)>button]:font-medium [&>section>div:nth-of-type(1)>button]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-16 md:[&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
+      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>img]:size-8 [&>section>img]:shrink-0 [&>section>img]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>a]:text-lg [&>section>div:nth-of-type(1)>a]:font-medium [&>section>div:nth-of-type(1)>a]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-16 md:[&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
     >
       <h2 class="text-xl font-bold">{{ $t("workExperience.title") }}</h2>
       <section>
         <NuxtImg src="https://www.millcloud.cn/logo.ico" alt="MillCloud LOGO" />
         <div>
-          <ULink href="https://www.millcloud.cn/" target="_blank">
+          <ULink to="https://www.millcloud.cn/" target="_blank">
             {{ $t("workExperience.millcloud") }}
           </ULink>
           <template v-if="locale === 'zh-CN'">
@@ -310,6 +306,9 @@ const values = computed(() => [
           <UTooltip text="TailwindCSS">
             <UIcon name="i-logos-tailwindcss-icon" />
           </UTooltip>
+          <UTooltip text="UnoCSS">
+            <UIcon name="i-logos-unocss" />
+          </UTooltip>
           <UTooltip text="Electron">
             <UIcon name="i-logos-electron" />
           </UTooltip>
@@ -322,14 +321,14 @@ const values = computed(() => [
           <UTooltip text="Vitest">
             <UIcon name="i-logos-vitest" />
           </UTooltip>
-          <UTooltip text="Sentry">
-            <UIcon name="i-logos-sentry-icon" />
-          </UTooltip>
           <UTooltip text="Koa">
             <UIcon name="i-logos-koa" />
           </UTooltip>
           <UTooltip text="Nest.js">
             <UIcon name="i-logos-nestjs" />
+          </UTooltip>
+          <UTooltip text="Hono">
+            <UIcon name="i-logos-hono" />
           </UTooltip>
           <UTooltip text="Azure DevOps">
             <UIcon name="i-devicon-azuredevops" />
@@ -342,7 +341,7 @@ const values = computed(() => [
       <section>
         <NuxtImg src="https://globus-china.com/favicon.svg" alt="Globus LOGO" />
         <div>
-          <ULink href="https://globus-china.com/" target="_blank">
+          <ULink to="https://globus-china.com/" target="_blank">
             {{ $t("workExperience.globus") }}
           </ULink>
           <template v-if="locale === 'zh-CN'">
@@ -351,7 +350,7 @@ const values = computed(() => [
             <ul>
               <li>参与到内部外贸管理系统研发，包括验货、PDF预览等功能研发。</li>
               <li>
-                我调研现有 Express.js 后端服务迁移到 Serverless Framework 和 AWS
+                调研现有 Express.js 后端服务迁移到 Serverless Framework 和 AWS
                 的可行性并设计方案。
               </li>
             </ul>
@@ -413,7 +412,7 @@ const values = computed(() => [
         <NuxtImg src="https://www.millcloud.cn/logo.ico" alt="MillCloud LOGO" />
         <div>
           <ULink
-            href="https://www.millcloud.cn/"
+            to="https://www.millcloud.cn/"
             target="_blank"
             class="font-medium"
           >
@@ -515,9 +514,97 @@ const values = computed(() => [
       </section>
     </section>
 
+    <!-- PROJECT -->
+    <section
+      class="[&>section]:my-2 [&>section]:text-sm [&>section>a]:text-lg [&>section>a]:font-medium"
+    >
+      <h2 class="text-xl font-bold">{{ $t("projectExperience.title") }}</h2>
+      <section>
+        <ULink to="https://vite-plugin-eslint2.modyqyw.top/" target="_blank">
+          vite-plugin-eslint2
+        </ULink>
+        <template v-if="locale === 'zh-CN'">
+          <p>
+            Vite ESLint 插件。🌟被 Nuxt 官方模块（<ULink
+              to="https://eslint.nuxt.com/"
+              target="_blank"
+              >@nuxt/eslint</ULink
+            >）采纳使用。
+          </p>
+        </template>
+        <template v-else>
+          <p>
+            ESLint plugin for Vite. 🌟 Adopted by Nuxt official module (<ULink
+              to="https://eslint.nuxt.com/"
+              target="_blank"
+              >@nuxt/eslint</ULink
+            >).
+          </p>
+        </template>
+      </section>
+      <section>
+        <ULink
+          to="https://github.com/ModyQyW/vite-plugin-stylelint"
+          target="_blank"
+        >
+          vite-plugin-stylelint
+        </ULink>
+        <template v-if="locale === 'zh-CN'">
+          <p>
+            Vite Stylelint 插件。🌟被 Nuxt 官方模块（<ULink
+              to="https://github.com/nuxt-modules/stylelint"
+              target="_blank"
+              >@nuxtjs/stylelint-module</ULink
+            >）采纳使用。
+          </p>
+        </template>
+        <template v-else>
+          <p>
+            Stylelint plugin for Vite. 🌟 Adopted by Nuxt official module
+            (<ULink
+              to="https://github.com/nuxt-modules/stylelint"
+              target="_blank"
+              >@nuxtjs/stylelint-module</ULink
+            >).
+          </p>
+        </template>
+      </section>
+      <section>
+        <ULink to="https://fabric.modyqyw.top" target="_blank">
+          @modyqyw/fabric
+        </ULink>
+        <template v-if="locale === 'zh-CN'">
+          <p>开箱即用的共享规范，适用于不同的 JavaScript / TypeScript 项目。</p>
+        </template>
+        <template v-else>
+          <p>
+            Opinionated shareable specification for different
+            JavaScript/TypeScript projects.
+          </p>
+        </template>
+      </section>
+      <section>
+        <ULink
+          to="https://github.com/ModyQyW/tailwind-extensions"
+          target="_blank"
+        >
+          tailwind-extensions
+        </ULink>
+        <template v-if="locale === 'zh-CN'">
+          <p>开箱即用的 TailwindCSS v3 扩展，方便与组件库结合使用。</p>
+        </template>
+        <template v-else>
+          <p>
+            Opinionated TailwindCSS v3 extensions. Easily integrate with
+            component libraries.
+          </p>
+        </template>
+      </section>
+    </section>
+
     <!-- EDUCATION -->
     <section
-      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>img]:size-8 [&>section>div]:text-sm [&>section>div>button]:text-lg [&>section>div>button]:font-medium [&>section>div>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div>p:nth-of-type(2)]:text-gray-400"
+      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>img]:size-8 [&>section>div]:text-sm [&>section>div>a]:text-lg [&>section>div>a]:font-medium [&>section>div>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div>p:nth-of-type(2)]:text-gray-400"
     >
       <h2 class="text-xl font-bold">{{ $t("education.title") }}</h2>
       <section>
@@ -526,7 +613,7 @@ const values = computed(() => [
           alt="SYSU LOGO"
         />
         <div>
-          <ULink href="https://www.sysu.edu.cn/" target="_blank">
+          <ULink to="https://www.sysu.edu.cn/" target="_blank">
             {{ $t("education.university") }}
           </ULink>
           <p>{{ $t("education.degree") }}</p>

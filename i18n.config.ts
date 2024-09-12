@@ -48,6 +48,10 @@ export default defineI18nConfig(() => ({
         globus: "佛山市马威贸易有限公司",
       },
 
+      projectExperience: {
+        title: "业余项目",
+      },
+
       education: {
         title: "教育经历",
         university: "中山大学",
