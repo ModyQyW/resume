@@ -536,18 +536,17 @@ const values = computed(() => [
         </ULink>
         <template v-if="locale === 'zh-CN'">
           <p>
-            Vite ESLint 插件。🌟被 Nuxt 官方模块（<ULink
-              to="https://eslint.nuxt.com/"
-              target="_blank"
+            Vite ESLint 插件。该插件周下载量达 10k，支撑了上千个项目，被 Nuxt
+            官方模块（<ULink to="https://eslint.nuxt.com/" target="_blank"
               >@nuxt/eslint</ULink
-            >）采纳使用。
+            >）内置。
           </p>
         </template>
         <template v-else>
           <p>
-            ESLint plugin for Vite. 🌟 Adopted by Nuxt official module (<ULink
-              to="https://eslint.nuxt.com/"
-              target="_blank"
+            ESLint plugin for Vite. The plugin has been downloaded 10k times a
+            week, supports thousands of projects, and is built into the official
+            Nuxt module (<ULink to="https://eslint.nuxt.com/" target="_blank"
               >@nuxt/eslint</ULink
             >).
           </p>
@@ -562,17 +561,19 @@ const values = computed(() => [
         </ULink>
         <template v-if="locale === 'zh-CN'">
           <p>
-            Vite Stylelint 插件。🌟被 Nuxt 官方模块（<ULink
+            Vite Stylelint 插件。该插件周下载量达 36k，支撑了上千个项目，被 Nuxt
+            官方模块（<ULink
               to="https://github.com/nuxt-modules/stylelint"
               target="_blank"
               >@nuxtjs/stylelint-module</ULink
-            >）采纳使用。
+            >）内置。
           </p>
         </template>
         <template v-else>
           <p>
-            Stylelint plugin for Vite. 🌟 Adopted by Nuxt official module
-            (<ULink
+            Stylelint plugin for Vite. The plugin has been downloaded 36k times
+            a week, supports thousands of projects, and is built into the
+            official Nuxt module (<ULink
               to="https://github.com/nuxt-modules/stylelint"
               target="_blank"
               >@nuxtjs/stylelint-module</ULink
@@ -585,12 +586,16 @@ const values = computed(() => [
           @modyqyw/fabric
         </ULink>
         <template v-if="locale === 'zh-CN'">
-          <p>开箱即用的共享规范，适用于不同的 JavaScript / TypeScript 项目。</p>
+          <p>
+            开箱即用的共享规范，适用于不同的 JavaScript / TypeScript
+            项目。该项目支撑了 10+ 个公司项目和 10+ 个个人项目。
+          </p>
         </template>
         <template v-else>
           <p>
             Opinionated shareable specification for different
-            JavaScript/TypeScript projects.
+            JavaScript/TypeScript projects. The project has supported 10+
+            company projects and 10+ personal projects.
           </p>
         </template>
       </section>
@@ -616,12 +621,17 @@ const values = computed(() => [
           uni-helper
         </ULink>
         <template v-if="locale === 'zh-CN'">
-          <p>增强 uni-app 系列产品的开发体验。</p>
+          <p>
+            增强 uni-app 系列产品的开发体验。该项目提供了 VS Code、TypeScript 和
+            npm 生态相关的集成支持，支撑了上千个 uni-app 项目。
+          </p>
         </template>
         <template v-else>
           <p>
             Enhance the development experience of the uni-app family of
-            products.
+            products. The project provides integrated support for VS Code,
+            TypeScript, and the npm ecosystem, supporting thousands of uni-app
+            projects.
           </p>
         </template>
       </section>
