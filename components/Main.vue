@@ -527,7 +527,7 @@ const values = computed(() => [
 
     <!-- PROJECT -->
     <section
-      class="[&>section]:my-2 [&>section]:text-sm [&>section>a]:text-lg [&>section>a]:font-medium"
+      class="[&>section]:my-2 [&>section]:text-sm [&>section>a]:text-lg [&>section>a]:font-medium [&>section>p:nth-of-type(1)]:text-gray-600 dark:[&>section>p:nth-of-type(1)]:text-gray-400"
     >
       <h2 class="text-xl font-bold">{{ $t("projectExperience.title") }}</h2>
       <section>
@@ -535,6 +535,7 @@ const values = computed(() => [
           vite-plugin-eslint2
         </ULink>
         <template v-if="locale === 'zh-CN'">
+          <p>2022-02 至今</p>
           <p>
             Vite ESLint 插件。该插件周下载量达 10k，支撑了上千个项目，被 Nuxt
             官方模块（<ULink to="https://eslint.nuxt.com/" target="_blank"
@@ -543,6 +544,7 @@ const values = computed(() => [
           </p>
         </template>
         <template v-else>
+          <p>02/2022 - present</p>
           <p>
             ESLint plugin for Vite. The plugin has been downloaded 10k times a
             week, supports thousands of projects, and is built into the official
@@ -560,6 +562,7 @@ const values = computed(() => [
           vite-plugin-stylelint
         </ULink>
         <template v-if="locale === 'zh-CN'">
+          <p>2021-08 至今</p>
           <p>
             Vite Stylelint 插件。该插件周下载量达 36k，支撑了上千个项目，被 Nuxt
             官方模块（<ULink
@@ -570,6 +573,7 @@ const values = computed(() => [
           </p>
         </template>
         <template v-else>
+          <p>08/2021 - present</p>
           <p>
             Stylelint plugin for Vite. The plugin has been downloaded 36k times
             a week, supports thousands of projects, and is built into the
@@ -586,12 +590,14 @@ const values = computed(() => [
           @modyqyw/fabric
         </ULink>
         <template v-if="locale === 'zh-CN'">
+          <p>2020-10 至今</p>
           <p>
             开箱即用的共享规范，适用于不同的 JavaScript / TypeScript
             项目。该项目支撑了 10+ 个公司项目和 10+ 个个人项目。
           </p>
         </template>
         <template v-else>
+          <p>10/2020 - present</p>
           <p>
             Opinionated shareable specification for different
             JavaScript/TypeScript projects. The project has supported 10+
@@ -607,9 +613,11 @@ const values = computed(() => [
           tailwind-extensions
         </ULink>
         <template v-if="locale === 'zh-CN'">
+          <p>2022-04 至今</p>
           <p>开箱即用的 TailwindCSS v3 扩展，方便与组件库结合使用。</p>
         </template>
         <template v-else>
+          <p>04/2022 - present</p>
           <p>
             Opinionated TailwindCSS v3 extensions. Easily integrate with
             component libraries.
@@ -621,12 +629,14 @@ const values = computed(() => [
           uni-helper
         </ULink>
         <template v-if="locale === 'zh-CN'">
+          <p>2020-12 至今</p>
           <p>
             增强 uni-app 系列产品的开发体验。该项目提供了 VS Code、TypeScript 和
             npm 生态相关的集成支持，支撑了上千个 uni-app 项目。
           </p>
         </template>
         <template v-else>
+          <p>12/2020 - present</p>
           <p>
             Enhance the development experience of the uni-app family of
             products. The project provides integrated support for VS Code,
