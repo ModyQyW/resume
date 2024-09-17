@@ -12,7 +12,7 @@ defineOptions({
       <Logo></Logo>
     </div>
     <div class="flex-1">
-      <Info></Info>
+      <Actions></Actions>
     </div>
   </header>
 </template>
