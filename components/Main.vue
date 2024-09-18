@@ -212,7 +212,7 @@ const values = computed(() => [
 
     <!-- WORK EXPERIENCE -->
     <section
-      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>a]:size-8 [&>section>a]:shrink-0 [&>section>a]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>a]:text-lg [&>section>div:nth-of-type(1)>a]:font-medium [&>section>div:nth-of-type(1)>a]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-16 md:[&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
+      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>a]:size-8 [&>section>a]:shrink-0 [&>section>a]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>a]:text-lg [&>section>div:nth-of-type(1)>a]:font-medium [&>section>div:nth-of-type(1)>a]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul>li:last-of-type]:hidden [&>section>div:nth-of-type(1)>ul>li:last-of-type]:print:list-item [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:print:hidden [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-16 md:[&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
     >
       <h2 class="text-xl font-bold">{{ $t("workExperience.title") }}</h2>
       <section>
@@ -239,6 +239,12 @@ const values = computed(() => [
                 CI/CD、引入监控等，优化项目编译和启动时间约
                 21%，优化项目构建产物体积约 18%，优化云服务器实例流出流量约
                 19%。
+              </li>
+              <li>
+                涉及技术栈：JavaScript、TypeScript、React、Ant Design、Material
+                UI、Taro、Solid、Vue、Element Plus、Naive
+                UI、uni-app、uni-helper、TailwindCSS、UnoCSS、Electron、Rollup、Vite、Vitest、Koa、Nest、Hono、Azure
+                DevOps、GitHub 等。
               </li>
             </ul>
           </template>
@@ -271,6 +277,12 @@ const values = computed(() => [
                 by about 21%, the volume of the project build product by about
                 18%, and the outgoing traffic of the cloud server instance by
                 about 19%.
+              </li>
+              <li>
+                Technology stack involved: JavaScript, TypeScript, React, Ant
+                Design, Material UI, Taro, Solid, Vue, Element Plus, Naive UI,
+                uni-app, uni-helper, TailwindCSS, UnoCSS, Electron, Rollup,
+                Vite, Vitest, Koa, Nest, Hono, Azure DevOps, GitHub, etc.
               </li>
             </ul>
           </template>
@@ -364,6 +376,11 @@ const values = computed(() => [
                 调研现有 Express.js 后端服务迁移到 Serverless Framework 和 AWS
                 的可行性并设计方案。
               </li>
+              <li>
+                涉及技术栈：JavaScript、TypeScript、React、Next、Ant
+                Design、TailwindCSS、Webpack、Vite、Express、Serverless
+                Framework、GitHub 等。
+              </li>
             </ul>
           </template>
           <template v-else>
@@ -379,6 +396,11 @@ const values = computed(() => [
                 I investigated the feasibility of migrating existing Express.js
                 backend services to Serverless Framework and AWS and designed
                 the solution.
+              </li>
+              <li>
+                Technology stack involved: JavaScript, TypeScript, React, Next,
+                Ant Design, TailwindCSS, Webpack, Vite, Express, Serverless
+                Framework, GitHub, etc.
               </li>
             </ul>
           </template>
@@ -442,6 +464,12 @@ const values = computed(() => [
                 100 多门课程，被访问 100 多万次。
               </li>
               <li>协助评估招聘新的开发人员。</li>
+              <li>
+                涉及技术栈：JavaScript、TypeScript、React、Ant Design、Material
+                UI、Taro、Vue、Element UI、Naive
+                UI、uni-app、TailwindCSS、Electron、Webpack、Express、Azure
+                DevOps、GitHub 等。
+              </li>
             </ul>
           </template>
           <template v-else>
@@ -470,6 +498,12 @@ const values = computed(() => [
                 over 1 million times.
               </li>
               <li>I help evaluate hiring new developers.</li>
+              <li>
+                Technology stack involved: JavaScript, TypeScript, React, Ant
+                Design, Material UI, Taro, Vue, Element UI, Naive UI, uni-app,
+                TailwindCSS, Electron, Webpack, Express, Azure DevOps, GitHub,
+                etc.
+              </li>
             </ul>
           </template>
         </div>
