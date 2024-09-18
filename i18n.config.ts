@@ -15,7 +15,8 @@ export default defineI18nConfig(() => ({
         emailAddress: "wurui-dev{'@'}foxmail.com",
         contact: "电话联系",
         phoneNumber: "13266337925",
-        intro: "{count} 年经验，懂得换位思考、用心打造产品的前端工程师。",
+        intro:
+          "{count} 年经验，懂得换位思考、用心打造产品的前端工程师，拥有独当一面的能力。",
       },
 
       philosophy: {
@@ -80,7 +81,7 @@ export default defineI18nConfig(() => ({
         contact: "Contact me",
         phoneNumber: "+8613266337925",
         intro:
-          "Front-end engineers with {count} years of experience who know how to think differently and build products with heart.",
+          "{count} years of experience as a front-end engineer who understands how to think differently and build a product with heart, with the ability to be unique.",
       },
 
       philosophy: {
