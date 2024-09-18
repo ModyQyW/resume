@@ -32,7 +32,7 @@ export default defineI18nConfig(() => ({
           "我通过展示最佳实践来帮助初级开发人员进阶。",
 
         values: "价值观",
-        autonomy: "自主权",
+        autonomy: "自我驱动",
         autonomyTooltip: " 我可以承担复杂的任务并高度专注地完成工作。",
         highLevelOfRequirement: "高要求",
         highLevelOfRequirementTooltip: "我非常关注细节并尝试提供最佳解决方案。",
