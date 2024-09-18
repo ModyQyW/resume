@@ -13,6 +13,8 @@ export default defineI18nConfig(() => ({
         github: "访问 GitHub",
         email: "写邮件",
         emailAddress: "wurui-dev{'@'}foxmail.com",
+        contact: "电话联系",
+        phoneNumber: "13266337925",
         intro: "{count} 年经验，懂得换位思考、用心打造产品的前端工程师。",
       },
 
@@ -75,6 +77,8 @@ export default defineI18nConfig(() => ({
         github: "Visit GitHub",
         email: "Write EMail",
         emailAddress: "wurui.dev{'@'}gmail.com",
+        contact: "Contact me",
+        phoneNumber: "+8613266337925",
         intro:
           "Front-end engineers with {count} years of experience who know how to think differently and build products with heart.",
       },

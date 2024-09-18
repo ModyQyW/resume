@@ -27,7 +27,14 @@ const links = computed(() => [
   {
     tooltip: t("base.email"),
     icon: "i-heroicons-envelope",
-    link: `${t("base.emailAddress")}`,
+    text: t("base.emailAddress"),
+    link: `mailto:${t("base.emailAddress")}`,
+  },
+  {
+    tooltip: t("base.contact"),
+    icon: "i-heroicons-phone",
+    text: t("base.phoneNumber"),
+    link: `tel:${t("base.phoneNumber")}`,
   },
 ]);
 
@@ -134,7 +141,7 @@ const values = computed(() => [
           class="flex gap-1.5 items-center text-sm"
         >
           <UIcon :name="l.icon"></UIcon>
-          <span>{{ l.link }}</span>
+          <span>{{ l.text || l.link }}</span>
         </div>
       </div>
       <div class="size-16 flex-none size-24 print:size-24">
@@ -210,10 +217,7 @@ const values = computed(() => [
       <h2 class="text-xl font-bold">{{ $t("workExperience.title") }}</h2>
       <section>
         <ULink to="https://www.millcloud.cn/" target="_blank">
-          <NuxtImg
-            src="https://www.millcloud.cn/logo.ico"
-            alt="MillCloud LOGO"
-          />
+          <NuxtImg src="/millcloud.png" alt="MillCloud LOGO" />
         </ULink>
         <div>
           <ULink to="https://www.millcloud.cn/" target="_blank">
@@ -345,10 +349,7 @@ const values = computed(() => [
       </section>
       <section>
         <ULink to="https://globus-china.com/" target="_blank">
-          <NuxtImg
-            src="https://globus-china.com/favicon.svg"
-            alt="Globus LOGO"
-          />
+          <NuxtImg src="/globus.svg" alt="Globus LOGO" />
         </ULink>
         <div>
           <ULink to="https://globus-china.com/" target="_blank">
@@ -420,10 +421,7 @@ const values = computed(() => [
       </section>
       <section>
         <ULink to="https://www.millcloud.cn/" target="_blank">
-          <NuxtImg
-            src="https://www.millcloud.cn/logo.ico"
-            alt="MillCloud LOGO"
-          />
+          <NuxtImg src="/millcloud.png" alt="MillCloud LOGO" />
         </ULink>
         <div>
           <ULink to="https://www.millcloud.cn/" target="_blank">
