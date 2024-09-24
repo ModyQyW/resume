@@ -82,7 +82,7 @@ export default defineI18nConfig(() => ({
         contact: "Contact me",
         phoneNumber: "+8613266337925",
         intro:
-          "{count} years of experience as a front-end engineer who understands how to think differently and build a product with heart, with the ability to be unique.",
+          "{count} years of experience as a front-end engineer who understands how to think differently and build a product with heart, with the ability to be unique. In terms of compliance, I am open to both EOR(prepared) and self-employment contracts.",
       },
 
       philosophy: {
