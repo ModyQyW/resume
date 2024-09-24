@@ -13,7 +13,7 @@ watch(
 
 <template>
   <div
-    class="container mx-auto *:px-5 *:sm:px-10 *:md:px-15 *:lg:px-20 *:xl:px-25 *:xl:px-30"
+    class="container max-w-4xl mx-auto *:px-5 *:sm:px-10 *:md:px-15 *:lg:px-20 *:xl:px-25 *:xl:px-30"
   >
     <Header></Header>
     <Main></Main>

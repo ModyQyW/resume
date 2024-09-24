@@ -8,7 +8,6 @@ export default defineI18nConfig(() => ({
       base: {
         name: "吴睿",
         title: "前端工程师",
-        position: "远程 / 广东佛山禅城",
         website: "访问博客",
         github: "访问 GitHub",
         email: "写邮件",
@@ -16,7 +15,7 @@ export default defineI18nConfig(() => ({
         contact: "电话联系",
         phoneNumber: "13266337925",
         intro:
-          "{count} 年经验，懂得换位思考、用心打造产品的前端工程师，拥有独当一面的能力。",
+          "{count} 年前端经验，熟悉 React 和 Vue 相关技术栈，基础扎实，深度参与和负责多个项目。具备基本项目管理经验和完整项目开发上线经验，能够有效协调资源并落实，确保项目按时交付。",
       },
 
       philosophy: {
@@ -24,25 +23,28 @@ export default defineI18nConfig(() => ({
 
         roles: "角色",
         frontendEngineer: "前端工程师",
-        frontendEngineerTooltip: "我构建网页端、桌面端、移动端和小程序应用。",
+        frontendEngineerDescription:
+          "我构建网页端、桌面端、移动端和小程序应用。",
         architectureDesign: "架构设计",
-        architectureDesignTooltip: "我喜欢设计具有挑战性的技术解决方案和产品。",
+        architectureDesignDescription:
+          "我喜欢设计具有挑战性的技术解决方案和产品。",
         techLeadAndMentoring: "技术主管与指导",
-        techLeadAndMentoringTooltip:
+        techLeadAndMentoringDescription:
           "我通过展示最佳实践来帮助初级开发人员进阶。",
 
         values: "价值观",
         autonomy: "自我驱动",
-        autonomyTooltip: " 我可以承担复杂的任务并高度专注地完成工作。",
+        autonomyDescription: " 我能承担复杂任务并高度专注地完成工作。",
         highLevelOfRequirement: "高要求",
-        highLevelOfRequirementTooltip: "我非常关注细节并尝试提供最佳解决方案。",
+        highLevelOfRequirementDescription:
+          "我很关注细节并尝试提供最佳解决方案。",
         healthyRelationships: "健康关系",
-        healthyRelationshipsTooltip:
-          "我非常重视充满信任、诚实和友善的工作空间。",
+        healthyRelationshipsDescription:
+          "我很重视充满信任、诚实和友善的工作空间。",
         teamSpirit: "团队精神",
-        teamSpiritTooltip: "我相信协作努力和环境支持对于实现目标至关重要。",
+        teamSpiritDescription: "我相信协作努力和环境支持有助于实现目标。",
         activeCommunication: "积极沟通",
-        activeCommunicationTooltip: "我根据具体情况使用有效方式积极沟通。",
+        activeCommunicationDescription: "我根据具体情况使用有效方式积极沟通。",
       },
 
       workExperience: {
@@ -73,7 +75,6 @@ export default defineI18nConfig(() => ({
       base: {
         name: "Rui Wu",
         title: "Front-end Developer",
-        position: "Remote / Chancheng, Foshan, Guangdong, Guangdong",
         website: "Visit website",
         github: "Visit GitHub",
         email: "Write EMail",
@@ -89,30 +90,30 @@ export default defineI18nConfig(() => ({
 
         roles: "Roles",
         frontendEngineer: "Front-end Engineer",
-        frontendEngineerTooltip:
+        frontendEngineerDescription:
           "I build web, desktop, mobile and mini-program apps.",
         architectureDesign: "Architecture & Design",
-        architectureDesignTooltip:
+        architectureDesignDescription:
           "I love designing challenging technical solutions and products.",
         techLeadAndMentoring: "Tech Lead & Mentoring",
-        techLeadAndMentoringTooltip:
+        techLeadAndMentoringDescription:
           "I help junior developers to level up, by showing best practices.",
 
         values: "Values",
         autonomy: "Autonomy",
-        autonomyTooltip:
+        autonomyDescription:
           "I can take complex tasks and get things done with strong focus.",
         highLevelOfRequirement: "High level of requirement",
-        highLevelOfRequirementTooltip:
+        highLevelOfRequirementDescription:
           "I pay high attention to details and try to deliver the best solution.",
         healthyRelationships: "Healthy relationships",
-        healthyRelationshipsTooltip:
+        healthyRelationshipsDescription:
           "I truly value workspaces full of trust, honesty and kindness.",
         teamSpirit: "Team Spirit",
-        teamSpiritTooltip:
+        teamSpiritDescription:
           "I believe that collaborative efforts and a supportive environment are critical to achieving goals.",
         activeCommunication: "Active Communication",
-        activeCommunicationTooltip:
+        activeCommunicationDescription:
           "I communicate positively using effective methods on a case-by-case basis.",
       },
 

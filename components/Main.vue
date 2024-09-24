@@ -15,23 +15,23 @@ const years = differenceInYears(
 
 const links = computed(() => [
   {
-    tooltip: t("base.website"),
+    description: t("base.website"),
     icon: "i-heroicons-home",
     link: "https://modyqyw.top",
   },
   {
-    tooltip: t("base.github"),
+    description: t("base.github"),
     icon: "i-simple-icons-github",
     link: "https://github.com/ModyQyW",
   },
   {
-    tooltip: t("base.email"),
+    description: t("base.email"),
     icon: "i-heroicons-envelope",
     text: t("base.emailAddress"),
     link: `mailto:${t("base.emailAddress")}`,
   },
   {
-    tooltip: t("base.contact"),
+    description: t("base.contact"),
     icon: "i-heroicons-phone",
     text: t("base.phoneNumber"),
     link: `tel:${t("base.phoneNumber")}`,
@@ -55,25 +55,21 @@ const tools = computed(() => [
     icon: "i-logos-tailwindcss-icon",
     text: "TailwindCSS",
   },
-  {
-    icon: "i-logos-hono",
-    text: "Hono",
-  },
 ]);
 
 const roles = computed(() => [
   {
-    tooltip: t("philosophy.frontendEngineerTooltip"),
+    description: t("philosophy.frontendEngineerDescription"),
     icon: "i-carbon-laptop",
     text: t("philosophy.frontendEngineer"),
   },
   {
-    tooltip: t("philosophy.architectureDesignTooltip"),
+    description: t("philosophy.architectureDesignDescription"),
     icon: "i-carbon-chart-network",
     text: t("philosophy.architectureDesign"),
   },
   {
-    tooltip: t("philosophy.techLeadAndMentoringTooltip"),
+    description: t("philosophy.techLeadAndMentoringDescription"),
     icon: "i-heroicons-academic-cap",
     text: t("philosophy.techLeadAndMentoring"),
   },
@@ -81,27 +77,27 @@ const roles = computed(() => [
 
 const values = computed(() => [
   {
-    tooltip: t("philosophy.autonomyTooltip"),
+    description: t("philosophy.autonomyDescription"),
     icon: "i-heroicons-user",
     text: t("philosophy.autonomy"),
   },
   {
-    tooltip: t("philosophy.highLevelOfRequirementTooltip"),
+    description: t("philosophy.highLevelOfRequirementDescription"),
     icon: "i-ph-target",
     text: t("philosophy.highLevelOfRequirement"),
   },
   {
-    tooltip: t("philosophy.healthyRelationshipsTooltip"),
+    description: t("philosophy.healthyRelationshipsDescription"),
     icon: "i-heroicons-heart",
     text: t("philosophy.healthyRelationships"),
   },
   {
-    tooltip: t("philosophy.teamSpiritTooltip"),
+    description: t("philosophy.teamSpiritDescription"),
     icon: "i-heroicons-users",
     text: t("philosophy.teamSpirit"),
   },
   {
-    tooltip: t("philosophy.activeCommunicationTooltip"),
+    description: t("philosophy.activeCommunicationDescription"),
     icon: "i-heroicons-chat-bubble-left-right",
     text: t("philosophy.activeCommunication"),
   },
@@ -117,12 +113,8 @@ const values = computed(() => [
           {{ $t("base.name") }} - {{ $t("base.title") }}
         </h1>
         <p>{{ $t("base.intro", years) }}</p>
-        <div class="flex items-center gap-1 text-xs">
-          <UIcon name="i-heroicons-map-pin" class="size-4 shrink-0" />
-          <span>{{ $t("base.position") }}</span>
-        </div>
         <div class="flex gap-1.5 print:hidden">
-          <UTooltip v-for="l of links" :key="l.link" :text="l.tooltip">
+          <UTooltip v-for="l of links" :key="l.link" :text="l.description">
             <UButton
               :icon="l.icon"
               color="gray"
@@ -155,7 +147,7 @@ const values = computed(() => [
 
     <!-- PHILOSOPHY -->
     <section
-      class="flex gap-4 *:flex-initial *:basis-1/3 [&>div>h2]:text-xl [&>div>h2]:font-bold [&>div>h2]:mb-2 [&>div>div]:flex [&>div>div]:flex-wrap [&>div>div]:gap-2"
+      class="flex gap-4 *:flex-initial *:basis-1/3 [&>div>h2]:text-xl [&>div>h2]:font-bold [&>div>h2]:mb-2 [&>div>div]:flex [&>div>div]:print:hidden [&>div>div]:flex-wrap [&>div>div]:gap-2 [&>div>ul]:hidden [&>div>ul]:print:block [&>div>ul]:list-disc [&>div>ul]:ml-4 [&>div>ul]:text-sm"
     >
       <!-- MAIN TOOLS -->
       <div>
@@ -173,12 +165,18 @@ const values = computed(() => [
             <span>{{ t.text }}</span>
           </UBadge>
         </div>
+        <ul>
+          <li v-for="t of tools" :key="t.text">
+            <UIcon :name="t.icon" class="mr-1 size-3 shrink-0"></UIcon>
+            <span>{{ t.text }}</span>
+          </li>
+        </ul>
       </div>
       <!-- ROLES -->
       <div>
         <h2>{{ $t("philosophy.roles") }}</h2>
         <div>
-          <UTooltip v-for="r of roles" :key="r.text" :text="r.tooltip">
+          <UTooltip v-for="r of roles" :key="r.text" :text="r.description">
             <UBadge
               color="gray"
               variant="solid"
@@ -190,12 +188,18 @@ const values = computed(() => [
             </UBadge>
           </UTooltip>
         </div>
+        <ul>
+          <li v-for="r of roles" :key="r.text">
+            <UIcon :name="r.icon" class="mr-1 size-3 shrink-0"></UIcon>
+            <span>{{ r.text }}：{{ r.description }}</span>
+          </li>
+        </ul>
       </div>
       <!-- VALUES -->
       <div>
         <h2>{{ $t("philosophy.values") }}</h2>
         <div>
-          <UTooltip v-for="v of values" :key="v.text" :text="v.tooltip">
+          <UTooltip v-for="v of values" :key="v.text" :text="v.description">
             <UBadge
               color="gray"
               variant="solid"
@@ -207,12 +211,18 @@ const values = computed(() => [
             </UBadge>
           </UTooltip>
         </div>
+        <ul>
+          <li v-for="v of values" :key="v.text">
+            <UIcon :name="v.icon" class="mr-1 size-3"></UIcon>
+            <span>{{ v.text }}：{{ v.description }}</span>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- WORK EXPERIENCE -->
     <section
-      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>a]:size-8 [&>section>a]:shrink-0 [&>section>a]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>a]:text-lg [&>section>div:nth-of-type(1)>a]:font-medium [&>section>div:nth-of-type(1)>a]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ul]:list-disc [&>section>div:nth-of-type(1)>ul]:ml-4 [&>section>div:nth-of-type(1)>ul>li:last-of-type]:hidden [&>section>div:nth-of-type(1)>ul>li:last-of-type]:print:list-item [&>section>div:nth-of-type(1)>ul]:text-gray-600 dark:[&>section>div>ul]:text-gray-400 [&>section>div:nth-of-type(2)]:print:hidden [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-16 md:[&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
+      class="[&>section]:my-2 [&>section]:flex [&>section]:gap-4 [&>section>a]:size-8 [&>section>a]:shrink-0 [&>section>a]:basis-8 [&>section>div:nth-of-type(1)]:text-sm [&>section>div:nth-of-type(1)]:flex-auto [&>section>div:nth-of-type(1)>a]:text-lg [&>section>div:nth-of-type(1)>a]:font-medium [&>section>div:nth-of-type(1)>a]:text-left [&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-600 dark:[&>section>div:nth-of-type(1)>p:nth-of-type(2)]:text-gray-400 [&>section>div:nth-of-type(1)>ol]:list-decimal [&>section>div:nth-of-type(1)>ol]:ml-4 [&>section>div:nth-of-type(1)>ol>li>ul]:list-disc [&>section>div:nth-of-type(1)>ol>li>ul]:ml-4 [&>section>div:nth-of-type(1)>ol>li:last-of-type]:hidden [&>section>div:nth-of-type(1)>ol>li:last-of-type]:print:list-item [&>section>div:nth-of-type(1)>ol]:text-gray-600 dark:[&>section>div>ol]:text-gray-400 [&>section>div:nth-of-type(2)]:print:hidden [&>section>div:nth-of-type(2)]:flex [&>section>div:nth-of-type(2)]:flex-wrap [&>section>div:nth-of-type(2)]:gap-2 [&>section>div:nth-of-type(2)]:shrink-0 [&>section>div:nth-of-type(2)]:basis-16 md:[&>section>div:nth-of-type(2)]:basis-24 [&>section>div:nth-of-type(2)]:content-start [&>section>div:nth-of-type(2)>*]:size-4"
     >
       <h2 class="text-xl font-bold">{{ $t("workExperience.title") }}</h2>
       <section>
@@ -226,32 +236,77 @@ const values = computed(() => [
           <template v-if="locale === 'zh-CN'">
             <p>前端负责人</p>
             <p>2021-07 至今</p>
-            <ul>
+            <ol>
               <li>
-                负责团队沟通和协作、需求沟通与分析、任务拆解和安排、前端架构设计、前端组件抽象扩展、业务重难点攻坚等。
+                团队领导与项目管理
+                <ul>
+                  <li>
+                    领导并管理一支 5
+                    人技术团队，负责跨平台教育项目的开发和维护，包括网页、桌面应用、移动应用、小程序等。
+                  </li>
+                  <li>
+                    通过需求沟通与分析、任务拆解和安排，确保项目按时交付且满足客户的信息化需求。
+                  </li>
+                </ul>
               </li>
               <li>
-                管理 5
-                人小团队，深度参与多个教育类项目，既有从头设计与实现部分项目的技术方案，也有基于低代码平台框架实现部分项目，包括网页、桌面应用、移动应用、小程序等，满足高校和教研院等对于信息化、研修、教研、校内宣传、学生管理、课程管理等实际需求。
+                技术方案与架构设计
+                <ul>
+                  <li>
+                    负责前端架构设计和优化，确保系统的可扩展性和可维护性。
+                  </li>
+                  <li>
+                    设计并实施技术方案，包括从零开始构建和基于低代码平台的快速开发。
+                  </li>
+                </ul>
               </li>
               <li>
-                主导升级历史项目，优化项目架构，确立研发与文档规范、引入单元测试、引入
-                CI/CD、引入监控等，优化项目编译和启动时间约
-                21%，优化项目构建产物体积约 18%，优化云服务器实例流出流量约
-                19%。
+                技术攻坚与创新
+                <ul>
+                  <li>
+                    引入约定大于配置的设计范式、服务端状态管理思想、JSON Schema
+                    表单和表格等，提升开发体验。
+                  </li>
+                  <li>
+                    针对业务重难点（请求和状态混乱、模块耦合严重、页面加载缓慢等）进行技术攻坚，提升项目性能和用户体验。
+                  </li>
+                </ul>
               </li>
               <li>
-                涉及技术栈：JavaScript、TypeScript、React、Ant Design、Material
-                UI、Taro、Solid、Vue、Element Plus、Naive
-                UI、uni-app、uni-helper、TailwindCSS、UnoCSS、Electron、Rollup、Vite、Vitest、Koa、Nest、Hono、Azure
-                DevOps、GitHub 等。
+                项目优化与流程改进
+                <ul>
+                  <li>主导历史项目的升级，优化架构，提升系统性能。</li>
+                  <li>
+                    实施研发流程改进，包括引入单元测试、CI/CD、监控等，显著提升项目性能和团队效率。
+                  </li>
+                  <li>
+                    优化项目编译和启动时间约 21%，优化项目构建产物体积约
+                    18%，优化云服务器实例流出流量约 19%。
+                  </li>
+                </ul>
               </li>
-            </ul>
+              <li>
+                涉及技术栈
+                <ul>
+                  <li>JavaScript、TypeScript、CSS、SCSS 等基本技术</li>
+                  <li>React、Ant Design、Material UI、Taro 等 React 生态</li>
+                  <li>
+                    Vue、Element Plus、Naive UI、uni-app、uni-helper 等 Vue 生态
+                  </li>
+                  <li>TailwindCSS、UnoCSS 等原子化 CSS 生态</li>
+                  <li>
+                    Electron、Rollup、Vite、Vitest、Azure DevOps、GitHub
+                    等前端工程化工具
+                  </li>
+                  <li>Koa、Nest、Hono 等 Node.js 后端生态</li>
+                </ul>
+              </li>
+            </ol>
           </template>
           <template v-else>
             <p>Front-end Lead</p>
             <p>07/2021 - present</p>
-            <ul>
+            <ol>
               <li>
                 I am responsible for team communication and collaboration,
                 requirement communication and analysis, task disassembly and
@@ -284,7 +339,7 @@ const values = computed(() => [
                 uni-app, uni-helper, TailwindCSS, UnoCSS, Electron, Rollup,
                 Vite, Vitest, Koa, Nest, Hono, Azure DevOps, GitHub, etc.
               </li>
-            </ul>
+            </ol>
           </template>
         </div>
         <div>
@@ -370,23 +425,40 @@ const values = computed(() => [
           <template v-if="locale === 'zh-CN'">
             <p>全栈工程师</p>
             <p>2021-05 ~ 2021-07</p>
-            <ul>
-              <li>参与到内部外贸管理系统研发，包括验货、PDF预览等功能研发。</li>
+            <ol>
               <li>
-                调研现有 Express.js 后端服务迁移到 Serverless Framework 和 AWS
-                的可行性并设计方案。
+                系统功能开发
+                <ul>
+                  <li>
+                    实施内部 ERP 系统验货流程记录和 PDF
+                    文件在线预览功能，提升了业务处理的效率和用户体验。
+                  </li>
+                </ul>
               </li>
               <li>
-                涉及技术栈：JavaScript、TypeScript、React、Next、Ant
-                Design、TailwindCSS、Webpack、Vite、Express、Serverless
-                Framework、GitHub 等。
+                技术架构迁移与升级
+                <ul>
+                  负责调研将传统 Express 后端服务迁移到 Serverless Framework
+                  的可行性及方案，预期利用 AWS
+                  无服务器计算服务，实现系统高可用性和伸缩性并降低运维成本。
+                </ul>
               </li>
-            </ul>
+              <li>
+                涉及技术栈
+                <ul>
+                  <li>JavaScript、TypeScript、CSS 等基本技术</li>
+                  <li>React、Next、Ant Design 等 React 生态</li>
+                  <li>TailwindCSS 等原子化 CSS 生态</li>
+                  <li>Webpack、Vite、GitHub 等前端工程化工具</li>
+                  <li>Express、Serverless Framework 等 Node.js 后端生态</li>
+                </ul>
+              </li>
+            </ol>
           </template>
           <template v-else>
             <p>Fullstack Engineer</p>
             <p>05/2021 - 07/2021</p>
-            <ul>
+            <ol>
               <li>
                 I was involved in the development of an internal foreign trade
                 management system, including the development of features such as
@@ -402,7 +474,7 @@ const values = computed(() => [
                 Ant Design, TailwindCSS, Webpack, Vite, Express, Serverless
                 Framework, GitHub, etc.
               </li>
-            </ul>
+            </ol>
           </template>
         </div>
         <div>
@@ -452,30 +524,50 @@ const values = computed(() => [
           <template v-if="locale === 'zh-CN'">
             <p>前端工程师</p>
             <p>2019-06 ~ 2021-04</p>
-            <ul>
-              <li>接手旧项目并加以改进，规范化技术栈、兼容性适配等方面。</li>
+            <ol>
               <li>
-                深度参与餐饮类项目，从头设计并实现相关的网站、小程序和移动端应用的技术方案，用于后台管理客户、菜单和订单，用户下单、支付、取餐等。每天有
-                5000 或以上用户使用小程序和移动端应用，每月金额流水达到 1000
-                万元。
+                旧项目接管与优化
+                <ul>
+                  成功接管并重构了遗留项目，统一技术栈，确保了跨平台兼容性和代码的可维护性。
+                </ul>
               </li>
               <li>
-                深度参与教育类项目，从头设计并实现类百度网盘的共享文件库的技术方案，为高校、企业等在线教育需求提供使用平台。平台目前托管了
-                100 多门课程，被访问 100 多万次。
+                连锁餐饮企业解决方案
+                <ul>
+                  <li>
+                    主导设计并实施了一套针对某连锁餐饮企业的技术解决方案，包括网站、小程序和移动应用，以支持后台管理、客户订单处理和用户交互。
+                  </li>
+                  <li>
+                    每天有5000+用户使用小程序和移动应用，每月金额流水达到1000万元。
+                  </li>
+                </ul>
               </li>
-              <li>协助评估招聘新的开发人员。</li>
               <li>
-                涉及技术栈：JavaScript、TypeScript、React、Ant Design、Material
-                UI、Taro、Vue、Element UI、Naive
-                UI、uni-app、TailwindCSS、Electron、Webpack、Express、Azure
-                DevOps、GitHub 等。
+                在线教育平台
+                <ul>
+                  <li>
+                    从零开始设计并开发了一个类百度网盘的在线教育文件共享平台，服务于高校和企业，托管超过100门课程，月访问量超过100万次。
+                  </li>
+                </ul>
               </li>
-            </ul>
+              <li>
+                涉及技术栈
+                <ul>
+                  <li>JavaScript、TypeScript、CSS、SCSS 等基本技术</li>
+                  <li>React、Ant Design、Material UI、Taro 等 React 生态</li>
+                  <li>Vue、Element UI、uni-app、uni-helper 等 Vue 生态</li>
+                  <li>TailwindCSS、UnoCSS 等原子化 CSS 生态</li>
+                  <li>
+                    Electron、Webpack、Azure DevOps、GitHub 等前端工程化工具
+                  </li>
+                </ul>
+              </li>
+            </ol>
           </template>
           <template v-else>
             <p>Front-end Engineer</p>
             <p>06/2019 - 04/2021</p>
-            <ul>
+            <ol>
               <li>
                 I take over old projects and improve them, normalizing the tech
                 stack, compatibility adaptations, and other aspects.
@@ -497,14 +589,13 @@ const values = computed(() => [
                 platform currently hosts over 100 courses and has been visited
                 over 1 million times.
               </li>
-              <li>I help evaluate hiring new developers.</li>
               <li>
                 Technology stack involved: JavaScript, TypeScript, React, Ant
                 Design, Material UI, Taro, Vue, Element UI, Naive UI, uni-app,
                 TailwindCSS, Electron, Webpack, Express, Azure DevOps, GitHub,
                 etc.
               </li>
-            </ul>
+            </ol>
           </template>
         </div>
         <div>
@@ -529,11 +620,11 @@ const values = computed(() => [
           <UTooltip text="Element UI">
             <UIcon name="i-logos-element" />
           </UTooltip>
-          <UTooltip text="WePY">
-            <UIcon name="i-custom-wepy" />
-          </UTooltip>
           <UTooltip text="uni-app">
             <UIcon name="i-custom-uni-app" />
+          </UTooltip>
+          <UTooltip text="uni-helper">
+            <UIcon name="i-custom-uni-helper" />
           </UTooltip>
           <UTooltip text="TailwindCSS">
             <UIcon name="i-logos-tailwindcss-icon" />
@@ -543,9 +634,6 @@ const values = computed(() => [
           </UTooltip>
           <UTooltip text="Webpack">
             <UIcon name="i-logos-webpack" />
-          </UTooltip>
-          <UTooltip text="Express.js">
-            <UIcon name="i-logos-express" />
           </UTooltip>
           <UTooltip text="Azure DevOps">
             <UIcon name="i-devicon-azuredevops" />
