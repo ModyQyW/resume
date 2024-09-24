@@ -547,9 +547,9 @@ const values = computed(() => [
                 在线教育平台
                 <ul>
                   <li>
-                    从零开始设计并开发了一个类百度网盘的在线教育文件共享平台，服务于高校和企业，托管超过
-                    100 门课程，访问量超过 100 万次。
+                    从零开始设计并开发了一个类百度网盘的在线教育文件共享平台，服务于高校和企业。
                   </li>
+                  <li>平台托管超过 100 门课程，访问量超过 100 万次。</li>
                 </ul>
               </li>
               <li>
@@ -658,8 +658,10 @@ const values = computed(() => [
         <template v-if="locale === 'zh-CN'">
           <p>2022-02 至今</p>
           <p>
-            Vite ESLint 插件。该插件周下载量达 10k，支撑了上千个项目，被 Nuxt
-            官方模块（<ULink to="https://eslint.nuxt.com/" target="_blank"
+            Vite ESLint 插件，允许 ESLint 校验代码质量。该插件周下载量达
+            10k，支撑了上千个项目，被 Nuxt 官方模块（<ULink
+              to="https://eslint.nuxt.com/"
+              target="_blank"
               >@nuxt/eslint</ULink
             >）内置。
           </p>
@@ -685,8 +687,8 @@ const values = computed(() => [
         <template v-if="locale === 'zh-CN'">
           <p>2021-08 至今</p>
           <p>
-            Vite Stylelint 插件。该插件周下载量达 36k，支撑了上千个项目，被 Nuxt
-            官方模块（<ULink
+            Vite Stylelint 插件，允许 Stylelint 校验代码质量。该插件周下载量达
+            36k，支撑了上千个项目，被 Nuxt 官方模块（<ULink
               to="https://github.com/nuxt-modules/stylelint"
               target="_blank"
               >@nuxtjs/stylelint-module</ULink
@@ -735,7 +737,9 @@ const values = computed(() => [
         </ULink>
         <template v-if="locale === 'zh-CN'">
           <p>2022-04 至今</p>
-          <p>开箱即用的 TailwindCSS v3 扩展，方便与组件库结合使用。</p>
+          <p>
+            开箱即用的 TailwindCSS v3 扩展，方便与组件库结合使用，提升开发效率。
+          </p>
         </template>
         <template v-else>
           <p>04/2022 - present</p>
