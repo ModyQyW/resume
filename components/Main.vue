@@ -538,7 +538,8 @@ const values = computed(() => [
                     主导设计并实施了一套针对某连锁餐饮企业的技术解决方案，包括网站、小程序和移动应用，以支持后台管理、客户订单处理和用户交互。
                   </li>
                   <li>
-                    每天有5000+用户使用小程序和移动应用，每月金额流水达到1000万元。
+                    每天有 5000+ 用户使用小程序和移动应用，每月金额流水达到 1000
+                    万元。
                   </li>
                 </ul>
               </li>
@@ -546,7 +547,8 @@ const values = computed(() => [
                 在线教育平台
                 <ul>
                   <li>
-                    从零开始设计并开发了一个类百度网盘的在线教育文件共享平台，服务于高校和企业，托管超过100门课程，月访问量超过100万次。
+                    从零开始设计并开发了一个类百度网盘的在线教育文件共享平台，服务于高校和企业，托管超过
+                    100 门课程，访问量超过 100 万次。
                   </li>
                 </ul>
               </li>
@@ -591,9 +593,8 @@ const values = computed(() => [
               </li>
               <li>
                 Technology stack involved: JavaScript, TypeScript, React, Ant
-                Design, Material UI, Taro, Vue, Element UI, Naive UI, uni-app,
-                TailwindCSS, Electron, Webpack, Express, Azure DevOps, GitHub,
-                etc.
+                Design, Material UI, Taro, Vue, Element UI, uni-app,
+                TailwindCSS, Electron, Webpack, Azure DevOps, GitHub, etc.
               </li>
             </ol>
           </template>
