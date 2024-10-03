@@ -324,36 +324,126 @@ const values = computed(() => [
             <p>07/2021 - present</p>
             <ol>
               <li>
-                I am responsible for team communication and collaboration,
-                requirement communication and analysis, task disassembly and
-                scheduling, front-end architecture design, front-end component
-                abstraction and extension, and business critical point
-                overcoming.
+                Team Leadership and Project Management
+                <ul>
+                  <li>
+                    Lead and manage a 5-member technical team responsible for
+                    the development and maintenance of cross-platform education
+                    projects, including web pages, desktop applications, mobile
+                    applications, and mini-programs.
+                  </li>
+                  <li>
+                    Ensure projects are delivered on time and meet client's IT
+                    needs through requirements communication and analysis, task
+                    disassembly and scheduling.
+                  </li>
+                </ul>
               </li>
               <li>
-                I managed a small team of 5 people, and have been deeply
-                involved in many education projects, including designing and
-                implementing some projects from scratch, as well as implementing
-                some projects based on low-code platform frameworks, including
-                web pages, desktop apps, mobile apps, applets, etc., to meet the
-                practical needs of colleges and universities for
-                informatization, training, teaching and research, on-campus
-                publicity, student management, and course management.
+                Technical program and architecture design
+                <ul>
+                  <li>
+                    Responsible for front-end architecture design and
+                    optimization to ensure system scalability and
+                    maintainability.
+                  </li>
+                  <li>
+                    Design and implement technical solutions, including building
+                    from scratch and rapid development based on low-code
+                    platforms.
+                  </li>
+                </ul>
               </li>
               <li>
-                I took the lead in upgrading historical projects, optimizing
-                project architecture, establishing R&D and documentation
-                specifications, introducing unit testing, CI/CD, monitoring,
-                etc., which optimized the project compilation and startup time
-                by about 21%, the volume of the project build product by about
-                18%, and the outgoing traffic of the cloud server instance by
-                about 19%.
+                Technical Tackling and Innovation
+                <ul>
+                  <li>
+                    Introduce the design paradigm of convention over
+                    configuration, server-side state management ideas, JSON
+                    Schema forms and tables, etc., to enhance the development
+                    experience.
+                  </li>
+                  <li>
+                    Technical attacks on business difficulties (confusing
+                    requests and states, serious module coupling, slow page
+                    loading, etc.) to improve project performance and user
+                    experience.
+                  </li>
+                </ul>
               </li>
               <li>
-                Technology stack involved: JavaScript, TypeScript, React, Ant
-                Design, Material UI, Taro, Solid, Vue, Element Plus, Naive UI,
-                uni-app, uni-helper, TailwindCSS, UnoCSS, Electron, Rollup,
-                Vite, Vitest, Koa, Nest, Hono, Azure DevOps, GitHub, etc.
+                Project optimization and process improvement
+                <ul>
+                  <li>
+                    Lead the upgrade of historical projects, optimize
+                    architecture, and improve system performance.
+                  </li>
+                  <li>
+                    Implemented R&D process improvements, including the
+                    introduction of unit testing, CI/CD, monitoring, etc. to
+                    significantly improve project performance and team
+                    efficiency.
+                  </li>
+                  <li>
+                    Optimized project compilation and startup time by about 21%,
+                    optimized project build product volume by about 18%, and
+                    optimized cloud server instance outflow traffic by about
+                    19%.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Guangdong Teaching Research Digital Intelligence Platform
+                Development
+                <ul>
+                  <li>
+                    Based on the JVS enterprise informatization base, we
+                    constructed a digital platform for education and teaching
+                    research that supports high-level teaching and research
+                    activities, teaching and research teams, and curriculum
+                    teaching through low-code, no-code, and full-code
+                    development methods.
+                  </li>
+                  <li>
+                    Secondary development for JVS front-end code, introduction
+                    of front-end engineering, refactoring of part of the code,
+                    expansion of low-code functions, and optimization of
+                    interactive experience.
+                  </li>
+                  <li>
+                    The platform is oriented to the whole province, docking with
+                    multiple online systems to promote the digitalization,
+                    intelligence and informatization of education teaching
+                    research.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Technology Stack Involved
+                <ul>
+                  <li>
+                    JavaScript, TypeScript, CSS, SCSS and other basic
+                    technologies.
+                  </li>
+                  <li>
+                    React, Ant Design, Material UI, Taro and other React
+                    ecosystems.
+                  </li>
+                  <li>
+                    Vue, Element Plus, Naive UI, uni-app, uni-helper and other
+                    Vue ecosystems.
+                  </li>
+                  <li>
+                    Atomized CSS ecosystems such as TailwindCSS, UnoCSS, etc.
+                  </li>
+                  <li>
+                    Front-end engineering tools such as Electron, Rollup, Vite,
+                    Vitest, Azure DevOps, GitHub, etc.
+                  </li>
+                  <li>
+                    Node.js backend ecosystems such as Koa, Nest, Hono, etc.
+                  </li>
+                </ul>
               </li>
             </ol>
           </template>
@@ -476,19 +566,45 @@ const values = computed(() => [
             <p>05/2021 - 07/2021</p>
             <ol>
               <li>
-                I was involved in the development of an internal foreign trade
-                management system, including the development of features such as
-                goods inspection and PDF preview.
+                System functionality development
+                <ul>
+                  <li>
+                    Implemented the internal ERP system to record the inspection
+                    process and the online preview function of PDF files, which
+                    enhanced the efficiency of business processing and user
+                    experience.
+                  </li>
+                </ul>
               </li>
               <li>
-                I investigated the feasibility of migrating existing Express.js
-                backend services to Serverless Framework and AWS and designed
-                the solution.
+                Technical Architecture Migration and Upgrade
+                <ul>
+                  <li>
+                    Responsible for investigating the feasibility of migrating
+                    traditional Express back-end services to Serverless
+                    Framework, and expected to utilize AWS serverless computing
+                    services to achieve high availability and scalability of the
+                    system and reduce operation and maintenance costs.
+                  </li>
+                </ul>
               </li>
               <li>
-                Technology stack involved: JavaScript, TypeScript, React, Next,
-                Ant Design, TailwindCSS, Webpack, Vite, Express, Serverless
-                Framework, GitHub, etc.
+                Technology Stack Involved
+                <ul>
+                  <li>
+                    JavaScript, TypeScript, CSS and other basic technologies.
+                  </li>
+                  <li>React ecosystem such as React, Next, Ant Design, etc.</li>
+                  <li>TailwindCSS and other atomized CSS ecosystems.</li>
+                  <li>
+                    Front-end engineering tools such as Webpack, Vite, GitHub,
+                    etc.
+                  </li>
+                  <li>
+                    Node.js backend ecosystems such as Express, Serverless
+                    Framework, etc.
+                  </li>
+                </ul>
               </li>
             </ol>
           </template>
@@ -592,30 +708,74 @@ const values = computed(() => [
             <p>06/2019 - 04/2021</p>
             <ol>
               <li>
-                I take over old projects and improve them, normalizing the tech
-                stack, compatibility adaptations, and other aspects.
+                Legacy project takeover and optimization
+                <ul>
+                  <li>
+                    Successfully took over and refactored the legacy project,
+                    unified the technology stack, and ensured cross-platform
+                    compatibility and code maintainability.
+                  </li>
+                </ul>
               </li>
               <li>
-                I was deeply involved in a restaurant project, designing and
-                implementing from scratch the technical solution for the related
-                website, mini programs and mobile apps for management of
-                customers, menus and orders, as well as for users to place, pay
-                and pick up orders. Every day, 5000 or more users use the app
-                and mobile application, and the monthly amount of money flow
-                reaches 10 million RMB.
+                Technology solution for restaurant chain (Ducheng Fast Food)
+                <ul>
+                  <li>
+                    Led the design and implementation of a set of technology
+                    solutions for restaurant chain Capitol Express, including
+                    website, applets and mobile apps, to support the backend
+                    management and data display of clients, customers, outlets,
+                    employees and orders.
+                  </li>
+                  <li>
+                    The project is running stably, with more than 5,000 users
+                    using the applets and mobile applications every day, and the
+                    monthly amount of water flow has reached RMB 10 million,
+                    effectively promoting digital transformation.
+                  </li>
+                </ul>
               </li>
               <li>
-                I am deeply involved in education projects, designing and
-                realizing the technical solution of Baidu.com-like shared file
-                library from scratch, providing a platform for colleges,
-                universities, enterprises and other online education needs. The
-                platform currently hosts over 100 courses and has been visited
-                over 1 million times.
+                Online Education Resource Library (MTU Interactive Learning
+                Platform Teaching Resource Library)
+                <ul>
+                  <li>
+                    Leading the design and development of a Baidu.com-like
+                    online education resource library (MTU Interactive Learning
+                    Platform Teaching Resource Library) from scratch, realizing
+                    online production and management of teaching resources,
+                    information dissemination, teaching exchanges, and resource
+                    sharing.
+                  </li>
+                  <li>
+                    The project is running stably, with more than 100 courses
+                    hosted on the platform and more than 1 million visits.
+                  </li>
+                </ul>
               </li>
               <li>
-                Technology stack involved: JavaScript, TypeScript, React, Ant
-                Design, Material UI, Taro, Vue, Element UI, uni-app,
-                TailwindCSS, Electron, Webpack, Azure DevOps, GitHub, etc.
+                Technology Stacks Involved
+                <ul>
+                  <li>
+                    JavaScript, TypeScript, CSS, SCSS and other basic
+                    technologies.
+                  </li>
+                  <li>
+                    React, Ant Design, Material UI, Taro and other React
+                    ecosystems.
+                  </li>
+                  <li>
+                    Vue, Element UI, uni-app, uni-helper and other Vue
+                    ecosystems.
+                  </li>
+                  <li>
+                    Atomized CSS ecosystems such as TailwindCSS, UnoCSS, etc.
+                  </li>
+                  <li>
+                    Front-end engineering tools such as Electron, Webpack, Azure
+                    DevOps, GitHub, and so on.
+                  </li>
+                </ul>
               </li>
             </ol>
           </template>
