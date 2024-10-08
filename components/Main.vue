@@ -544,9 +544,11 @@ const values = computed(() => [
               <li>
                 技术架构迁移与升级
                 <ul>
-                  负责调研将传统 Express 后端服务迁移到 Serverless Framework
-                  的可行性及方案，预期利用 AWS
-                  无服务器计算服务，实现系统高可用性和伸缩性并降低运维成本。
+                  <li>
+                    负责调研将传统 Express 后端服务迁移到 Serverless Framework
+                    的可行性及方案，预期利用 AWS
+                    无服务器计算服务，实现系统高可用性和伸缩性并降低运维成本。
+                  </li>
                 </ul>
               </li>
               <li>
