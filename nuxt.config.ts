@@ -8,21 +8,24 @@ export default defineNuxtConfig({
     classSuffix: "",
   },
 
-  css: ["./assets/css/html.css"],
+  css: ["./app/assets/css/html.css"],
 
   i18n: {
     locales: ["zh-CN", "en-US"],
     defaultLocale: "zh-CN",
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
   },
 
   icon: {
     customCollections: [
       {
         prefix: "custom",
-        dir: "./assets/icons",
+        dir: "./app/assets/icons",
       },
     ],
   },
 
-  compatibilityDate: "2024-08-26",
+  compatibilityDate: "2025-07-01",
 });

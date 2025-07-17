@@ -136,7 +136,7 @@ const values = computed(() => [
           <span>{{ l.text || l.link }}</span>
         </div>
       </div>
-      <div class="size-16 flex-none size-24 print:size-24">
+      <div class="flex-none size-24 print:size-24">
         <NuxtImg
           src="/wurui.jpg"
           alt="Rui Wu"
