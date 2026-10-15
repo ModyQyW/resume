@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="/favicon.ico" rel="icon">
+    <title>吴睿 - 前端工程师</title>
+    <!-- Static defaults so the page is describable before React mounts; the
+         locale switch rewrites these along with the document title. -->
+    <meta
+      content="吴睿，前端工程师，7 年前端经验，熟悉 React 和 Vue 相关技术栈，具备项目管理和完整项目上线经验。"
+      name="description"
+    >
+    <meta content="Rui Wu" name="author">
+    <meta content="profile" property="og:type">
+    <meta content="吴睿 - 前端工程师" property="og:title">
+    <meta
+      content="吴睿，前端工程师，7 年前端经验，熟悉 React 和 Vue 相关技术栈，具备项目管理和完整项目上线经验。"
+      property="og:description"
+    >
+    <script>
+    "use strict";
+    // Applied before paint so a dark-mode visitor never sees a white flash.
+    // Mirrors the storage key and the three-way preference used by lib/theme.ts.
+    (() => {
+      try {
+        const preference = localStorage.getItem("theme") || "system";
+        const dark =
+          preference === "dark" ||
+          (preference === "system" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.classList.toggle("dark", dark);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      } catch {
+        /* localStorage blocked: fall back to the light theme. */
+      }
+    })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/src/main.tsx" type="module"></script>
+  </body>
+</html>

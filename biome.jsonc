@@ -1,0 +1,63 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "extends": [
+    "ultracite/biome/core",
+    "ultracite/biome/type-aware",
+    "ultracite/biome/react"
+  ],
+  "javascript": {
+    "formatter": {
+      "trailingCommas": "all"
+    }
+  },
+  "overrides": [
+    {
+      // unplugin-icons generates virtual modules (prefixed ~icons/) at build
+      // time; biome's static resolver cannot find them, so noUnresolvedImports
+      // fires as a false positive on every icon import. React 19 also
+      // restructured its type definitions in a way that confuses biome's
+      // module resolver for named exports like StrictMode.
+      "includes": ["src/lib/icons.ts", "src/vite-env.d.ts", "src/main.tsx"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnresolvedImports": "off"
+          }
+        }
+      }
+    },
+    {
+      // icons.ts is a deliberate aggregation module: it imports the virtual
+      // icon components and re-exports the subset the UI needs directly,
+      // so callers have a single import source. noExportedImports would require
+      // re-declaring every forwarded symbol rather than forwarding them.
+      "includes": ["src/lib/icons.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noExportedImports": "off"
+          }
+        }
+      }
+    },
+    {
+      // public/ SVGs are used as <img> sources — accessibility is via the
+      // alt attribute on the element, not a <title> inside the file.
+      // src/assets/icons/ SVGs are build-time inputs processed by SVGR into
+      // React components; the component caller sets aria-hidden.
+      "includes": ["public/**/*.svg", "src/assets/**/*.svg"],
+      "linter": {
+        "rules": {
+          "a11y": {
+            "noSvgWithoutTitle": "off"
+          }
+        }
+      }
+    }
+  ]
+}

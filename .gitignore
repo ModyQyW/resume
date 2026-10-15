@@ -1,13 +1,11 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
+# Build output
 dist
 
 # Node dependencies
 node_modules
+
+# TypeScript incremental build state
+*.tsbuildinfo
 
 # Logs
 logs
