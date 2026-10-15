@@ -6,7 +6,33 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    cssCodeSplit: false,
+    // Split vendor chunks for better browser caching: react/react-dom and
+    // @heroui/@react-aria/@react-stately change far less often than app code.
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name(id: string) {
+                if (
+                  id.includes("node_modules/react-dom") ||
+                  id.includes("node_modules/react/")
+                ) {
+                  return "react";
+                }
+                if (
+                  id.includes("node_modules/@heroui") ||
+                  id.includes("node_modules/@react-aria") ||
+                  id.includes("node_modules/@react-stately")
+                ) {
+                  return "heroui";
+                }
+              },
+            },
+          ],
+        },
+      },
+    },
   },
   plugins: [
     react(),
