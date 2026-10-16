@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc -b && vite build",
+    "build": "node scripts/print-pages.mjs --write && tsc -b && vite build",
     "check": "ultracite check",
+    "check:print": "node scripts/print-pages.mjs",
     "dev": "vite",
     "fix": "ultracite fix",
     "preview": "vite preview",

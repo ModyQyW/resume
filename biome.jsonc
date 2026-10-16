@@ -46,6 +46,19 @@
       }
     },
     {
+      // @playwright/test is a devDependency pnpm keeps inside .pnpm/, so
+      // biome's static resolver cannot see its named exports (chromium).
+      // The imports run correctly; only the resolver is confused.
+      "includes": ["scripts/**"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnresolvedImports": "off"
+          }
+        }
+      }
+    },
+    {
       // public/ SVGs are used as <img> sources — accessibility is via the
       // alt attribute on the element, not a <title> inside the file.
       // src/assets/icons/ SVGs are build-time inputs processed by SVGR into
