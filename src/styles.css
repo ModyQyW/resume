@@ -178,6 +178,14 @@ body {
     break-inside: avoid;
   }
 
+  /* A job entry is often taller than one sheet's remaining space (the first
+     role alone runs past 600px). The entry is left free to split, and only its
+     company line is pinned to what follows, so a heading cannot be stranded at
+     the foot of a sheet while the rest of the role moves on. */
+  .print-keep-with-next {
+    break-after: avoid;
+  }
+
   /* Chips carry a tinted fill on screen (and a dark one in dark mode). On
      paper that fill is a waste of toner and in dark mode it is a solid black
      blob, so the label is printed as plain outlined text instead. */

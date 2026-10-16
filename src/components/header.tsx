@@ -1,7 +1,8 @@
-import { Button, Dropdown, Label } from "@heroui/react";
+import { Button, buttonVariants, Dropdown, Label, Link } from "@heroui/react";
 import { useCallback } from "react";
 import { type Locale, locales, type Resume } from "../content";
 import {
+  IconHeroiconsArrowDownTray,
   IconHeroiconsArrowTopRightOnSquare,
   IconHeroiconsComputerDesktop,
   IconHeroiconsLanguage,
@@ -22,9 +23,9 @@ interface HeaderProps {
 }
 
 /**
- * The two preferences a visitor might change (language, theme), plus print and
- * a link to the source. Kept to a thin bar so it never competes with the
- * resume, and removed entirely on paper.
+ * The two preferences a visitor might change (language, theme), plus the PDF
+ * action and a link to the source. Kept to a thin bar so it never competes
+ * with the resume, and removed entirely on paper.
  */
 export function Header({
   locale,
@@ -90,6 +91,14 @@ export function Header({
   const handlePrint = useCallback(() => {
     window.print();
   }, []);
+
+  // Dev prints from the live page, so a copy tweak is visible in the PDF
+  // immediately. Production links to the PDF `pnpm build:pdf` generated from
+  // this same page, because a visitor's browser cannot render one on demand.
+  const pdfHref = `${import.meta.env.BASE_URL}resume-${locale}.pdf`;
+  // The saved file is named the way a reader would: whose resume it is and
+  // which language edition, not the internal locale code.
+  const pdfFileName = `${name} - ${locales.find((item) => item.value === locale)?.label ?? locale}.pdf`;
 
   return (
     <header className="print-hidden sticky top-0 z-40 border-(--rule) border-b bg-(--page)/85 backdrop-blur-sm">
@@ -164,16 +173,39 @@ export function Header({
             />
           </Button>
 
-          <Button
-            aria-label={labels.print}
-            className="text-(--muted-ink)"
-            isIconOnly
-            onPress={handlePrint}
-            size="sm"
-            variant="ghost"
-          >
-            <IconHeroiconsPrinter aria-hidden="true" className="size-4" />
-          </Button>
+          {/* A dev server prints the live page, so a copy tweak shows up in the PDF
+              at once; a built bundle links to the file `pnpm build:pdf` wrote.
+              `MODE` rather than `DEV`: `DEV` follows `NODE_ENV`, so a dev server
+              started under `NODE_ENV=production` would silently link to a stale
+              PDF instead of printing. */}
+          {import.meta.env.MODE === "production" ? (
+            <Link
+              aria-label={labels.download}
+              className={buttonVariants({
+                isIconOnly: true,
+                size: "sm",
+                variant: "ghost",
+              })}
+              download={pdfFileName}
+              href={pdfHref}
+            >
+              <IconHeroiconsArrowDownTray
+                aria-hidden="true"
+                className="size-4"
+              />
+            </Link>
+          ) : (
+            <Button
+              aria-label={labels.print}
+              className="text-(--muted-ink)"
+              isIconOnly
+              onPress={handlePrint}
+              size="sm"
+              variant="ghost"
+            >
+              <IconHeroiconsPrinter aria-hidden="true" className="size-4" />
+            </Button>
+          )}
         </div>
       </div>
     </header>

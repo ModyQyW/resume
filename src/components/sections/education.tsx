@@ -29,7 +29,7 @@ export function Education({
   const school = dictionary[education.schoolKey] ?? education.schoolKey;
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="print-avoid-break flex flex-col gap-3">
       <div className="print-avoid-break">
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
           <Link

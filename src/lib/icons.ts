@@ -16,6 +16,7 @@ import IconCustomUniApp from "~icons/custom/uni-app";
 import IconCustomUniHelper from "~icons/custom/uni-helper";
 import IconDeviconAzuredevops from "~icons/devicon/azuredevops";
 import IconHeroiconsAcademicCap from "~icons/heroicons/academic-cap";
+import IconHeroiconsArrowDownTray from "~icons/heroicons/arrow-down-tray";
 import IconHeroiconsArrowTopRightOnSquare from "~icons/heroicons/arrow-top-right-on-square";
 import IconHeroiconsChatBubbleLeftRight from "~icons/heroicons/chat-bubble-left-right";
 import IconHeroiconsComputerDesktop from "~icons/heroicons/computer-desktop";
@@ -64,6 +65,7 @@ export const iconRegistry: Record<string, IconComponent> = {
   "custom:uni-helper": IconCustomUniHelper,
   "devicon:azuredevops": IconDeviconAzuredevops,
   "heroicons:academic-cap": IconHeroiconsAcademicCap,
+  "heroicons:arrow-down-tray": IconHeroiconsArrowDownTray,
   "heroicons:arrow-top-right-on-square": IconHeroiconsArrowTopRightOnSquare,
   "heroicons:chat-bubble-left-right": IconHeroiconsChatBubbleLeftRight,
   "heroicons:computer-desktop": IconHeroiconsComputerDesktop,
@@ -149,11 +151,36 @@ function humanise(iconKey: string): string {
     .join(" ");
 }
 
+/**
+ * Icon keys come from the content files, where a typo has no other symptom: the
+ * icon disappears from the page and from the printed PDF, and a tooltip shows a
+ * name invented from the broken key. Report each unknown key once, and only for
+ * a non-production bundle — `MODE` rather than `DEV`, because `DEV` follows
+ * `NODE_ENV` and reads false for a dev server started under
+ * `NODE_ENV=production`.
+ */
+const reportedIconKeys = new Set<string>();
+
+function reportUnknownIconKey(iconKey: string) {
+  if (import.meta.env.MODE === "production" || reportedIconKeys.has(iconKey)) {
+    return;
+  }
+  reportedIconKeys.add(iconKey);
+  console.warn(`Unknown icon key "${iconKey}"`);
+}
+
 export function getIcon(iconKey: string): IconComponent | undefined {
-  return iconRegistry[iconKey];
+  const Icon = iconRegistry[iconKey];
+  if (!Icon) {
+    reportUnknownIconKey(iconKey);
+  }
+  return Icon;
 }
 
 export function getIconName(iconKey: string): string {
+  if (!iconRegistry[iconKey]) {
+    reportUnknownIconKey(iconKey);
+  }
   return humanise(iconKey);
 }
 
@@ -162,6 +189,7 @@ export function getIconName(iconKey: string): string {
  * Exported here so every icon in the app resolves through one module.
  */
 export {
+  IconHeroiconsArrowDownTray,
   IconHeroiconsArrowTopRightOnSquare,
   IconHeroiconsComputerDesktop,
   IconHeroiconsLanguage,

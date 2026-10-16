@@ -1,5 +1,5 @@
 import { Link } from "@heroui/react";
-import type { Job, Locale, Resume } from "../../content";
+import type { Highlight, Job, Locale, Resume } from "../../content";
 import { formatPeriod, periodDateTime } from "../../lib/format";
 import { TechStack } from "../tech-stack";
 
@@ -17,11 +17,33 @@ interface JobEntryProps {
   locale: Locale;
 }
 
+/**
+ * One achievement. A bold lead-in is followed by a colon and the sentence, so
+ * a reader scanning only the bold parts still gets the shape of the work.
+ *
+ * The colon is spelled per language: the ideographic one sits flush against the
+ * following character in Chinese, but alongside Latin text it renders with a
+ * gap before it that reads as a typo.
+ */
+function Achievement({ item, locale }: { item: Highlight; locale: Locale }) {
+  const labelSeparator = locale === "zh-CN" ? "：" : ": ";
+
+  return (
+    <li className="text-xs leading-[1.45] print:text-[13px] print:leading-[1.5]">
+      {item.label ? (
+        <strong className="font-medium text-(--heading)">{item.label}</strong>
+      ) : null}
+      {item.label ? labelSeparator : null}
+      {item.text}
+    </li>
+  );
+}
+
 function JobEntry({ job, locale, dictionary, current }: JobEntryProps) {
   const company = dictionary[job.companyKey] ?? job.companyKey;
 
   return (
-    <li className="print-avoid-break relative grid gap-x-6 gap-y-1 sm:grid-cols-[7.5rem_1fr]">
+    <li className="relative grid gap-x-6 gap-y-1 sm:grid-cols-[6.5rem_1fr]">
       {/* The date column doubles as the timeline rail: the dot sits on the
           rail, and the rule below it is drawn as a pseudo-element so the two
           columns stay independent. */}
@@ -45,7 +67,7 @@ function JobEntry({ job, locale, dictionary, current }: JobEntryProps) {
       </div>
 
       <div className="min-w-0">
-        <div className="flex items-center gap-2">
+        <div className="print-keep-with-next flex items-center gap-2">
           <img
             alt=""
             className="size-5 shrink-0 object-contain"
@@ -61,36 +83,32 @@ function JobEntry({ job, locale, dictionary, current }: JobEntryProps) {
           >
             {company}
           </Link>
+          <span className="font-medium text-(--muted-ink) text-xs">
+            {job.role}
+          </span>
         </div>
-
-        <p className="mt-0.5 font-medium text-xs">{job.role}</p>
-
-        <div className="mt-1 flex flex-col gap-0.5">
+        <div className="mt-1 flex flex-col gap-2.5">
           {job.groups.map((group) => (
-            <div key={group.title}>
-              <h4 className="font-semibold text-(--heading) text-xs">
+            <div className="print-avoid-break" key={group.title}>
+              <h4 className="font-semibold text-(--heading) text-xs print:text-[13px]">
                 {group.title}
               </h4>
-              <p className="prose-measure mt-0.5 text-xs leading-tight">
-                {group.items.map((item, idx) => (
-                  <span key={item.label + item.text}>
-                    {idx > 0 ? "；" : ""}
-                    {item.label ? (
-                      <strong className="font-medium text-(--heading)">
-                        {item.label}
-                      </strong>
-                    ) : null}
-                    {item.label ? "：" : ""}
-                    {item.text}
-                  </span>
+              <ul className="mt-0.5 list-disc space-y-0.5 pl-3.5 marker:text-(--rule-strong)">
+                {group.items.map((item) => (
+                  <Achievement
+                    item={item}
+                    key={item.label + item.text}
+                    locale={locale}
+                  />
                 ))}
-              </p>
+              </ul>
             </div>
           ))}
         </div>
-
-        <div className="mt-1.5">
-          <TechStack icons={job.stack} locale={locale} />
+        {/* `break-inside: avoid` does not apply to a flex container, so the
+            guard wraps the icon row instead of sitting on it. */}
+        <div className="print-avoid-break mt-1.5">
+          <TechStack icons={job.stack} />
         </div>
       </div>
     </li>

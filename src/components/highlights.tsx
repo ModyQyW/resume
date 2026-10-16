@@ -8,17 +8,17 @@ interface TraitGroupProps {
 }
 
 /**
- * One labelled list of traits. On screen each trait is a chip whose explanatory
- * sentence lives in a tooltip, because the labels alone are what a reader
- * scans. On paper tooltips do not exist, so the sentence prints beneath the
- * label instead of being lost.
+ * One labelled list of traits. Each trait is a chip whose explanatory sentence
+ * lives in a tooltip, because the labels alone are what a reader scans. The
+ * printed edition shows the same chips without the explanation, so the page and
+ * the PDF stay the same document.
  */
 function TraitGroup({ title, traits }: TraitGroupProps) {
   return (
     <div className="min-w-0">
       <h3 className="mb-2 font-mono text-(--muted-ink) text-2xs">{title}</h3>
 
-      <ul className="print-hidden flex flex-wrap gap-1.5">
+      <ul className="flex flex-wrap gap-1.5">
         {traits.map((trait) => {
           const Icon = getIcon(trait.icon);
           return (
@@ -38,10 +38,6 @@ function TraitGroup({ title, traits }: TraitGroupProps) {
           );
         })}
       </ul>
-
-      <p className="hidden text-xs leading-[1.375rem] print:block">
-        {traits.map((t) => t.label).join("、")}
-      </p>
     </div>
   );
 }
