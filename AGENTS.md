@@ -121,7 +121,7 @@ src/
     model.ts      双语共享的内容模型，改结构从这里开始
     zh-cn.ts      中文文案
     en-us.ts      英文文案
-    index.ts      语言注册表、locale 检测（默认中文）
+    index.ts      语言注册表、locale 检测（浏览器首选简体中文才用中文版）
   components/
     hero.tsx      抬头 + 个人介绍 + 联系方式（屏幕图标 + tooltip，纸上图标 + 值平铺）
     header.tsx    语言 / 主题 / 源码 / PDF 动作

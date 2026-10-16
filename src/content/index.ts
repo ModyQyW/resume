@@ -19,19 +19,30 @@ export function isLocale(value: string | null | undefined): value is Locale {
 }
 
 /**
- * Picks the edition that matches the visitor's browser, defaulting to Chinese
- * because that is the primary market for this resume.
+ * Picks the edition that matches the visitor's browser: only Simplified Chinese
+ * asks for the Chinese edition, everything else reads English. Traditional
+ * Chinese counts as "everything else", so a zh-TW visitor gets English rather
+ * than Simplified copy.
  */
 export function detectLocale(): Locale {
   if (typeof navigator === "undefined") {
-    return "zh-CN";
+    return "en-US";
   }
   const languages = navigator.languages?.length
     ? navigator.languages
     : [navigator.language];
-  return languages.some((language) => language?.toLowerCase().startsWith("en"))
-    ? "en-US"
-    : "zh-CN";
+  return isSimplifiedChinese(languages[0]) ? "zh-CN" : "en-US";
+}
+
+/**
+ * "zh", "zh-CN" and "zh-Hans" are Simplified; "zh-TW", "zh-HK", "zh-MO" and
+ * "zh-Hant" are not, so they fall through to English.
+ */
+const TRADITIONAL_CHINESE = /(hant|-tw|-hk|-mo)/;
+
+function isSimplifiedChinese(language: string | undefined): boolean {
+  const tag = language?.toLowerCase() ?? "";
+  return tag.startsWith("zh") && !TRADITIONAL_CHINESE.test(tag);
 }
 
 export type {
