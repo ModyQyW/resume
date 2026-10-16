@@ -32,7 +32,7 @@ export function Projects({ projects, locale }: ProjectsProps) {
               {formatPeriod(project.period, locale)}
             </time>
           </div>
-          <p className="prose-measure mt-0.5 text-xs leading-[1.5] print:text-[13px]">
+          <p className="mt-0.5 text-xs leading-[1.5] print:text-[13px]">
             {project.before}
             {project.relatedUrl && project.relatedName ? (
               <Link

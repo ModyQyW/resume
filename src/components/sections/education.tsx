@@ -47,9 +47,7 @@ export function Education({
             {formatPeriod(education.period, locale)}
           </time>
         </div>
-        <p className="prose-measure mt-0.5 text-sm leading-6">
-          {education.degree}
-        </p>
+        <p className="mt-0.5 text-sm leading-6">{education.degree}</p>
       </div>
 
       <div>

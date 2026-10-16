@@ -135,11 +135,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Keeps long-form body text under ~68 characters per line. */
-.prose-measure {
-  max-width: 68ch;
-}
-
 /* A resume gets printed more often than it gets skimmed on screen. These
    rules turn the interactive page into a clean document. */
 @media print {
