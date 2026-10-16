@@ -20,6 +20,7 @@ interface HeaderProps {
   onThemeChange: (next: ThemePreference) => void;
   sourceUrl: string;
   themePreference: ThemePreference;
+  title: string;
 }
 
 /**
@@ -35,6 +36,7 @@ export function Header({
   labels,
   sourceUrl,
   name,
+  title,
 }: HeaderProps) {
   // Every option is labelled in both languages so the menus stay readable
   // whichever edition is currently displayed.
@@ -96,9 +98,9 @@ export function Header({
   // immediately. Production links to the PDF `pnpm build:pdf` generated from
   // this same page, because a visitor's browser cannot render one on demand.
   const pdfHref = `${import.meta.env.BASE_URL}resume-${locale}.pdf`;
-  // The saved file is named the way a reader would: whose resume it is and
-  // which language edition, not the internal locale code.
-  const pdfFileName = `${name} - ${locales.find((item) => item.value === locale)?.label ?? locale}.pdf`;
+  // The saved file is named the way a reader would: whose resume it is and the
+  // role they are applying for, both taken from the edition being read.
+  const pdfFileName = `${name} - ${title}.pdf`;
 
   return (
     <header className="print-hidden sticky top-0 z-40 border-(--rule) border-b bg-(--page)/85 backdrop-blur-sm">

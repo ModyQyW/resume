@@ -16,13 +16,13 @@ export const enUS: Resume = {
     theme: "Change theme",
   },
   description:
-    "Rui Wu is a front-end engineer with 7 years of experience across the React and Vue ecosystems, comfortable running a small team and shipping projects end to end.",
+    "Ray Wu is a front-end engineer with 7 years of experience across the React and Vue ecosystems, comfortable running a small team and shipping projects end to end.",
   dictionary: {
     "company.globus": "Globus LTD.",
     "company.millcloud": "Guangdong MillCloud Technology Co., Ltd.",
     "school.sysu": "Sun Yat-sen University",
   },
-  documentTitle: "Rui Wu - Front-end Engineer",
+  documentTitle: "Ray Wu - Front-end Engineer",
   education: {
     degree:
       "Bachelor of Engineering, Software Engineering (Mobile Information Engineering)",
@@ -277,7 +277,7 @@ export const enUS: Resume = {
     ],
     intro:
       "Front-end engineer with 7 years of experience, leading a five-person team across web, desktop, mobile and mini-program products. I own architecture and performance work, cutting build times by 21%, and I work across the React and Vue ecosystems.",
-    name: "Rui Wu",
+    name: "Ray Wu",
     portrait: "/wurui.jpg",
     title: "Front-end Engineer",
   },

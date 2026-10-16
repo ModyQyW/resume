@@ -22,6 +22,7 @@ export function App() {
         onThemeChange={setPreference}
         sourceUrl={resume.footer.sourceUrl}
         themePreference={preference}
+        title={resume.person.title}
       />
 
       <main className="mx-auto max-w-3xl px-5 py-3 sm:px-8 sm:py-4 print:py-2">
