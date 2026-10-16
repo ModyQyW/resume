@@ -21,7 +21,7 @@
     <script>
     "use strict";
     // Applied before paint so a dark-mode visitor never sees a white flash.
-    // Mirrors the storage key and the three-way preference used by lib/theme.ts.
+    // Mirrors the storage key and the three-way preference used by src/lib/use-theme.ts.
     (() => {
       try {
         const preference = localStorage.getItem("theme") || "system";

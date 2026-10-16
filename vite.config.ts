@@ -1,5 +1,6 @@
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import { codeInspectorPlugin } from "code-inspector-plugin";
 import { FileSystemIconLoader } from "unplugin-icons/loaders";
 import Icons from "unplugin-icons/vite";
 import { defineConfig } from "vite";
@@ -35,6 +36,9 @@ export default defineConfig({
     },
   },
   plugins: [
+    codeInspectorPlugin({
+      bundler: "vite",
+    }),
     react(),
     tailwindcss(),
     // Icons resolve at build time into inlined SVG, so the technology strip

@@ -21,3 +21,16 @@ logs
 .env.*
 !.env.example
 stats.html
+
+# Coding Agent
+.claude
+.codex
+.grok
+.gemini
+.pi
+.omp
+.zcode
+.codebuddy
+.workbuddy
+.qoder
+.trae

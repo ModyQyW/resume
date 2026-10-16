@@ -1,3 +1,5 @@
+allowBuilds:
+  node-pty: true
 configDependencies:
   '@pnpm/plugin-trusted-deps': latest
 minimumReleaseAgeExclude:
@@ -20,3 +22,6 @@ minimumReleaseAgeExclude:
   - react-dom@19.3.1
   - react@19.3.1
   - rolldown@1.2.14
+permissions:
+  ultracite:
+    skills: true
