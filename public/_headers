@@ -1,0 +1,7 @@
+# PDF 文件名固定，改了文案重新部署后浏览器可能还留着旧的。
+# 这里写明每次都跟服务器校验。（Cloudflare 源站本来就发同样的头，
+# 但 Caching → Configuration 里的 Browser Cache TTL 默认 4 小时，
+# 会把比它小的 max-age 顶上去，所以这个值要生效得先改成
+# Respect Existing Headers。）
+/resume-*.pdf
+  Cache-Control: public, max-age=0, must-revalidate

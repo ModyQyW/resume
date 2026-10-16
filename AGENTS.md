@@ -21,9 +21,8 @@
   ```
 
   超限时逐条列出张数并以非零码退出（可直接进 CI）。脚本在 `scripts/print-pages.mjs`，
-  自己起停 dev server，不需要事先有服务在跑。检查模式占 5199，`--write` 占 5198，
-  两个模式可以同时跑。`pnpm build` 第一步就跑这个脚本（`--write`），所以页数超了
-  构建会直接失败。
+  自己起停 dev server，不需要事先有服务在跑。检查模式占 5199，`--write` 占 5198（也就是
+  `pnpm build:pdf`），两个模式可以同时跑。
 
 - 数页数**必须**读浏览器生成的 PDF（`/Type /Page` 计数）。测量 DOM 高度猜不准：
   分页、孤行（orphans）、寡妇行（widows）都会改变真实张数。
@@ -91,21 +90,21 @@
 
 ### 4. 站上导出的 PDF
 
-访客点右上角的下载按钮拿到的 PDF，是构建时用 Playwright 渲染出来的，不在访客浏览器
-里生成。
+访客点右上角的下载按钮拿到的 PDF，是本地用 Playwright 渲染出来、随仓库提交的静态文件。
+它不在访客浏览器里生成，也不在部署构建里生成。
 
 - 开发时按钮是打印图标，点一下打当前页面（改完文案立刻能看到）。
-- 生产构建下按钮是下载图标，链到 `/resume-<locale>.pdf`，即 `dist/` 里的静态资源。
-- `pnpm build` 先跑 `print-pages.mjs --write` 生成 `public/resume-<locale>.pdf`，再
-  `tsc -b` 和 `vite build`，后者把 `public/` 整个搬进 `dist/`。
-- 任一种语言超过 2 页就整批不写，脚本非零退出，`&&` 把后面的步骤也停掉，不会出现一份新、
-  一份旧的产物。
-- **构建机器必须能跑 Chromium。** 本地靠 `pnpm exec playwright install chromium`；
-  Cloudflare 的构建镜像里没装浏览器，构建命令得先装一个（见 README 的部署一节）。
-  镜像自带的 Node 是 24、pnpm 是 10.x，仓库要的是 Node 26（`.node-version` 会被读）和
-  pnpm 12.11.2（要么显式设 `PNPM_VERSION`，要么确认镜像会按 `packageManager` 切版本）。
-- `public/resume-*.pdf` 现在是构建中间产物，每次 build 都会重写，不需要手动生成、也不用
-  为了让线上更新而提交它。
+- 生产构建下按钮是下载图标，链到 `/resume-<locale>.pdf`，即 `public/` 里提交好的文件。
+- 本地生成：
+
+  ```bash
+  pnpm build:pdf     # 两种语言各生成一份到 public/
+  ```
+
+  要本机有 Chromium，新机器先 `pnpm exec playwright install chromium`。
+- 任一种语言超过 2 页就整批不写，不会出现一份新、一份旧的产物。
+- **改完文案必须重跑 `pnpm build:pdf` 并提交产物**，否则线上 PDF 会和页面对不上。PDF 每次
+  渲染都带创建时间，字节不可能一致，所以没有「产物是不是最新的」这种自动检查，只能靠记得。
 - 文件名由脚本写、按钮拼，两边必须一致（`resume-<locale>.pdf`），因为按钮按 `BASE_URL`
   拼路径。
 - 头像 `public/wurui.jpg` 必须保持小体积。它曾经是 5186×5186（7.4 MB），嵌进 PDF 后
@@ -139,7 +138,7 @@ src/
 scripts/
   print-pages.mjs  起 dev server、渲染两种语言、数页数；`--write` 写出 public/resume-<locale>.pdf
                    （`pnpm build` 第一步，`pnpm check:print` 只数不写）
-public/           头像、站点图标，以及提交进仓库的两份 PDF
+public/           头像、站点图标、`_headers`（PDF 缓存头），以及构建时写入的两份 PDF
 ```
 
 `header.tsx` 按 `import.meta.env.MODE` 决定按钮是打印还是下载，**别改成 `DEV`**：
@@ -154,7 +153,8 @@ public/           头像、站点图标，以及提交进仓库的两份 PDF
 
 ```bash
 pnpm dev           # 开发服务器（端口被占用会自动往后找）
-pnpm build         # 生成两份 PDF，再 tsc -b && vite build
+pnpm build         # tsc -b && vite build，部署时跑的就是它
+pnpm build:pdf     # 本地重新生成 public/ 下的两份 PDF
 pnpm preview       # 本地看 dist/ 的构建结果
 pnpm typecheck     # tsc -b --noEmit
 pnpm check         # ultracite check
@@ -162,16 +162,30 @@ pnpm fix           # ultracite fix
 pnpm check:print   # 只数打印页数，不写文件
 ```
 
-`pnpm build` 要跑 Chromium，新机器先 `pnpm exec playwright install chromium`。
-Node 看 `.node-version`（26），包管理器是 `packageManager` 里的 `pnpm@12.11.2`。
+`pnpm build` 不需要浏览器；`pnpm build:pdf` 要跑 Chromium，新机器先
+`pnpm exec playwright install chromium`。Node 看 `.node-version`（26），包管理器是
+`packageManager` 里的 `pnpm@12.11.2`。
 
-提交前跑 `pnpm typecheck && pnpm check && pnpm check:print`。改了样式、依赖或文案再加
-`pnpm build`（文案页数变了它会在第一步就停下）。
+提交前跑 `pnpm typecheck && pnpm check && pnpm check:print`。改了样式或依赖再加
+`pnpm build`；改了文案另加 `pnpm build:pdf` 并提交产物。
 
 `.gitignore` 里列了 `.pi`、`.claude` 等 agent 目录，biome 按 `.gitignore` 跳过它们，所以
 后台任务自己写的时间戳文件不会进 `pnpm check`。`biome.jsonc` 给 `scripts/**` 关掉了
 `noUnresolvedImports`：pnpm 把 `@playwright/test` 放在 `.pnpm/` 里，biome 的静态解析
 看不到它，代码本身能跑。
+
+## 部署
+
+线上跑在 Cloudflare 的 Git 集成构建上，构建命令 `pnpm run build`，产物目录 `dist/`。
+
+- 构建步骤里没有浏览器，也不生成 PDF：PDF 用仓库里提交好的那两份。
+- 镜像自带的 Node 是 24、pnpm 是 10.x，仓库要的是 Node 26（`.node-version` 会被读）和
+  pnpm 12.11.2（要么显式设 `PNPM_VERSION`，要么确认镜像会按 `packageManager` 切版本）。
+- `public/_headers` 里给 PDF 定了缓存：`Cache-Control: public, max-age=0, must-revalidate`。
+  这个文件只有 Cloudflare 会解析，本地 `pnpm preview` 只是把 `dist/_headers` 当普通文件发。
+- 域名级的 **Browser Cache TTL**（默认 4 小时）会把比它小的 `max-age` 顶上去，所以那个
+  `max-age=0` 要真生效，得在 Caching → Configuration 里设成 Respect Existing Headers，
+  或者用 Cache Rule 单独管 PDF。
 
 ## 提交
 
