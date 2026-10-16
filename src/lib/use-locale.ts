@@ -25,7 +25,7 @@ function setMeta(attribute: "name" | "property", key: string, content: string) {
 
 /**
  * Holds the active language. The chosen edition drives the rendered copy, the
- * document's `lang` attribute and title, and the description and share
+ * document's `lang` attribute, title and author, and the description and share
  * preview, so search engines and social cards follow the switch too.
  */
 export function useLocale() {
@@ -36,6 +36,7 @@ export function useLocale() {
     document.documentElement.lang = resume.htmlLang;
     document.title = resume.documentTitle;
     setMeta("name", "description", resume.description);
+    setMeta("name", "author", resume.person.name);
     setMeta("property", "og:title", resume.documentTitle);
     setMeta("property", "og:description", resume.description);
     setMeta("property", "og:locale", resume.htmlLang.replace("-", "_"));
