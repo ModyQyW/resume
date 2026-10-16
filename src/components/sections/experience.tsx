@@ -29,7 +29,7 @@ function Achievement({ item, locale }: { item: Highlight; locale: Locale }) {
   const labelSeparator = locale === "zh-CN" ? "：" : ": ";
 
   return (
-    <li className="text-xs leading-[1.45] print:text-[13px] print:leading-[1.5]">
+    <li className="text-xs leading-[1.45] print:text-[13px] print:leading-normal">
       {item.label ? (
         <strong className="font-medium text-(--heading)">{item.label}</strong>
       ) : null}

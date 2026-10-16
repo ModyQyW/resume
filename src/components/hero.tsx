@@ -65,7 +65,7 @@ export function Hero({ name, title, intro, portrait, contacts }: HeroProps) {
           <p className="mt-1 font-mono text-(--accent) text-[0.6875rem]">
             {title}
           </p>
-          <p className="mt-1.5 text-(--ink) text-xs leading-[1.5] print:text-[13px]">
+          <p className="mt-1.5 text-(--ink) text-xs leading-normal print:text-[13px]">
             {intro}
           </p>
         </div>
