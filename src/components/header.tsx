@@ -1,5 +1,12 @@
-import { Button, buttonVariants, Dropdown, Label, Link } from "@heroui/react";
-import { useCallback } from "react";
+import {
+  Button,
+  buttonVariants,
+  Dropdown,
+  Label,
+  Link,
+  Tooltip,
+} from "@heroui/react";
+import { type ReactNode, useCallback } from "react";
 import { type Locale, locales, type Resume } from "../content";
 import {
   IconHeroiconsArrowDownTray,
@@ -21,6 +28,31 @@ interface HeaderProps {
   sourceUrl: string;
   themePreference: ThemePreference;
   title: string;
+}
+
+/**
+ * One action in the toolbar with its label in a tooltip. The icons carry no
+ * text, so the label is the only thing telling a visitor what a button does.
+ *
+ * The control itself is the tooltip trigger, not a wrapper around it: HeroUI's
+ * `Tooltip` hands React Aria's trigger props to the next focusable child, so
+ * the label also reaches screen readers as a description and the toolbar keeps
+ * one tab stop per action. `Tooltip.Trigger` would put a focusable `div` in
+ * front of every button instead.
+ */
+function ToolbarAction({
+  children,
+  label,
+}: {
+  children: ReactNode;
+  label: string;
+}) {
+  return (
+    <Tooltip delay={150}>
+      {children}
+      <Tooltip.Content>{label}</Tooltip.Content>
+    </Tooltip>
+  );
 }
 
 /**
@@ -111,15 +143,17 @@ export function Header({
 
         <div className="flex items-center gap-0.5">
           <Dropdown>
-            <Button
-              aria-label={labels.language}
-              className="text-(--muted-ink)"
-              isIconOnly
-              size="sm"
-              variant="ghost"
-            >
-              <IconHeroiconsLanguage aria-hidden="true" className="size-4" />
-            </Button>
+            <ToolbarAction label={labels.language}>
+              <Button
+                aria-label={labels.language}
+                className="text-(--muted-ink)"
+                isIconOnly
+                size="sm"
+                variant="ghost"
+              >
+                <IconHeroiconsLanguage aria-hidden="true" className="size-4" />
+              </Button>
+            </ToolbarAction>
             <Dropdown.Popover placement="bottom end">
               <Dropdown.Menu
                 onSelectionChange={handleLocaleChange}
@@ -136,15 +170,17 @@ export function Header({
           </Dropdown>
 
           <Dropdown>
-            <Button
-              aria-label={labels.theme}
-              className="text-(--muted-ink)"
-              isIconOnly
-              size="sm"
-              variant="ghost"
-            >
-              <activeTheme.icon aria-hidden="true" className="size-4" />
-            </Button>
+            <ToolbarAction label={labels.theme}>
+              <Button
+                aria-label={labels.theme}
+                className="text-(--muted-ink)"
+                isIconOnly
+                size="sm"
+                variant="ghost"
+              >
+                <activeTheme.icon aria-hidden="true" className="size-4" />
+              </Button>
+            </ToolbarAction>
             <Dropdown.Popover placement="bottom end">
               <Dropdown.Menu
                 onSelectionChange={handleThemeChange}
@@ -161,19 +197,21 @@ export function Header({
             </Dropdown.Popover>
           </Dropdown>
 
-          <Button
-            aria-label={labels.source}
-            className="text-(--muted-ink)"
-            isIconOnly
-            onPress={handleOpenSource}
-            size="sm"
-            variant="ghost"
-          >
-            <IconHeroiconsArrowTopRightOnSquare
-              aria-hidden="true"
-              className="size-4"
-            />
-          </Button>
+          <ToolbarAction label={labels.source}>
+            <Button
+              aria-label={labels.source}
+              className="text-(--muted-ink)"
+              isIconOnly
+              onPress={handleOpenSource}
+              size="sm"
+              variant="ghost"
+            >
+              <IconHeroiconsArrowTopRightOnSquare
+                aria-hidden="true"
+                className="size-4"
+              />
+            </Button>
+          </ToolbarAction>
 
           {/* A dev server prints the live page, so a copy tweak shows up in the PDF
               at once; a built bundle links to the file `pnpm build:pdf` wrote.
@@ -181,32 +219,36 @@ export function Header({
               started under `NODE_ENV=production` would silently link to a stale
               PDF instead of printing. */}
           {import.meta.env.MODE === "production" ? (
-            <Link
-              aria-label={labels.download}
-              className={buttonVariants({
-                isIconOnly: true,
-                size: "sm",
-                variant: "ghost",
-              })}
-              download={pdfFileName}
-              href={pdfHref}
-            >
-              <IconHeroiconsArrowDownTray
-                aria-hidden="true"
-                className="size-4"
-              />
-            </Link>
+            <ToolbarAction label={labels.download}>
+              <Link
+                aria-label={labels.download}
+                className={buttonVariants({
+                  isIconOnly: true,
+                  size: "sm",
+                  variant: "ghost",
+                })}
+                download={pdfFileName}
+                href={pdfHref}
+              >
+                <IconHeroiconsArrowDownTray
+                  aria-hidden="true"
+                  className="size-4"
+                />
+              </Link>
+            </ToolbarAction>
           ) : (
-            <Button
-              aria-label={labels.print}
-              className="text-(--muted-ink)"
-              isIconOnly
-              onPress={handlePrint}
-              size="sm"
-              variant="ghost"
-            >
-              <IconHeroiconsPrinter aria-hidden="true" className="size-4" />
-            </Button>
+            <ToolbarAction label={labels.print}>
+              <Button
+                aria-label={labels.print}
+                className="text-(--muted-ink)"
+                isIconOnly
+                onPress={handlePrint}
+                size="sm"
+                variant="ghost"
+              >
+                <IconHeroiconsPrinter aria-hidden="true" className="size-4" />
+              </Button>
+            </ToolbarAction>
           )}
         </div>
       </div>
