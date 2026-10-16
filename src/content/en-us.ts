@@ -9,6 +9,7 @@ export const enUS: Resume = {
     "System Integration Project Management Engineer, Computer and Software Technology Proficiency",
   ],
   controls: {
+    download: "Download PDF",
     language: "Change language",
     print: "Print or save as PDF",
     source: "View source",
@@ -47,7 +48,7 @@ export const enUS: Resume = {
             },
             {
               label: "",
-              text: "Keep delivery on schedule by scoping requirements with the client, then breaking the work into tasks the team can pick up.",
+              text: "Scope requirements with the client, then break the work into tasks the team can pick up.",
             },
           ],
           title: "Team leadership and project management",
@@ -73,7 +74,7 @@ export const enUS: Resume = {
             },
             {
               label: "",
-              text: "Worked through the problems that hurt most — tangled request state, tightly coupled modules, slow page loads — and improved both performance and the user's experience.",
+              text: "Untangled request state, decoupled modules and cut page load times, improving both performance and the user's experience.",
             },
           ],
           title: "Hard problems and new practice",
@@ -86,7 +87,7 @@ export const enUS: Resume = {
             },
             {
               label: "",
-              text: "Introduced unit testing, CI/CD and monitoring into the development process, which raised both project quality and team throughput.",
+              text: "Introduced unit testing, CI/CD and monitoring, raising project quality and team throughput.",
             },
             {
               label: "~21% faster builds",
@@ -99,15 +100,15 @@ export const enUS: Resume = {
           items: [
             {
               label: "",
-              text: "Built a provincial education research platform on the JVS low-code base, supporting research activity, research teams and classroom teaching across low-code, no-code and full-code development.",
+              text: "Built a provincial education research platform on the JVS low-code base, combining low-code, no-code and full-code development.",
             },
             {
               label: "",
-              text: "Did secondary development on the JVS front end: introduced front-end tooling, refactored existing code, extended the low-code features and reworked the interactive experience.",
+              text: "Extended the JVS front end: introduced tooling, refactored code, widened the low-code feature set and reworked the interactive experience.",
             },
             {
               label: "",
-              text: "The platform serves the whole province and connects to several external systems, moving education research online.",
+              text: "Connects to several external systems, moving education research online across the province.",
             },
           ],
           title: "Guangdong Teaching Research Digital Intelligence Platform",
@@ -151,7 +152,7 @@ export const enUS: Resume = {
           items: [
             {
               label: "",
-              text: "Built inspection-record capture and in-browser PDF preview for the internal ERP system, which sped up processing and improved the experience for its users.",
+              text: "Built inspection-record capture and in-browser PDF preview for the internal ERP system, speeding up processing for its users.",
             },
           ],
           title: "Product features",
@@ -160,7 +161,7 @@ export const enUS: Resume = {
           items: [
             {
               label: "",
-              text: "Researched whether the existing Express back end could move to Serverless Framework, with the goal of using AWS serverless compute to gain availability and elasticity while cutting operational cost.",
+              text: "Researched moving the Express back end to Serverless Framework, to gain availability and elasticity from AWS serverless compute while cutting operational cost.",
             },
           ],
           title: "Architecture migration",
@@ -201,7 +202,7 @@ export const enUS: Resume = {
           items: [
             {
               label: "",
-              text: "Led the design and delivery of a platform for a restaurant chain — website, mini-program and mobile app — covering back-office management and reporting for clients, customers, outlets, staff and orders.",
+              text: "Led the design and delivery of a restaurant chain's website, mini-program and mobile app, covering back-office management and reporting for clients, customers, outlets, staff and orders.",
             },
             {
               label: "5,000+ daily users",
@@ -218,7 +219,7 @@ export const enUS: Resume = {
             },
             {
               label: "100+ courses hosted",
-              text: "and more than one million visits to date.",
+              text: "more than one million visits to date.",
             },
           ],
           title: "Online education resource library (MTU)",
@@ -274,6 +275,8 @@ export const enUS: Resume = {
         value: "+8613266337925",
       },
     ],
+    intro:
+      "Front-end engineer with 7 years of experience, leading a five-person team across web, desktop, mobile and mini-program products. I own architecture and performance work, cutting build times by 21%, and I work across the React and Vue ecosystems.",
     name: "Rui Wu",
     portrait: "/wurui.jpg",
     title: "Front-end Engineer",

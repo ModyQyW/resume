@@ -87,6 +87,8 @@ export interface Resume {
     theme: string;
     source: string;
     print: string;
+    /** Production only: the toolbar downloads a pre-built PDF instead. */
+    download: string;
   };
   /** Used for the meta description and the social-share preview. */
   description: string;
@@ -105,6 +107,11 @@ export interface Resume {
   person: {
     name: string;
     title: string;
+    /**
+     * The opening pitch. Short on purpose: it sits above the fold and is the
+     * first thing a recruiter reads, so it has to earn its three lines.
+     */
+    intro: string;
     portrait: string;
     contacts: ContactLink[];
   };
